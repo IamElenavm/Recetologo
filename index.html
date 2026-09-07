@@ -12,10 +12,10 @@
   <div class="app-shell">
     <header class="site-header no-print">
       <div class="header-inner">
-        <a class="brand" href="./" aria-label="Ir al inicio">
+        <button id="home-button" class="brand" type="button" aria-label="Volver a la página principal">
           <span class="brand-icon" aria-hidden="true">✦</span>
           <span>Mi plan nutricional</span>
-        </a>
+        </button>
 
         <button id="open-selector-button" class="icon-button" type="button" aria-label="Cambiar perfil o plan" title="Cambiar plan">
           <span aria-hidden="true">⌄</span>
@@ -23,13 +23,14 @@
       </div>
     </header>
 
-    <main id="app-main" class="main-content">
+    `
+
       <section id="loading-state" class="loading-state" aria-live="polite">
         <div class="loading-orb" aria-hidden="true"></div>
         <p id="loading-text">Cargando tu plan nutricional…</p>
       </section>
 
-      <section id="app-content" class="is-hidden">
+      <section id="app-content" class="is-hidden"> <button id="back-to-profile-plans-button" class="back-button no-print" type="button"> <span aria-hidden="true">←</span> Ver planes del perfil </button>
         <section class="hero-card">
           <div class="hero-card__top">
             <p id="profile-name" class="eyebrow">Perfil</p>
