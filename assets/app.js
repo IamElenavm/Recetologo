@@ -2,88 +2,29 @@
 
 const DATA_INDEX_URL = "data/index.json";
 
-const MEAL_CONFIG = {
-  desayuno: { label: "Desayuno", emoji: "🌅" },
-  "media-manana": { label: "Media mañana", emoji: "🍎" },
-  comida: { label: "Comida", emoji: "🥗" },
-  merienda: { label: "Merienda", emoji: "🍊" },
-  cena: { label: "Cena", emoji: "🌙" }
-};
+const MEAL_CONFIG = { desayuno: { label: "Desayuno", emoji: "🌅" }, "media-manana": { label: "Media mañana", emoji: "🍎" }, comida: { label: "Comida", emoji: "🥗" }, merienda: { label: "Merienda", emoji: "🍊" }, cena: { label: "Cena", emoji: "🌙" } };
 
-const CATEGORY_ICONS = {
-  "Carnes y pescados": "🥩",
-  "Huevos y lácteos": "🥛",
-  "Verduras y hortalizas": "🥦",
-  Frutas: "🍎",
-  "Legumbres y conservas": "🥫",
-  "Cereales y carbohidratos": "🌾",
-  Despensa: "🫙",
-  Congelados: "❄️",
-  Otros: "🛒"
-};
+const CATEGORY_ICONS = { "Carnes y pescados": "🥩", "Huevos y lácteos": "🥛", "Verduras y hortalizas": "🥦", Frutas: "🍎", "Legumbres y conservas": "🥫", "Cereales y carbohidratos": "🌾", Despensa: "🫙", Congelados: "❄️", Otros: "🛒" };
 
-const state = {
-  index: null,
-  profile: null,
-  plan: null,
-  activeTab: "menu",
-  selectedProfileId: null,
-  openDays: new Set(),
-  openCategories: new Set(),
-  activeRecipe: null
-};
+const state = { index: null, profile: null, plan: null, activeTab: "menu", selectedProfileId: null, openDays: new Set(), openCategories: new Set(), activeRecipe: null };
 
-const elements = {
-  loadingState: document.getElementById("loading-state"),
-  loadingText: document.getElementById("loading-text"),
-  appContent: document.getElementById("app-content"),
-  errorState: document.getElementById("error-state"),
-  errorMessage: document.getElementById("error-message"),
-  retryButton: document.getElementById("retry-button"),
+const elements = { loadingState: document.getElementById("loading-state"), loadingText: document.getElementById("loading-text"), appContent: document.getElementById("app-content"), errorState: document.getElementById("error-state"), errorMessage: document.getElementById("error-message"), retryButton: document.getElementById("retry-button"),
 
-  profileName: document.getElementById("profile-name"),
-  peopleCountBadge: document.getElementById("people-count-badge"),
-  planTitle: document.getElementById("plan-title"),
-  planSubtitle: document.getElementById("plan-subtitle"),
-  planPeriod: document.getElementById("plan-period"),
-  planDaysCount: document.getElementById("plan-days-count"),
+homeButton: document.getElementById("home-button"), homePage: document.getElementById("home-page"), homeProfilesGrid: document.getElementById("home-profiles-grid"), profilePlansPage: document.getElementById("profile-plans-page"), profilePlansTitle: document.getElementById("profile-plans-title"), profilePlansDescription: document.getElementById("profile-plans-description"), profilePlansList: document.getElementById("profile-plans-list"), backToHomeButton: document.getElementById("back-to-home-button"), backToProfilePlansButton: document.getElementById("back-to-profile-plans-button"),
 
-  menuSummary: document.getElementById("menu-summary"),
-  menuContainer: document.getElementById("menu-container"),
-  shoppingContainer: document.getElementById("shopping-container"),
+profileName: document.getElementById("profile-name"), peopleCountBadge: document.getElementById("people-count-badge"), planTitle: document.getElementById("plan-title"), planSubtitle: document.getElementById("plan-subtitle"), planPeriod: document.getElementById("plan-period"), planDaysCount: document.getElementById("plan-days-count"),
 
-  shoppingProgressText: document.getElementById("shopping-progress-text"),
-  shoppingProgressPercent: document.getElementById("shopping-progress-percent"),
-  shoppingProgressBar: document.getElementById("shopping-progress-bar"),
-  resetShoppingButton: document.getElementById("reset-shopping-button"),
+menuSummary: document.getElementById("menu-summary"), menuContainer: document.getElementById("menu-container"), shoppingContainer: document.getElementById("shopping-container"), shoppingProgressText: document.getElementById("shopping-progress-text"), shoppingProgressPercent: document.getElementById("shopping-progress-percent"), shoppingProgressBar: document.getElementById("shopping-progress-bar"), resetShoppingButton: document.getElementById("reset-shopping-button"),
 
-  openSelectorButton: document.getElementById("open-selector-button"),
-  changePlanButton: document.getElementById("change-plan-button"),
-  closeSelectorButton: document.getElementById("close-selector-button"),
-  selectorOverlay: document.getElementById("selector-overlay"),
-  selectorModal: document.getElementById("plan-selector-modal"),
-  profilesList: document.getElementById("profiles-list"),
-  plansList: document.getElementById("plans-list"),
+openSelectorButton: document.getElementById("open-selector-button"), changePlanButton: document.getElementById("change-plan-button"), closeSelectorButton: document.getElementById("close-selector-button"), selectorOverlay: document.getElementById("selector-overlay"), selectorModal: document.getElementById("plan-selector-modal"), profilesList: document.getElementById("profiles-list"), plansList: document.getElementById("plans-list"),
 
-  recipeOverlay: document.getElementById("recipe-overlay"),
-  recipeModal: document.getElementById("recipe-modal"),
-  closeRecipeButton: document.getElementById("close-recipe-button"),
-  recipeModalSlot: document.getElementById("recipe-modal-slot"),
-  recipeModalTitle: document.getElementById("recipe-modal-title"),
-  recipeModalContent: document.getElementById("recipe-modal-content"),
+recipeOverlay: document.getElementById("recipe-overlay"), recipeModal: document.getElementById("recipe-modal"), closeRecipeButton: document.getElementById("close-recipe-button"), recipeModalSlot: document.getElementById("recipe-modal-slot"), recipeModalTitle: document.getElementById("recipe-modal-title"), recipeModalContent: document.getElementById("recipe-modal-content"),
 
-  printMenuButton: document.getElementById("print-menu-button"),
-  printShoppingButton: document.getElementById("print-shopping-button"),
-  printMenuArea: document.getElementById("print-menu-area"),
-  printShoppingArea: document.getElementById("print-shopping-area")
-};
+printMenuButton: document.getElementById("print-menu-button"), printShoppingButton: document.getElementById("print-shopping-button"), printMenuArea: document.getElementById("print-menu-area"), printShoppingArea: document.getElementById("print-shopping-area") };
 
 document.addEventListener("DOMContentLoaded", init);
 
-async function init() {
-  bindEvents();
-  await loadApplication();
-}
+async function init() { bindEvents(); await loadApplication(); }
 
 function bindEvents() {
   document.querySelectorAll("[data-tab-target]").forEach((button) => {
@@ -91,7 +32,15 @@ function bindEvents() {
   });
 
   elements.openSelectorButton.addEventListener("click", openSelector);
-  elements.changePlanButton.addEventListener("click", openSelector);
+
+  elements.changePlanButton.addEventListener("click", () => {
+    if (state.profile) {
+      showProfilePlansPage(state.profile.id);
+    } else {
+      showHomePage();
+    }
+  });
+
   elements.closeSelectorButton.addEventListener("click", closeSelector);
   elements.selectorOverlay.addEventListener("click", closeSelector);
 
@@ -99,9 +48,18 @@ function bindEvents() {
   elements.recipeOverlay.addEventListener("click", closeRecipeModal);
 
   elements.retryButton.addEventListener("click", loadApplication);
+  elements.homeButton.addEventListener("click", showHomePage);
+  elements.backToHomeButton.addEventListener("click", showHomePage);
+
+  elements.backToProfilePlansButton.addEventListener("click", () => {
+    if (state.profile) {
+      showProfilePlansPage(state.profile.id);
+    } else {
+      showHomePage();
+    }
+  });
 
   elements.resetShoppingButton.addEventListener("click", resetShoppingChecks);
-
   elements.printMenuButton.addEventListener("click", printMenu);
   elements.printShoppingButton.addEventListener("click", printShopping);
 
@@ -127,22 +85,126 @@ async function loadApplication() {
     validateIndex(index);
 
     state.index = index;
-
-    const savedSelection = getSavedSelection();
-    const initialProfile = getInitialProfile(savedSelection);
-    const initialPlan = getInitialPlan(initialProfile, savedSelection);
-
-    await selectPlan(initialProfile.id, initialPlan.id, false);
+    renderHomePage();
 
     elements.loadingState.classList.add("is-hidden");
     elements.errorState.classList.add("is-hidden");
-    elements.appContent.classList.remove("is-hidden");
+    showHomePage();
   } catch (error) {
     console.error("Error al cargar la aplicación:", error);
     showError(
       "No se ha podido cargar el plan. Comprueba que el repositorio contiene data/index.json y los archivos JSON del plan."
     );
   }
+}
+
+function showHomePage() {
+  closeSelector();
+  closeRecipeModal();
+
+  elements.homePage.classList.remove("is-hidden");
+  elements.profilePlansPage.classList.add("is-hidden");
+  elements.appContent.classList.add("is-hidden");
+}
+
+function renderHomePage() {
+  if (!state.index) return;
+
+  elements.homeProfilesGrid.innerHTML = state.index.profiles
+    .map((profile) => {
+      const peopleCount = profile.id === "elena-ruben" ? 2 : 1;
+      const icon = peopleCount > 1 ? "👥" : "🌿";
+      const plansCount = profile.plans.length;
+
+      return `
+        <button
+          class="profile-app-card"
+          type="button"
+          data-home-profile-id="${escapeAttribute(profile.id)}"
+          aria-label="Abrir perfil ${escapeAttribute(profile.name)}"
+        >
+          <span class="profile-app-card__icon" aria-hidden="true">${icon}</span>
+          <span class="profile-app-card__name">${escapeHtml(profile.name)}</span>
+          <span class="profile-app-card__meta">
+            ${pluralize(plansCount, "plan disponible", "planes disponibles")}
+          </span>
+        </button>
+      `;
+    })
+    .join("");
+
+  elements.homeProfilesGrid
+    .querySelectorAll("[data-home-profile-id]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        showProfilePlansPage(button.dataset.homeProfileId);
+      });
+    });
+}
+
+function showProfilePlansPage(profileId) {
+  const profile = state.index?.profiles.find((item) => item.id === profileId);
+
+  if (!profile) {
+    showHomePage();
+    return;
+  }
+
+  closeSelector();
+  closeRecipeModal();
+
+  state.selectedProfileId = profile.id;
+
+  elements.profilePlansTitle.textContent = profile.name;
+  elements.profilePlansDescription.textContent =
+    profile.description || "Selecciona un plan para consultarlo.";
+
+  elements.profilePlansList.innerHTML = profile.plans
+    .map(
+      (plan) => `
+        <button
+          class="profile-plan-card"
+          type="button"
+          data-home-plan-id="${escapeAttribute(plan.id)}"
+          data-home-plan-profile-id="${escapeAttribute(profile.id)}"
+        >
+          <span class="profile-plan-card__icon" aria-hidden="true">📅</span>
+          <span class="profile-plan-card__content">
+            <span class="profile-plan-card__title">${escapeHtml(plan.title)}</span>
+            ${
+              plan.periodLabel
+                ? `<span class="profile-plan-card__meta">${escapeHtml(
+                    plan.periodLabel
+                  )}</span>`
+                : ""
+            }
+          </span>
+          <span class="profile-plan-card__arrow" aria-hidden="true">›</span>
+        </button>
+      `
+    )
+    .join("");
+
+  elements.profilePlansList
+    .querySelectorAll("[data-home-plan-id]")
+    .forEach((button) => {
+      button.addEventListener("click", async () => {
+        try {
+          await selectPlan(
+            button.dataset.homePlanProfileId,
+            button.dataset.homePlanId,
+            false
+          );
+        } catch (error) {
+          console.error(error);
+          showError("No se ha podido abrir el plan seleccionado.");
+        }
+      });
+    });
+
+  elements.homePage.classList.add("is-hidden");
+  elements.profilePlansPage.classList.remove("is-hidden");
+  elements.appContent.classList.add("is-hidden");
 }
 
 async function selectPlan(profileId, planId, shouldCloseSelector = true) {
@@ -167,11 +229,7 @@ async function selectPlan(profileId, planId, shouldCloseSelector = true) {
   state.plan = plan;
   state.selectedProfileId = profile.id;
   state.activeRecipe = null;
-
-  state.openDays = new Set(
-    plan.days.length > 0 ? [plan.days[0].id] : []
-  );
-
+  state.openDays = new Set(plan.days.length > 0 ? [plan.days[0].id] : []);
   state.openCategories = new Set(
     getShoppingCategories(plan).map((category) => category.category)
   );
@@ -181,13 +239,16 @@ async function selectPlan(profileId, planId, shouldCloseSelector = true) {
   renderPlan();
   renderSelector();
 
+  elements.homePage.classList.add("is-hidden");
+  elements.profilePlansPage.classList.add("is-hidden");
+  elements.appContent.classList.remove("is-hidden");
+
   if (shouldCloseSelector) {
     closeSelector();
   }
 
   elements.loadingState.classList.add("is-hidden");
   elements.errorState.classList.add("is-hidden");
-  elements.appContent.classList.remove("is-hidden");
 }
 
 function renderPlan() {
@@ -199,10 +260,13 @@ function renderPlan() {
 
 function renderPlanHeader() {
   const { profile, plan } = state;
-  const peopleLabel = pluralize(plan.people.length, "persona", "personas");
 
   elements.profileName.textContent = profile.name;
-  elements.peopleCountBadge.textContent = peopleLabel;
+  elements.peopleCountBadge.textContent = pluralize(
+    plan.people.length,
+    "persona",
+    "personas"
+  );
   elements.planTitle.textContent = plan.title;
   elements.planSubtitle.textContent = plan.subtitle || "";
   elements.planSubtitle.hidden = !plan.subtitle;
@@ -212,12 +276,11 @@ function renderPlanHeader() {
 
 function renderMenu() {
   const { plan } = state;
+  const mealCount = getMealCount(plan);
 
   elements.menuSummary.textContent = `${plan.days.length} ${
     plan.days.length === 1 ? "día" : "días"
-  } · ${getMealCount(plan)} ${
-    getMealCount(plan) === 1 ? "receta" : "recetas"
-  }`;
+  } · ${mealCount} ${mealCount === 1 ? "receta" : "recetas"}`;
 
   elements.menuContainer.innerHTML = plan.days
     .map((day, dayIndex) => renderDay(day, dayIndex))
@@ -312,7 +375,9 @@ function renderMealCard(meal, dayId, mealIndex) {
       data-meal-index="${mealIndex}"
       aria-label="Abrir receta: ${escapeAttribute(recipe.name)}"
     >
-      <span class="meal-card__emoji" aria-hidden="true">${escapeHtml(recipe.emoji || config.emoji)}</span>
+      <span class="meal-card__emoji" aria-hidden="true">
+        ${escapeHtml(recipe.emoji || config.emoji)}
+      </span>
 
       <span class="meal-card__content">
         <span class="meal-card__topline">
@@ -379,16 +444,15 @@ function renderRecipeMeta(recipe) {
     items.push(`<span class="recipe-meta-card">⏱ ${recipe.timeMinutes} min</span>`);
   }
 
-  const peopleCount = state.plan.people.length;
   items.push(
     `<span class="recipe-meta-card">👥 ${pluralize(
-      peopleCount,
+      state.plan.people.length,
       "persona",
       "personas"
     )}</span>`
   );
 
-  return items.length ? `<div class="recipe-meta-grid">${items.join("")}</div>` : "";
+  return `<div class="recipe-meta-grid">${items.join("")}</div>`;
 }
 
 function renderRecipeTags(recipe) {
@@ -410,9 +474,7 @@ function renderMacros(recipe) {
     .map((person) => {
       const macros = recipe.macrosByPerson?.[person.id];
 
-      if (!macros) {
-        return "";
-      }
+      if (!macros) return "";
 
       const values = [];
 
@@ -436,9 +498,7 @@ function renderMacros(recipe) {
         values.push(`${formatNumber(macros.fiberG)} g fibra`);
       }
 
-      if (values.length === 0) {
-        return "";
-      }
+      if (!values.length) return "";
 
       return `
         <div class="macro-row">
@@ -454,9 +514,7 @@ function renderMacros(recipe) {
     .filter(Boolean)
     .join("");
 
-  if (!rows) {
-    return "";
-  }
+  if (!rows) return "";
 
   return `
     <section class="recipe-section">
@@ -468,16 +526,17 @@ function renderMacros(recipe) {
 
 function renderIngredients(recipe) {
   const people = state.plan.people;
+  const basePerson = getBasePerson(state.plan);
   const nonBasePeople = people.filter((person) => !person.isBase);
 
   const headerCells = [
     "<th>Ingrediente</th>",
-    `<th>${escapeHtml(getBasePerson(state.plan).name)} (Base)</th>`,
+    `<th>${escapeHtml(basePerson.name)} (Base)</th>`,
     ...nonBasePeople.map((person) => `<th>${escapeHtml(person.name)}</th>`),
     "<th>Total</th>"
   ].join("");
 
-  const rows = recipe.ingredients
+  const rows = (recipe.ingredients || [])
     .map((ingredient) => {
       const baseQuantity = formatIngredientQuantity(
         ingredient.baseQuantity,
@@ -486,12 +545,12 @@ function renderIngredients(recipe) {
 
       const personCells = nonBasePeople
         .map((person) => {
-          const quantity = calculatePersonIngredientQuantity(ingredient, person.id);
-          const extra = getExtraQuantity(ingredient, person.id);
-
           if (isNonQuantifiable(ingredient)) {
             return "<td>al gusto</td>";
           }
+
+          const quantity = calculatePersonIngredientQuantity(ingredient, person.id);
+          const extra = getExtraQuantity(ingredient, person.id);
 
           const extraText =
             extra > 0
@@ -501,7 +560,9 @@ function renderIngredients(recipe) {
                 )})</span>`
               : "";
 
-          return `<td>${escapeHtml(formatIngredientQuantity(quantity, ingredient.unit))}${extraText}</td>`;
+          return `<td>${escapeHtml(
+            formatIngredientQuantity(quantity, ingredient.unit)
+          )}${extraText}</td>`;
         })
         .join("");
 
@@ -544,7 +605,7 @@ function renderRecipeSteps(recipe) {
   const steps = [...recipe.steps]
     .sort((first, second) => Number(first.order) - Number(second.order))
     .map((step) => {
-      const text = replaceIngredientTokens(step.text, recipe.ingredients);
+      const text = replaceIngredientTokens(step.text, recipe.ingredients || []);
       return `<li>${formatStepText(text)}</li>`;
     })
     .join("");
@@ -560,9 +621,7 @@ function renderRecipeSteps(recipe) {
 function renderRecipeNotes(recipe) {
   const notes = Array.isArray(recipe.notes) ? recipe.notes.filter(Boolean) : [];
 
-  if (notes.length === 0) {
-    return "";
-  }
+  if (!notes.length) return "";
 
   return `
     <section class="recipe-section">
@@ -581,14 +640,16 @@ function renderShopping() {
   const allItems = categories.flatMap((category) => category.items);
   const checkedCount = allItems.filter((item) => Boolean(checkState[item.key])).length;
   const totalCount = allItems.length;
-  const percentage = totalCount
-    ? Math.round((checkedCount / totalCount) * 100)
-    : 0;
+  const percentage = totalCount ? Math.round((checkedCount / totalCount) * 100) : 0;
 
-  elements.shoppingProgressText.textContent = `${checkedCount} de ${totalCount} productos marcados`;
+  elements.shoppingProgressText.textContent =
+    `${checkedCount} de ${totalCount} productos marcados`;
   elements.shoppingProgressPercent.textContent = `${percentage}%`;
   elements.shoppingProgressBar.style.width = `${percentage}%`;
-  elements.shoppingProgressBar.parentElement.setAttribute("aria-valuenow", String(percentage));
+  elements.shoppingProgressBar.parentElement.setAttribute(
+    "aria-valuenow",
+    String(percentage)
+  );
 
   elements.shoppingContainer.innerHTML = categories
     .map((category) => renderShoppingCategory(category, checkState))
@@ -614,10 +675,7 @@ function renderShopping() {
     .querySelectorAll("[data-shopping-key]")
     .forEach((checkbox) => {
       checkbox.addEventListener("change", () => {
-        setShoppingItemChecked(
-          checkbox.dataset.shoppingKey,
-          checkbox.checked
-        );
+        setShoppingItemChecked(checkbox.dataset.shoppingKey, checkbox.checked);
         renderShopping();
       });
     });
@@ -642,7 +700,6 @@ function renderShoppingCategory(category, checkState) {
           <span>${escapeHtml(category.category)}</span>
           <span class="category-count">${checkedCount}/${category.items.length}</span>
         </span>
-
         <span class="category-chevron" aria-hidden="true">⌄</span>
       </button>
 
@@ -682,17 +739,16 @@ function getShoppingCategories(plan) {
 
   plan.days.forEach((day) => {
     (day.meals || []).forEach((meal) => {
-      const recipe = meal.recipe;
-
-      (recipe.ingredients || []).forEach((ingredient) => {
-        const key = `${ingredient.id}|${ingredient.unit}|${ingredient.category}`;
+      (meal.recipe.ingredients || []).forEach((ingredient) => {
+        const category = ingredient.category || "Otros";
+        const key = `${ingredient.id}|${ingredient.unit}|${category}`;
 
         if (!aggregate.has(key)) {
           aggregate.set(key, {
             key,
             id: ingredient.id,
             name: ingredient.name,
-            category: ingredient.category || "Otros",
+            category,
             unit: ingredient.unit,
             quantity: 0,
             nonQuantifiable: isNonQuantifiable(ingredient)
@@ -737,7 +793,9 @@ function normalizeShoppingOverride(override) {
       category: category.category || "Otros",
       items: [...(category.items || [])]
         .map((item) => ({
-          key: `override|${category.category}|${item.id || slugify(item.name)}|${item.unit || ""}`,
+          key: `override|${category.category}|${item.id || slugify(item.name)}|${
+            item.unit || ""
+          }`,
           name: item.name,
           quantityLabel:
             item.quantityLabel ||
@@ -763,8 +821,7 @@ function calculatePersonIngredientQuantity(ingredient, personId) {
 }
 
 function getExtraQuantity(ingredient, personId) {
-  const extra = ingredient.extraByPerson?.[personId];
-  return Number(extra) || 0;
+  return Number(ingredient.extraByPerson?.[personId]) || 0;
 }
 
 function calculateIngredientTotal(ingredient) {
@@ -779,9 +836,7 @@ function isNonQuantifiable(ingredient) {
   return (
     ingredient.unit === "al gusto" ||
     ingredient.baseQuantity === null ||
-    ingredient.baseQuantity === undefined ||
-    Number(ingredient.baseQuantity) === 0 &&
-      ingredient.unit === "al gusto"
+    ingredient.baseQuantity === undefined
   );
 }
 
@@ -791,9 +846,7 @@ function replaceIngredientTokens(text, ingredients) {
   return text.replace(/\{\{([a-z0-9-]+)\.total\}\}/gi, (match, ingredientId) => {
     const ingredient = ingredients.find((item) => item.id === ingredientId);
 
-    if (!ingredient) {
-      return match;
-    }
+    if (!ingredient) return match;
 
     return formatIngredientQuantity(
       calculateIngredientTotal(ingredient),
@@ -803,9 +856,7 @@ function replaceIngredientTokens(text, ingredients) {
 }
 
 function formatStepText(text) {
-  const escaped = escapeHtml(text);
-
-  return escaped
+  return escapeHtml(text)
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
     .replace(/\n/g, "<br>");
 }
@@ -839,8 +890,7 @@ function openSelector() {
   elements.selectorModal.classList.add("is-open");
   elements.selectorModal.setAttribute("aria-hidden", "false");
 
-  const selectedProfileButton = elements.profilesList.querySelector(".is-selected");
-  selectedProfileButton?.focus();
+  elements.profilesList.querySelector(".is-selected")?.focus();
 }
 
 function closeSelector() {
@@ -1044,67 +1094,184 @@ function renderPrintHeader(sectionName, planTitle) {
 }
 
 function renderPrintDay(day) {
+  const dayNumber = state.plan.days.indexOf(day) + 1;
+
   return `
     <section class="print-day">
-      <h2>Día ${state.plan.days.indexOf(day) + 1}</h2>
-      ${(day.meals || [])
-        .map((meal) => {
-          const config = MEAL_CONFIG[meal.slot] || {
-            label: meal.label || "Receta"
-          };
-          const recipe = meal.recipe;
-          const basePerson = getBasePerson(state.plan);
-          const baseMacros = recipe.macrosByPerson?.[basePerson.id];
-
-          const details = [
-            Number.isFinite(recipe.timeMinutes) ? `${recipe.timeMinutes} min` : "",
-            baseMacros?.kcal !== undefined
-              ? `${formatNumber(baseMacros.kcal)} kcal (${basePerson.name})`
-              : ""
-          ].filter(Boolean);
-
-          return `
-            <article class="print-recipe">
-              <h3>${escapeHtml(meal.label || config.label)} · ${escapeHtml(
-                recipe.name
-              )}</h3>
-              ${details.length ? `<p>${escapeHtml(details.join(" · "))}</p>` : ""}
-            </article>
-          `;
-        })
-        .join("")}
+      <h2>Día ${dayNumber}</h2>
+      ${(day.meals || []).map((meal) => renderPrintRecipe(meal)).join("")}
     </section>
   `;
 }
 
-function getInitialProfile(savedSelection) {
-  if (savedSelection?.profileId) {
-    const savedProfile = state.index.profiles.find(
-      (profile) => profile.id === savedSelection.profileId
-    );
+function renderPrintRecipe(meal) {
+  const recipe = meal.recipe;
+  const mealConfig = MEAL_CONFIG[meal.slot] || {
+    label: meal.label || "Receta"
+  };
 
-    if (savedProfile) return savedProfile;
-  }
+  const people = state.plan.people;
+  const basePerson = getBasePerson(state.plan);
+  const additionalPeople = people.filter((person) => !person.isBase);
 
-  return state.index.profiles[0];
-}
+  const macros = people
+    .map((person) => {
+      const values = recipe.macrosByPerson?.[person.id];
 
-function getInitialPlan(profile, savedSelection) {
-  if (savedSelection?.planId) {
-    const savedPlan = profile.plans.find((plan) => plan.id === savedSelection.planId);
+      if (!values) return "";
 
-    if (savedPlan) return savedPlan;
-  }
+      const macroValues = [];
 
-  return profile.plans[0];
-}
+      if (values.kcal !== undefined) {
+        macroValues.push(`${formatNumber(values.kcal)} kcal`);
+      }
 
-function getSavedSelection() {
-  try {
-    return JSON.parse(localStorage.getItem("nutrition-last-selection") || "");
-  } catch {
-    return null;
-  }
+      if (values.proteinG !== undefined) {
+        macroValues.push(`${formatNumber(values.proteinG)} g proteína`);
+      }
+
+      if (values.carbsG !== undefined) {
+        macroValues.push(`${formatNumber(values.carbsG)} g hidratos`);
+      }
+
+      if (values.fatG !== undefined) {
+        macroValues.push(`${formatNumber(values.fatG)} g grasas`);
+      }
+
+      if (values.fiberG !== undefined) {
+        macroValues.push(`${formatNumber(values.fiberG)} g fibra`);
+      }
+
+      if (!macroValues.length) return "";
+
+      return `
+        <li>
+          <strong>${escapeHtml(person.name)}${person.isBase ? " (Base)" : ""}:</strong>
+          ${escapeHtml(macroValues.join(" · "))}
+        </li>
+      `;
+    })
+    .filter(Boolean)
+    .join("");
+
+  const ingredientHeaders = [
+    "<th>Ingrediente</th>",
+    `<th>${escapeHtml(basePerson.name)} (Base)</th>`,
+    ...additionalPeople.map((person) => `<th>${escapeHtml(person.name)}</th>`),
+    "<th>Total</th>"
+  ].join("");
+
+  const ingredientRows = (recipe.ingredients || [])
+    .map((ingredient) => {
+      const additionalCells = additionalPeople
+        .map((person) => {
+          if (isNonQuantifiable(ingredient)) {
+            return "<td>al gusto</td>";
+          }
+
+          return `<td>${escapeHtml(
+            formatIngredientQuantity(
+              calculatePersonIngredientQuantity(ingredient, person.id),
+              ingredient.unit
+            )
+          )}</td>`;
+        })
+        .join("");
+
+      return `
+        <tr>
+          <td>${escapeHtml(ingredient.name)}</td>
+          <td>${escapeHtml(
+            formatIngredientQuantity(ingredient.baseQuantity, ingredient.unit)
+          )}</td>
+          ${additionalCells}
+          <td>${escapeHtml(
+            formatIngredientQuantity(
+              calculateIngredientTotal(ingredient),
+              ingredient.unit
+            )
+          )}</td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  const steps = [...(recipe.steps || [])]
+    .sort((first, second) => Number(first.order) - Number(second.order))
+    .map((step) => {
+      const text = replaceIngredientTokens(step.text, recipe.ingredients || []);
+      return `<li>${formatStepText(text)}</li>`;
+    })
+    .join("");
+
+  const tags =
+    Array.isArray(recipe.tags) && recipe.tags.length
+      ? `<p class="print-recipe__tags">${escapeHtml(recipe.tags.join(" · "))}</p>`
+      : "";
+
+  const time = Number.isFinite(recipe.timeMinutes)
+    ? `<p class="print-recipe__time">Tiempo: ${recipe.timeMinutes} min</p>`
+    : "";
+
+  const notes =
+    Array.isArray(recipe.notes) && recipe.notes.length
+      ? `
+        <div class="print-recipe__notes">
+          <strong>Notas:</strong>
+          <ul>
+            ${recipe.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
+          </ul>
+        </div>
+      `
+      : "";
+
+  return `
+    <article class="print-recipe print-recipe--complete">
+      <h3>
+        ${escapeHtml(meal.label || mealConfig.label)} ·
+        ${escapeHtml(recipe.emoji || "🍽️")} ${escapeHtml(recipe.name)}
+      </h3>
+
+      ${tags}
+      ${time}
+
+      ${
+        macros
+          ? `
+            <div class="print-recipe__section">
+              <h4>Macros por persona</h4>
+              <ul class="print-macros-list">${macros}</ul>
+            </div>
+          `
+          : ""
+      }
+
+      <div class="print-recipe__section">
+        <h4>Ingredientes</h4>
+        <table class="print-ingredients-table">
+          <thead>
+            <tr>${ingredientHeaders}</tr>
+          </thead>
+          <tbody>
+            ${ingredientRows}
+          </tbody>
+        </table>
+      </div>
+
+      ${
+        steps
+          ? `
+            <div class="print-recipe__section">
+              <h4>Preparación</h4>
+              <ol class="print-steps-list">${steps}</ol>
+            </div>
+          `
+          : ""
+      }
+
+      ${notes}
+    </article>
+  `;
 }
 
 function saveSelection(profileId, planId) {
@@ -1229,6 +1396,8 @@ function showLoading(message) {
 
 function showError(message) {
   elements.loadingState.classList.add("is-hidden");
+  elements.homePage.classList.add("is-hidden");
+  elements.profilePlansPage.classList.add("is-hidden");
   elements.appContent.classList.add("is-hidden");
   elements.errorMessage.textContent = message;
   elements.errorState.classList.remove("is-hidden");
