@@ -1,0 +1,942 @@
+{ "schemaVersion": "1.0", "id": "menu-super-buenos-semana-1", "profileId": "elena-ruben", "title": "Plan nutricional · Semana 1", "subtitle": "Plan histórico de 7 días para Elena y Ruben", "period": { "label": "Plan de 7 días" }, "people": [ { "id": "elena", "name": "Elena", "isBase": true }, { "id": "ruben", "name": "Ruben", "isBase": false } ], "days": [ { "id": "dia-1", "label": "Día 1", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tosta-mediterranea", "name": "Tosta mediterránea con queso fresco, tomate y jamón", "emoji": "🍞", "tags": ["Entre semana"], "timeMinutes": 5, "macrosByPerson": { "elena": { "kcal": 348, "proteinG": 22 }, "ruben": { "kcal": 468, "proteinG": 22 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "pan-integral", "name": "Pan integral en rebanadas", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 55, "extraByPerson": { "ruben": 28 } }, { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 90, "extraByPerson": {} }, { "id": "jamon-serrano", "name": "Jamón serrano", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 25, "extraByPerson": { "ruben": 13 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "oregano", "name": "Orégano", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "ajo-polvo", "name": "Ajo en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "sal", "name": "Sal", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." }, { "order": 2, "text": "Unta {{queso-fresco-batido-0.total}} de queso fresco batido y añade {{tomate-pera.total}} de tomate rallado." }, { "order": 3, "text": "Termina con {{jamon-serrano.total}} de jamón, {{aove.total}} de AOVE, orégano, ajo en polvo y sal." }, { "order": 4, "text": "Prepara el café con {{leche-desnatada.total}} de leche desnatada." } ], "notes": [ "Conversión histórica: la rebanada y loncha extra de Ruben se han estimado a partir de la cantidad base." ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "yogur-manzana-canela", "name": "Yogur griego con manzana verde y canela", "emoji": "🥛", "tags": ["Entre semana"], "timeMinutes": 2, "macrosByPerson": { "elena": { "kcal": 156, "proteinG": 10 }, "ruben": { "kcal": 244, "proteinG": 20 } }, "ingredients": [ { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 150 } }, { "id": "manzana-verde", "name": "Manzana verde Granny Smith", "category": "Frutas", "unit": "g", "baseQuantity": 130, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Trocea {{manzana-verde.total}} de manzana sobre {{yogur-griego-0.total}} de yogur griego." }, { "order": 2, "text": "Espolvorea canela al gusto." } ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "ensalada-pollo-garbanzos", "name": "Ensalada templada de garbanzos y pollo al limón-comino con pimientos del piquillo", "emoji": "🥗", "tags": ["Tupper", "Con fruta de postre"], "timeMinutes": 20, "macrosByPerson": { "elena": { "kcal": 571, "proteinG": 43 }, "ruben": { "kcal": 761, "proteinG": 43 } }, "ingredients": [ { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 70 } }, { "id": "garbanzos-cocidos", "name": "Garbanzos cocidos", "category": "Legumbres y conservas", "unit": "g", "baseQuantity": 160, "extraByPerson": { "ruben": 60 } }, { "id": "pimientos-piquillo", "name": "Pimientos del piquillo asados", "category": "Legumbres y conservas", "unit": "g", "baseQuantity": 80, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pepino", "name": "Pepino", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "cebolla-morada", "name": "Cebolla morada", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 40, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "comino", "name": "Comino molido", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "perejil", "name": "Perejil fresco", "category": "Verduras y hortalizas", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Corta {{pechuga-pollo.total}} de pollo y marina con {{zumo-limon.total}}, comino, orégano y sal." }, { "order": 2, "text": "Cocina el pollo en air fryer a 180 °C durante 12–13 minutos o a la plancha." }, { "order": 3, "text": "Mezcla {{garbanzos-cocidos.total}} de garbanzos con pimientos, tomate, pepino, cebolla y perejil." }, { "order": 4, "text": "Añade el pollo y aliña con {{aove.total}}, limón y especias. Sirve la fruta de postre." } ] } }, { "slot": "merienda", "label": "Merienda", "recipe": { "id": "tortitas-arroz-pavo-fruta", "name": "Tortitas de arroz con pavo y fruta", "emoji": "🍘", "tags": ["Entre semana", "Pre-entreno"], "timeMinutes": 1, "macrosByPerson": { "elena": { "kcal": 176, "proteinG": 10 }, "ruben": { "kcal": 276, "proteinG": 14 } }, "ingredients": [ { "id": "tortitas-arroz", "name": "Tortitas de arroz sin sal", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 20, "extraByPerson": { "ruben": 10 } }, { "id": "pavo-lonchas", "name": "Pechuga de pavo en lonchas", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 40, "extraByPerson": { "ruben": 13 } }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 120, "extraByPerson": { "ruben": 120 } } ], "steps": [ { "order": 1, "text": "Prepara {{tortitas-arroz.total}} de tortitas de arroz con {{pavo-lonchas.total}} de pavo." }, { "order": 2, "text": "Acompaña con {{naranja-mandarina.total}} de fruta." } ], "notes": [ "Conversión histórica: la fruta extra de Ruben se ha estimado como una pieza adicional." ] } }, { "slot": "cena", "label": "Cena", "recipe": { "id": "revuelto-esparragos-gambas", "name": "Revuelto cremoso de espárragos trigueros, gambas y champiñones al ajillo", "emoji": "🍳", "tags": ["Post-entreno"], "timeMinutes": 15, "macrosByPerson": { "elena": { "kcal": 421, "proteinG": 38 }, "ruben": { "kcal": 576, "proteinG": 38 } }, "ingredients": [ { "id": "huevos", "name": "Huevos L", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 2, "extraByPerson": { "ruben": 1 } }, { "id": "gambas-peladas", "name": "Gambas peladas", "category": "Congelados", "unit": "g", "baseQuantity": 100, "extraByPerson": { "ruben": 50 } }, { "id": "esparragos-trigueros", "name": "Espárragos trigueros", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 180, "extraByPerson": {} }, { "id": "champinones", "name": "Champiñones laminados", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "lechuga", "name": "Lechuga", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Saltea {{esparragos-trigueros.total}}, {{champinones.total}} y ajo con {{aove.total}}." }, { "order": 2, "text": "Añade {{gambas-peladas.total}} y cocina hasta que estén hechas." }, { "order": 3, "text": "Incorpora {{huevos.total}} batidos y remueve hasta lograr un revuelto jugoso." }, { "order": 4, "text": "Sirve con ensalada de {{lechuga.total}} y {{tomate-cherry.total}}." } ] } } ] }, { "id": "dia-2", "label": "Día 2", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tosta-mediterranea-dia-2", "name": "Tosta mediterránea con queso fresco, tomate y jamón", "emoji": "🍞", "tags": ["Entre semana"], "timeMinutes": 5, "macrosByPerson": { "elena": { "kcal": 348, "proteinG": 22 }, "ruben": { "kcal": 468, "proteinG": 22 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "pan-integral", "name": "Pan integral en rebanadas", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 55, "extraByPerson": { "ruben": 28 } }, { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 90, "extraByPerson": {} }, { "id": "jamon-serrano", "name": "Jamón serrano", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 25, "extraByPerson": { "ruben": 13 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan y sirve con queso fresco batido, tomate, jamón y AOVE." }, { "order": 2, "text": "Prepara café con {{leche-desnatada.total}} de leche." } ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "yogur-manzana-canela-dia-2", "name": "Yogur griego con manzana verde y canela", "emoji": "🥛", "tags": ["Entre semana"], "timeMinutes": 2, "macrosByPerson": { "elena": { "kcal": 156, "proteinG": 10 }, "ruben": { "kcal": 244, "proteinG": 20 } }, "ingredients": [ { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 150 } }, { "id": "manzana-verde", "name": "Manzana verde Granny Smith", "category": "Frutas", "unit": "g", "baseQuantity": 130, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Mezcla {{yogur-griego-0.total}} de yogur con {{manzana-verde.total}} de manzana y canela." } ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "merluza-papillote-arroz", "name": "Merluza al papillote con verduras mediterráneas y arroz integral al ajillo", "emoji": "🐟", "tags": ["Tupper", "Con fruta de postre"], "timeMinutes": 25, "macrosByPerson": { "elena": { "kcal": 562, "proteinG": 38 }, "ruben": { "kcal": 752, "proteinG": 38 } }, "ingredients": [ { "id": "merluza", "name": "Filete de merluza", "category": "Congelados", "unit": "g", "baseQuantity": 200, "extraByPerson": { "ruben": 80 } }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 80, "extraByPerson": {} }, { "id": "cebolla-blanca", "name": "Cebolla", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "arroz-integral-cocido", "name": "Arroz integral cocido", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 50 } }, { "id": "pera", "name": "Pera", "category": "Frutas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Saltea {{arroz-integral-cocido.total}} de arroz con ajo y parte del aceite." }, { "order": 2, "text": "Monta el papillote con {{merluza.total}}, tomate, pimiento, cebolla, ajo, limón y AOVE." }, { "order": 3, "text": "Hornea a 190 °C durante 20 minutos o cocina en air fryer." }, { "order": 4, "text": "Sirve con {{pera.total}} de pera de postre." } ] } }, { "slot": "merienda", "label": "Merienda", "recipe": { "id": "tortitas-arroz-pavo-fruta-dia-2", "name": "Tortitas de arroz con pavo y fruta", "emoji": "🍘", "tags": ["Entre semana", "Pre-entreno"], "timeMinutes": 1, "macrosByPerson": { "elena": { "kcal": 176, "proteinG": 10 }, "ruben": { "kcal": 276, "proteinG": 14 } }, "ingredients": [ { "id": "tortitas-arroz", "name": "Tortitas de arroz sin sal", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 20, "extraByPerson": { "ruben": 10 } }, { "id": "pavo-lonchas", "name": "Pechuga de pavo en lonchas", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 40, "extraByPerson": { "ruben": 13 } }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 120, "extraByPerson": { "ruben": 120 } } ], "steps": [ { "order": 1, "text": "Prepara las tortitas con pavo y fruta para llevar." } ] } }, { "slot": "cena", "label": "Cena", "recipe": { "id": "ensalada-pollo-aguacate-huevo", "name": "Ensalada de pollo asado, aguacate y huevo duro con vinagreta de mostaza y limón", "emoji": "🥑", "tags": ["Post-entreno"], "timeMinutes": 12, "macrosByPerson": { "elena": { "kcal": 435, "proteinG": 38 }, "ruben": { "kcal": 590, "proteinG": 38 } }, "ingredients": [ { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 60 } }, { "id": "aguacate", "name": "Aguacate", "category": "Frutas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pepino", "name": "Pepino", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "cebolla-morada", "name": "Cebolla morada", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} }, { "id": "mezcla-lechugas", "name": "Mezcla de lechugas o canónigos", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "huevo-duro", "name": "Huevo duro", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": { "ruben": 1 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "mostaza-dijon", "name": "Mostaza de Dijon", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "vinagre-manzana", "name": "Vinagre de manzana", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Cuece {{huevo-duro.total}} de huevos y cocina {{pechuga-pollo.total}} de pollo si no está preparado." }, { "order": 2, "text": "Mezcla las lechugas, tomate, pepino, cebolla, pollo, aguacate y huevo." }, { "order": 3, "text": "Aliña con {{aove.total}}, mostaza, limón y vinagre." } ] } } ] }, { "id": "dia-3", "label": "Día 3", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tosta-mediterranea-dia-3", "name": "Tosta mediterránea con queso fresco, tomate y jamón", "emoji": "🍞", "tags": ["Entre semana"], "timeMinutes": 5, "macrosByPerson": { "elena": { "kcal": 348, "proteinG": 22 }, "ruben": { "kcal": 468, "proteinG": 22 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "pan-integral", "name": "Pan integral en rebanadas", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 55, "extraByPerson": { "ruben": 28 } }, { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 90, "extraByPerson": {} }, { "id": "jamon-serrano", "name": "Jamón serrano", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 25, "extraByPerson": { "ruben": 13 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tuesta el pan y sirve con queso fresco, tomate, jamón y AOVE. Prepara el café con leche." } ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "yogur-manzana-canela-dia-3", "name": "Yogur griego con manzana verde y canela", "emoji": "🥛", "tags": ["Entre semana"], "timeMinutes": 2, "macrosByPerson": { "elena": { "kcal": 156, "proteinG": 10 }, "ruben": { "kcal": 244, "proteinG": 20 } }, "ingredients": [ { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 150 } }, { "id": "manzana-verde", "name": "Manzana verde Granny Smith", "category": "Frutas", "unit": "g", "baseQuantity": 130, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Trocea la manzana, mézclala con yogur y añade canela." } ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "solomillo-pavo-boniato", "name": "Solomillo de pavo en costra de mostaza-hierbas con boniato asado y espinacas al ajillo", "emoji": "🦃", "tags": ["Tupper", "Con fruta de postre"], "timeMinutes": 25, "macrosByPerson": { "elena": { "kcal": 561, "proteinG": 42 }, "ruben": { "kcal": 751, "proteinG": 42 } }, "ingredients": [ { "id": "solomillo-pavo", "name": "Solomillo de pavo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 175, "extraByPerson": { "ruben": 75 } }, { "id": "boniato", "name": "Boniato", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 180, "extraByPerson": { "ruben": 60 } }, { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} }, { "id": "mostaza-dijon", "name": "Mostaza de Dijon", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "miel", "name": "Miel", "category": "Despensa", "unit": "ml", "baseQuantity": 2, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "kiwi", "name": "Kiwi", "category": "Frutas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Marina {{solomillo-pavo.total}} con mostaza, miel, hierbas, ajo y sal." }, { "order": 2, "text": "Asa {{boniato.total}} y el pavo a 200 °C durante unos 20 minutos." }, { "order": 3, "text": "Saltea {{espinacas-frescas.total}} con ajo y AOVE." }, { "order": 4, "text": "Sirve con tomate cherry y {{kiwi.total}} de kiwi de postre." } ] } }, { "slot": "merienda", "label": "Merienda", "recipe": { "id": "tortitas-arroz-pavo-fruta-dia-3", "name": "Tortitas de arroz con pavo y fruta", "emoji": "🍘", "tags": ["Entre semana", "Pre-entreno"], "timeMinutes": 1, "macrosByPerson": { "elena": { "kcal": 176, "proteinG": 10 }, "ruben": { "kcal": 276, "proteinG": 14 } }, "ingredients": [ { "id": "tortitas-arroz", "name": "Tortitas de arroz sin sal", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 20, "extraByPerson": { "ruben": 10 } }, { "id": "pavo-lonchas", "name": "Pechuga de pavo en lonchas", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 40, "extraByPerson": { "ruben": 13 } }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 120, "extraByPerson": { "ruben": 120 } } ], "steps": [ { "order": 1, "text": "Prepara las tortitas, el pavo y la fruta para llevar." } ] } }, { "slot": "cena", "label": "Cena", "recipe": { "id": "dorada-hierbas-ensalada", "name": "Dorada a las hierbas mediterráneas con tomate asado y ensalada de rúcula", "emoji": "🐠", "tags": ["Post-entreno"], "timeMinutes": 22, "macrosByPerson": { "elena": { "kcal": 419, "proteinG": 41 }, "ruben": { "kcal": 514, "proteinG": 41 } }, "ingredients": [ { "id": "dorada", "name": "Dorada", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 250, "extraByPerson": { "ruben": 100 } }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }, { "id": "cebolla-blanca", "name": "Cebolla", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 10, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "rucula", "name": "Rúcula", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 40, "extraByPerson": {} }, { "id": "cebolla-morada", "name": "Cebolla morada", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} }, { "id": "vinagre-jerez", "name": "Vinagre de Jerez", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Coloca tomate, cebolla, ajo y {{dorada.total}} en una bandeja." }, { "order": 2, "text": "Riega con AOVE y limón; cocina a 190 °C durante 18–20 minutos." }, { "order": 3, "text": "Sirve con ensalada de rúcula, cebolla morada y vinagre." } ] } } ] }, { "id": "dia-4", "label": "Día 4", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tosta-mediterranea-dia-4", "name": "Tosta mediterránea con queso fresco, tomate y jamón", "emoji": "🍞", "tags": ["Entre semana"], "timeMinutes": 5, "macrosByPerson": { "elena": { "kcal": 348, "proteinG": 22 }, "ruben": { "kcal": 468, "proteinG": 22 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "pan-integral", "name": "Pan integral en rebanadas", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 55, "extraByPerson": { "ruben": 28 } }, { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 90, "extraByPerson": {} }, { "id": "jamon-serrano", "name": "Jamón serrano", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 25, "extraByPerson": { "ruben": 13 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tuesta el pan y sirve con queso fresco, tomate, jamón y AOVE. Prepara café con leche." } ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "yogur-manzana-canela-dia-4", "name": "Yogur griego con manzana verde y canela", "emoji": "🥛", "tags": ["Entre semana"], "timeMinutes": 2, "macrosByPerson": { "elena": { "kcal": 156, "proteinG": 10 }, "ruben": { "kcal": 244, "proteinG": 20 } }, "ingredients": [ { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 150 } }, { "id": "manzana-verde", "name": "Manzana verde Granny Smith", "category": "Frutas", "unit": "g", "baseQuantity": 130, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Mezcla yogur, manzana y canela." } ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "ensalada-pollo-garbanzos-dia-4", "name": "Ensalada templada de garbanzos y pollo al limón-comino con pimientos del piquillo", "emoji": "🥗", "tags": ["Tupper", "Con fruta de postre"], "timeMinutes": 20, "macrosByPerson": { "elena": { "kcal": 571, "proteinG": 43 }, "ruben": { "kcal": 761, "proteinG": 43 } }, "ingredients": [ { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 70 } }, { "id": "garbanzos-cocidos", "name": "Garbanzos cocidos", "category": "Legumbres y conservas", "unit": "g", "baseQuantity": 160, "extraByPerson": { "ruben": 60 } }, { "id": "pimientos-piquillo", "name": "Pimientos del piquillo asados", "category": "Legumbres y conservas", "unit": "g", "baseQuantity": 80, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pepino", "name": "Pepino", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "cebolla-morada", "name": "Cebolla morada", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 40, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Cocina el pollo marinado y mezcla con garbanzos, verduras y aliño." }, { "order": 2, "text": "Sirve la fruta de postre." } ] } }, { "slot": "merienda", "label": "Merienda", "recipe": { "id": "tortitas-arroz-pavo-fruta-dia-4", "name": "Tortitas de arroz con pavo y fruta", "emoji": "🍘", "tags": ["Entre semana", "Pre-entreno"], "timeMinutes": 1, "macrosByPerson": { "elena": { "kcal": 176, "proteinG": 10 }, "ruben": { "kcal": 276, "proteinG": 14 } }, "ingredients": [ { "id": "tortitas-arroz", "name": "Tortitas de arroz sin sal", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 20, "extraByPerson": { "ruben": 10 } }, { "id": "pavo-lonchas", "name": "Pechuga de pavo en lonchas", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 40, "extraByPerson": { "ruben": 13 } }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 120, "extraByPerson": { "ruben": 120 } } ], "steps": [ { "order": 1, "text": "Prepara las tortitas, el pavo y la fruta para llevar." } ] } }, { "slot": "cena", "label": "Cena", "recipe": { "id": "ensalada-pollo-aguacate-huevo-dia-4", "name": "Ensalada de pollo asado, aguacate y huevo duro con vinagreta de mostaza y limón", "emoji": "🥑", "tags": ["Post-entreno"], "timeMinutes": 12, "macrosByPerson": { "elena": { "kcal": 435, "proteinG": 38 }, "ruben": { "kcal": 590, "proteinG": 38 } }, "ingredients": [ { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 60 } }, { "id": "aguacate", "name": "Aguacate", "category": "Frutas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pepino", "name": "Pepino", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "cebolla-morada", "name": "Cebolla morada", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} }, { "id": "mezcla-lechugas", "name": "Mezcla de lechugas o canónigos", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "huevo-duro", "name": "Huevo duro", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": { "ruben": 1 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "mostaza-dijon", "name": "Mostaza de Dijon", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "vinagre-manzana", "name": "Vinagre de manzana", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Monta la ensalada con pollo, verduras, aguacate y huevo." }, { "order": 2, "text": "Aliña con AOVE, mostaza, limón y vinagre." } ] } } ] }, { "id": "dia-5", "label": "Día 5", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tosta-mediterranea-dia-5", "name": "Tosta mediterránea con queso fresco, tomate y jamón", "emoji": "🍞", "tags": ["Entre semana"], "timeMinutes": 5, "macrosByPerson": { "elena": { "kcal": 348, "proteinG": 22 }, "ruben": { "kcal": 468, "proteinG": 22 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "pan-integral", "name": "Pan integral en rebanadas", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 55, "extraByPerson": { "ruben": 28 } }, { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 90, "extraByPerson": {} }, { "id": "jamon-serrano", "name": "Jamón serrano", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 25, "extraByPerson": { "ruben": 13 } }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tuesta el pan y sirve con queso fresco, tomate, jamón y AOVE. Prepara café con leche." } ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "yogur-manzana-canela-dia-5", "name": "Yogur griego con manzana verde y canela", "emoji": "🥛", "tags": ["Entre semana"], "timeMinutes": 2, "macrosByPerson": { "elena": { "kcal": 156, "proteinG": 10 }, "ruben": { "kcal": 244, "proteinG": 20 } }, "ingredients": [ { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 150 } }, { "id": "manzana-verde", "name": "Manzana verde Granny Smith", "category": "Frutas", "unit": "g", "baseQuantity": 130, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Mezcla yogur, manzana y canela." } ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "merluza-papillote-arroz-dia-5", "name": "Merluza al papillote con verduras mediterráneas y arroz integral al ajillo", "emoji": "🐟", "tags": ["Tupper", "Con fruta de postre"], "timeMinutes": 25, "macrosByPerson": { "elena": { "kcal": 562, "proteinG": 38 }, "ruben": { "kcal": 752, "proteinG": 38 } }, "ingredients": [ { "id": "merluza", "name": "Filete de merluza", "category": "Congelados", "unit": "g", "baseQuantity": 200, "extraByPerson": { "ruben": 80 } }, { "id": "tomate-pera", "name": "Tomate de pera", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 80, "extraByPerson": {} }, { "id": "cebolla-blanca", "name": "Cebolla", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "zumo-limon", "name": "Zumo de limón", "category": "Frutas", "unit": "ml", "baseQuantity": 15, "extraByPerson": {} }, { "id": "arroz-integral-cocido", "name": "Arroz integral cocido", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 150, "extraByPerson": { "ruben": 50 } }, { "id": "pera", "name": "Pera", "category": "Frutas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Prepara arroz al ajillo y cocina la merluza al papillote con verduras." }, { "order": 2, "text": "Sirve la pera de postre." } ] } }, { "slot": "merienda", "label": "Merienda", "recipe": { "id": "tortitas-arroz-pavo-fruta-dia-5", "name": "Tortitas de arroz con pavo y fruta", "emoji": "🍘", "tags": ["Entre semana", "Pre-entreno"], "timeMinutes": 1, "macrosByPerson": { "elena": { "kcal": 176, "proteinG": 10 }, "ruben": { "kcal": 276, "proteinG": 14 } }, "ingredients": [ { "id": "tortitas-arroz", "name": "Tortitas de arroz sin sal", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 20, "extraByPerson": { "ruben": 10 } }, { "id": "pavo-lonchas", "name": "Pechuga de pavo en lonchas", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 40, "extraByPerson": { "ruben": 13 } }, { "id": "naranja-mandarina", "name": "Naranja o mandarina", "category": "Frutas", "unit": "g", "baseQuantity": 120, "extraByPerson": { "ruben": 120 } } ], "steps": [ { "order": 1, "text": "Prepara las tortitas, el pavo y la fruta para llevar." } ] } }, { "slot": "cena", "label": "Cena", "recipe": { "id": "revuelto-esparragos-gambas-dia-5", "name": "Revuelto cremoso de espárragos trigueros, gambas y champiñones al ajillo", "emoji": "🍳", "tags": ["Post-entreno"], "timeMinutes": 15, "macrosByPerson": { "elena": { "kcal": 421, "proteinG": 38 }, "ruben": { "kcal": 576, "proteinG": 38 } }, "ingredients": [ { "id": "huevos", "name": "Huevos L", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 2, "extraByPerson": { "ruben": 1 } }, { "id": "gambas-peladas", "name": "Gambas peladas", "category": "Congelados", "unit": "g", "baseQuantity": 100, "extraByPerson": { "ruben": 50 } }, { "id": "esparragos-trigueros", "name": "Espárragos trigueros", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 180, "extraByPerson": {} }, { "id": "champinones", "name": "Champiñones laminados", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }, { "id": "ajo", "name": "Ajo", "category": "Verduras y hortalizas", "unit": "dientes", "baseQuantity": 2, "extraByPerson": {} }, { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 5, "extraByPerson": {} }, { "id": "lechuga", "name": "Lechuga", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} }, { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 50, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Saltea verduras y gambas; añade huevo batido para formar el revuelto." }, { "order": 2, "text": "Sirve con ensalada." } ] } } ] }, { "id": "dia-6", "label": "Día 6", "meals": [ { "slot": "desayuno", "label": "Desayuno", "recipe": { "id": "tortitas-proteicas-avena", "name": "Tortitas proteicas de avena y canela con compota de frutos rojos", "emoji": "🥞", "tags": ["Fin de semana"], "timeMinutes": 10, "macrosByPerson": { "elena": { "kcal": 332, "proteinG": 21 }, "ruben": { "kcal": 442, "proteinG": 21 } }, "ingredients": [ { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} }, { "id": "copos-avena", "name": "Copos de avena finos", "category": "Cereales y carbohidratos", "unit": "g", "baseQuantity": 45, "extraByPerson": { "ruben": 15 } }, { "id": "claras-huevo", "name": "Claras de huevo", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 60, "extraByPerson": {} }, { "id": "canela", "name": "Canela en polvo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "edulcorante", "name": "Edulcorante", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }, { "id": "yogur-griego-0", "name": "Yogur griego 0% natural", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 100, "extraByPerson": { "ruben": 125 } }, { "id": "frutos-rojos", "name": "Frutos rojos", "category": "Congelados", "unit": "g", "baseQuantity": 80, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Tritura {{copos-avena.total}} de avena y mezcla con claras, canela y edulcorante." }, { "order": 2, "text": "Cocina las tortitas en una sartén antiadherente." }, { "order": 3, "text": "Sirve con {{yogur-griego-0.total}} de yogur y compota de frutos rojos." } ], "notes": [ "Conversión histórica: el yogur extra de Ruben se ha aproximado a una unidad individual de 125 g." ] } }, { "slot": "media-manana", "label": "Media mañana", "recipe": { "id": "hummus-verduras", "name": "Hummus con bastones de zanahoria, pepino y apio", "emoji": "🫛", "tags": ["Fin de semana"], "timeMinutes": 10, "macrosByPerson": { "elena": { "kcal": 162, "proteinG": 6 }, "ruben": { "kcal": 237, "proteinG": 6 } }, "ingredients": [ { "id": "hummus", "name": "Hummus", "category": "Legumbres y conservas", "unit": "g", "baseQuantity": 60, "extraByPerson": { "ruben": 30 } }, { "id": "zanahoria", "name": "Zanahoria", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 80, "extraByPerson": { "ruben": 80 } }, { "id": "pepino", "name": "Pepino", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} }, { "id": "apio", "name": "Apio", "category": "Verduras y hortalizas", "unit": "g", "baseQuantity": 40, "extraByPerson": {} }, { "id": "pimenton-ahumado", "name": "Pimentón dulce ahumado", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} } ], "steps": [ { "order": 1, "text": "Corta las verduras en bastones y sirve con {{hummus.total}} de hummus." } ], "notes": [ "Conversión histórica: la zanahoria extra de Ruben se ha estimado como otra zanahoria mediana." ] } }, { "slot": "comida", "label": "Comida", "recipe": { "id": "solomillo-pavo-boniato-dia-6", "name": "Solomillo de pavo en costra de mostaza-hierbas con boniato asado y espinacas al ajillo", "emoji": "🦃",
+"tags": ["Con fruta de postre", "Tupper"],
+"timeMinutes": 25,
+"macrosByPerson": {
+  "elena": {
+    "kcal": 561,
+    "proteinG": 42
+  },
+  "ruben": {
+    "kcal": 751
+  }
+},
+"ingredients": [
+  {
+    "id": "solomillo-pavo",
+    "name": "Solomillo de pavo",
+    "category": "Carnes y pescados",
+    "unit": "g",
+    "baseQuantity": 175,
+    "extraByPerson": {
+      "ruben": 75
+    }
+  },
+  {
+    "id": "boniato",
+    "name": "Boniato",
+    "category": "Verduras y hortalizas",
+    "unit": "g",
+    "baseQuantity": 180,
+    "extraByPerson": {
+      "ruben": 60
+    }
+  },
+  {
+    "id": "espinacas-frescas",
+    "name": "Espinacas frescas",
+    "category": "Verduras y hortalizas",
+    "unit": "g",
+    "baseQuantity": 150,
+    "extraByPerson": {}
+  },
+  {
+    "id": "ajo",
+    "name": "Ajo",
+    "category": "Verduras y hortalizas",
+    "unit": "dientes",
+    "baseQuantity": 2,
+    "extraByPerson": {}
+  },
+  {
+    "id": "aove",
+    "name": "Aceite de oliva virgen extra",
+    "category": "Despensa",
+    "unit": "ml",
+    "baseQuantity": 7,
+    "extraByPerson": {}
+  },
+  {
+    "id": "mostaza-dijon",
+    "name": "Mostaza de Dijon",
+    "category": "Despensa",
+    "unit": "g",
+    "baseQuantity": 5,
+    "extraByPerson": {}
+  },
+  {
+    "id": "miel",
+    "name": "Miel",
+    "category": "Despensa",
+    "unit": "g",
+    "baseQuantity": 4,
+    "extraByPerson": {}
+  },
+  {
+    "id": "hierbas-provenzales",
+    "name": "Hierbas provenzales",
+    "category": "Despensa",
+    "unit": "al gusto",
+    "baseQuantity": 0,
+    "extraByPerson": {}
+  },
+  {
+    "id": "tomate-cherry",
+    "name": "Tomate cherry",
+    "category": "Verduras y hortalizas",
+    "unit": "g",
+    "baseQuantity": 60,
+    "extraByPerson": {}
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "category": "Frutas",
+    "unit": "g",
+    "baseQuantity": 100,
+    "extraByPerson": {}
+  }
+],
+"steps": [
+  {
+    "order": 1,
+    "text": "Precalienta el air fryer a 200 °C."
+  },
+  {
+    "order": 2,
+    "text": "Marina {{solomillo-pavo.total}} de solomillo de pavo con {{mostaza-dijon.total}} de mostaza de Dijon, {{miel.total}} de miel, hierbas provenzales, ajo rallado y sal. Deja reposar 5 minutos."
+  },
+  {
+    "order": 3,
+    "text": "Corta {{boniato.total}} de boniato en dados. Ponlo en el air fryer junto al solomillo con parte de {{aove.total}} y sal. Cocina a 200 °C durante 20 minutos, girando el solomillo a mitad de cocción."
+  },
+  {
+    "order": 4,
+    "text": "Saltea {{ajo.total}} de ajo laminado con el resto de {{aove.total}} durante 1 minuto. Añade {{espinacas-frescas.total}} de espinacas y cocina 3–4 minutos."
+  },
+  {
+    "order": 5,
+    "text": "Deja reposar el solomillo 3 minutos antes de cortarlo. Sirve con el boniato, las espinacas, {{tomate-cherry.total}} de tomate cherry y {{kiwi.total}} de kiwi de postre."
+  }
+],
+"notes": [
+  "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+]
+}
+},
+{
+  "slot": "merienda",
+  "label": "Merienda",
+  "recipe": {
+    "id": "batido-proteico-cacao-fresas-dia-6",
+    "name": "Batido proteico de cacao, fresas y queso fresco",
+    "emoji": "🥤",
+    "tags": ["Fin de semana", "Pre-entreno"],
+    "timeMinutes": 3,
+    "macrosByPerson": {
+      "elena": {
+        "kcal": 165,
+        "proteinG": 18
+      },
+      "ruben": {
+        "kcal": 235
+      }
+    },
+    "ingredients": [
+      {
+        "id": "leche-desnatada",
+        "name": "Leche desnatada",
+        "category": "Huevos y lácteos",
+        "unit": "ml",
+        "baseQuantity": 200,
+        "extraByPerson": {
+          "ruben": 100
+        }
+      },
+      {
+        "id": "fresas",
+        "name": "Fresas frescas",
+        "category": "Frutas",
+        "unit": "g",
+        "baseQuantity": 100,
+        "extraByPerson": {}
+      },
+      {
+        "id": "queso-fresco-batido-0",
+        "name": "Queso fresco batido 0%",
+        "category": "Huevos y lácteos",
+        "unit": "g",
+        "baseQuantity": 80,
+        "extraByPerson": {
+          "ruben": 30
+        }
+      },
+      {
+        "id": "cacao-puro",
+        "name": "Cacao puro en polvo sin azúcar",
+        "category": "Despensa",
+        "unit": "g",
+        "baseQuantity": 8,
+        "extraByPerson": {}
+      },
+      {
+        "id": "edulcorante",
+        "name": "Edulcorante",
+        "category": "Despensa",
+        "unit": "al gusto",
+        "baseQuantity": 0,
+        "extraByPerson": {}
+      },
+      {
+        "id": "hielo",
+        "name": "Hielo",
+        "category": "Despensa",
+        "unit": "al gusto",
+        "baseQuantity": 0,
+        "extraByPerson": {}
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "text": "Introduce en la batidora {{leche-desnatada.total}} de leche desnatada, {{fresas.total}} de fresas, {{queso-fresco-batido-0.total}} de queso fresco batido 0%, {{cacao-puro.total}} de cacao puro, edulcorante y hielo."
+      },
+      {
+        "order": 2,
+        "text": "Tritura durante unos 30 segundos hasta obtener una textura homogénea."
+      },
+      {
+        "order": 3,
+        "text": "Puede prepararse la noche anterior y conservarse en una botella o tarro de cristal."
+      }
+    ],
+    "notes": [
+      "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+    ]
+  }
+},
+{
+  "slot": "cena",
+  "label": "Cena",
+  "recipe": {
+    "id": "dorada-hierbas-tomate-dia-6",
+    "name": "Dorada a las hierbas mediterráneas con tomate asado y ensalada de rúcula",
+    "emoji": "🐠",
+    "tags": ["Post-entreno"],
+    "timeMinutes": 22,
+    "macrosByPerson": {
+      "elena": {
+        "kcal": 419,
+        "proteinG": 41
+      },
+      "ruben": {
+        "kcal": 514
+      }
+    },
+    "ingredients": [
+      {
+        "id": "dorada",
+        "name": "Dorada",
+        "category": "Carnes y pescados",
+        "unit": "g",
+        "baseQuantity": 250,
+        "extraByPerson": {
+          "ruben": 100
+        }
+      },
+      {
+        "id": "tomate-pera",
+        "name": "Tomate de pera",
+        "category": "Verduras y hortalizas",
+        "unit": "g",
+        "baseQuantity": 150,
+        "extraByPerson": {}
+      },
+      {
+        "id": "cebolla",
+        "name": "Cebolla",
+        "category": "Verduras y hortalizas",
+        "unit": "g",
+        "baseQuantity": 60,
+        "extraByPerson": {}
+      },
+      {
+        "id": "ajo",
+        "name": "Ajo",
+        "category": "Verduras y hortalizas",
+        "unit": "dientes",
+        "baseQuantity": 2,
+        "extraByPerson": {}
+      },
+      {
+        "id": "aove",
+        "name": "Aceite de oliva virgen extra",
+        "category": "Despensa",
+        "unit": "ml",
+        "baseQuantity": 10,
+        "extraByPerson": {}
+      },
+      {
+        "id": "zumo-limon",
+        "name": "Zumo de limón",
+        "category": "Frutas",
+        "unit": "ml",
+        "baseQuantity": 15,
+        "extraByPerson": {}
+      },
+      {
+        "id": "romero",
+        "name": "Romero fresco",
+        "category": "Despensa",
+        "unit": "al gusto",
+        "baseQuantity": 0,
+        "extraByPerson": {}
+      },
+      {
+        "id": "tomillo",
+        "name": "Tomillo fresco",
+        "category": "Despensa",
+        "unit": "al gusto",
+        "baseQuantity": 0,
+        "extraByPerson": {}
+      },
+      {
+        "id": "sal-hierbas",
+        "name": "Sal gruesa con hierbas",
+        "category": "Despensa",
+        "unit": "al gusto",
+        "baseQuantity": 0,
+        "extraByPerson": {}
+      },
+      {
+        "id": "rucula",
+        "name": "Rúcula",
+        "category": "Verduras y hortalizas",
+        "unit": "g",
+        "baseQuantity": 40,
+        "extraByPerson": {}
+      },
+      {
+        "id": "cebolla-morada",
+        "name": "Cebolla morada",
+        "category": "Verduras y hortalizas",
+        "unit": "g",
+        "baseQuantity": 30,
+        "extraByPerson": {}
+      },
+      {
+        "id": "vinagre-jerez",
+        "name": "Vinagre de Jerez",
+        "category": "Despensa",
+        "unit": "ml",
+        "baseQuantity": 5,
+        "extraByPerson": {}
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "text": "Precalienta el air fryer a 190 °C o el horno a 200 °C."
+      },
+      {
+        "order": 2,
+        "text": "Coloca {{tomate-pera.total}} de tomate de pera y {{cebolla.total}} de cebolla en una bandeja. Añade {{ajo.total}} de ajo laminado, romero y tomillo."
+      },
+      {
+        "order": 3,
+        "text": "Pon {{dorada.total}} de dorada encima de las verduras. Riega con parte de {{aove.total}} y {{zumo-limon.total}} de zumo de limón. Añade sal gruesa con hierbas."
+      },
+      {
+        "order": 4,
+        "text": "Cocina en air fryer 18–20 minutos a 190 °C, o en horno 22–25 minutos a 200 °C."
+      },
+      {
+        "order": 5,
+        "text": "Aliña {{rucula.total}} de rúcula y {{cebolla-morada.total}} de cebolla morada con el resto de {{aove.total}} y {{vinagre-jerez.total}} de vinagre de Jerez. Sirve junto a la dorada."
+      }
+    ],
+    "notes": [
+      "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+    ]
+  }
+}
+]
+},
+{
+  "id": "dia-7",
+  "label": "Día 7",
+  "meals": [
+    {
+      "slot": "desayuno",
+      "label": "Desayuno",
+      "recipe": {
+        "id": "tortitas-avena-frutos-rojos-dia-7",
+        "name": "Tortitas proteicas de avena y canela con compota de frutos rojos",
+        "emoji": "🥞",
+        "tags": ["Fin de semana"],
+        "timeMinutes": 10,
+        "macrosByPerson": {
+          "elena": {
+            "kcal": 332,
+            "proteinG": 21
+          },
+          "ruben": {
+            "kcal": 442
+          }
+        },
+        "ingredients": [
+          {
+            "id": "leche-desnatada",
+            "name": "Leche desnatada",
+            "category": "Huevos y lácteos",
+            "unit": "ml",
+            "baseQuantity": 150,
+            "extraByPerson": {}
+          },
+          {
+            "id": "copos-avena",
+            "name": "Copos de avena finos",
+            "category": "Cereales y carbohidratos",
+            "unit": "g",
+            "baseQuantity": 45,
+            "extraByPerson": {
+              "ruben": 15
+            }
+          },
+          {
+            "id": "claras-huevo",
+            "name": "Claras de huevo",
+            "category": "Huevos y lácteos",
+            "unit": "g",
+            "baseQuantity": 60,
+            "extraByPerson": {}
+          },
+          {
+            "id": "canela",
+            "name": "Canela en polvo",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "edulcorante",
+            "name": "Edulcorante",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "yogur-griego-0",
+            "name": "Yogur griego 0% natural",
+            "category": "Huevos y lácteos",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {
+              "ruben": 100
+            }
+          },
+          {
+            "id": "frutos-rojos",
+            "name": "Frutos rojos",
+            "category": "Frutas",
+            "unit": "g",
+            "baseQuantity": 80,
+            "extraByPerson": {}
+          }
+        ],
+        "steps": [
+          {
+            "order": 1,
+            "text": "Tritura {{copos-avena.total}} de copos de avena hasta obtener una harina gruesa."
+          },
+          {
+            "order": 2,
+            "text": "Añade {{claras-huevo.total}} de claras de huevo, canela y edulcorante. Mezcla hasta integrar y deja reposar 1 minuto."
+          },
+          {
+            "order": 3,
+            "text": "Cocina las tortitas en una sartén antiadherente a fuego medio durante 2 minutos por cada lado."
+          },
+          {
+            "order": 4,
+            "text": "Calienta {{frutos-rojos.total}} de frutos rojos en el microondas durante 45 segundos con unas gotas de limón."
+          },
+          {
+            "order": 5,
+            "text": "Sirve las tortitas con {{yogur-griego-0.total}} de yogur griego y la compota de frutos rojos. Prepara el café con {{leche-desnatada.total}} de leche."
+          }
+        ],
+        "notes": [
+          "Conversión histórica: se ha estimado el yogur extra de Ruben como 100 g, equivalente a una ración individual."
+        ]
+      }
+    },
+    {
+      "slot": "media-manana",
+      "label": "Media mañana",
+      "recipe": {
+        "id": "hummus-verduras-dia-7",
+        "name": "Hummus con bastones de zanahoria, pepino y apio",
+        "emoji": "🫛",
+        "tags": ["Fin de semana"],
+        "timeMinutes": 10,
+        "macrosByPerson": {
+          "elena": {
+            "kcal": 162,
+            "proteinG": 6
+          },
+          "ruben": {
+            "kcal": 237
+          }
+        },
+        "ingredients": [
+          {
+            "id": "hummus",
+            "name": "Hummus",
+            "category": "Legumbres y conservas",
+            "unit": "g",
+            "baseQuantity": 60,
+            "extraByPerson": {
+              "ruben": 30
+            }
+          },
+          {
+            "id": "zanahoria",
+            "name": "Zanahoria",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 80,
+            "extraByPerson": {
+              "ruben": 80
+            }
+          },
+          {
+            "id": "pepino",
+            "name": "Pepino",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {}
+          },
+          {
+            "id": "apio",
+            "name": "Apio",
+            "category": "Verduras y hortalizas",
+            "unit": "tallos",
+            "baseQuantity": 1,
+            "extraByPerson": {}
+          },
+          {
+            "id": "pimenton-ahumado",
+            "name": "Pimentón dulce ahumado",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          }
+        ],
+        "steps": [
+          {
+            "order": 1,
+            "text": "Pela y corta {{zanahoria.total}} de zanahoria y {{pepino.total}} de pepino en bastones."
+          },
+          {
+            "order": 2,
+            "text": "Corta {{apio.total}} de apio en bastones, si se utiliza."
+          },
+          {
+            "order": 3,
+            "text": "Sirve con {{hummus.total}} de hummus y espolvorea pimentón ahumado."
+          }
+        ],
+        "notes": [
+          "Conversión histórica: la zanahoria extra de Ruben se ha estimado como otra zanahoria mediana."
+        ]
+      }
+    },
+    {
+      "slot": "comida",
+      "label": "Comida",
+      "recipe": {
+        "id": "ensalada-pollo-garbanzos-dia-7",
+        "name": "Ensalada templada de garbanzos y pollo al limón-comino con pimientos del piquillo",
+        "emoji": "🥗",
+        "tags": ["Con fruta de postre", "Tupper"],
+        "timeMinutes": 20,
+        "macrosByPerson": {
+          "elena": {
+            "kcal": 571,
+            "proteinG": 43
+          },
+          "ruben": {
+            "kcal": 761
+          }
+        },
+        "ingredients": [
+          {
+            "id": "pechuga-pollo",
+            "name": "Pechuga de pollo",
+            "category": "Carnes y pescados",
+            "unit": "g",
+            "baseQuantity": 150,
+            "extraByPerson": {
+              "ruben": 70
+            }
+          },
+          {
+            "id": "garbanzos-cocidos",
+            "name": "Garbanzos cocidos",
+            "category": "Legumbres y conservas",
+            "unit": "g",
+            "baseQuantity": 160,
+            "extraByPerson": {
+              "ruben": 60
+            }
+          },
+          {
+            "id": "pimientos-piquillo",
+            "name": "Pimientos del piquillo asados",
+            "category": "Legumbres y conservas",
+            "unit": "g",
+            "baseQuantity": 80,
+            "extraByPerson": {}
+          },
+          {
+            "id": "tomate-cherry",
+            "name": "Tomate cherry",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {}
+          },
+          {
+            "id": "pepino",
+            "name": "Pepino",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {}
+          },
+          {
+            "id": "cebolla-morada",
+            "name": "Cebolla morada",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 40,
+            "extraByPerson": {}
+          },
+          {
+            "id": "aove",
+            "name": "Aceite de oliva virgen extra",
+            "category": "Despensa",
+            "unit": "ml",
+            "baseQuantity": 7,
+            "extraByPerson": {}
+          },
+          {
+            "id": "zumo-limon",
+            "name": "Zumo de limón",
+            "category": "Frutas",
+            "unit": "ml",
+            "baseQuantity": 15,
+            "extraByPerson": {}
+          },
+          {
+            "id": "comino",
+            "name": "Comino molido",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "pimenton-dulce",
+            "name": "Pimentón dulce",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "oregano",
+            "name": "Orégano",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "perejil",
+            "name": "Perejil fresco",
+            "category": "Verduras y hortalizas",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "naranja-mandarina",
+            "name": "Naranja o mandarinas",
+            "category": "Frutas",
+            "unit": "g",
+            "baseQuantity": 150,
+            "extraByPerson": {}
+          }
+        ],
+        "steps": [
+          {
+            "order": 1,
+            "text": "Corta {{pechuga-pollo.total}} de pechuga de pollo en tiras y marina con limón, comino, orégano y sal durante 5 minutos."
+          },
+          {
+            "order": 2,
+            "text": "Cocina el pollo en air fryer a 180 °C durante 12–13 minutos, o a la plancha durante 8–10 minutos."
+          },
+          {
+            "order": 3,
+            "text": "Escurre y aclara {{garbanzos-cocidos.total}} de garbanzos cocidos."
+          },
+          {
+            "order": 4,
+            "text": "Mezcla los garbanzos con {{pimientos-piquillo.total}} de pimientos del piquillo, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino, {{cebolla-morada.total}} de cebolla morada y perejil."
+          },
+          {
+            "order": 5,
+            "text": "Añade el pollo y aliña con {{aove.total}}, {{zumo-limon.total}}, comino y pimentón. Sirve {{naranja-mandarina.total}} de naranja o mandarinas de postre."
+          }
+        ],
+        "notes": [
+          "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+        ]
+      }
+    },
+    {
+      "slot": "merienda",
+      "label": "Merienda",
+      "recipe": {
+        "id": "batido-proteico-cacao-fresas-dia-7",
+        "name": "Batido proteico de cacao, fresas y queso fresco",
+        "emoji": "🥤",
+        "tags": ["Fin de semana", "Pre-entreno"],
+        "timeMinutes": 3,
+        "macrosByPerson": {
+          "elena": {
+            "kcal": 165,
+            "proteinG": 18
+          },
+          "ruben": {
+            "kcal": 235
+          }
+        },
+        "ingredients": [
+          {
+            "id": "leche-desnatada",
+            "name": "Leche desnatada",
+            "category": "Huevos y lácteos",
+            "unit": "ml",
+            "baseQuantity": 200,
+            "extraByPerson": {
+              "ruben": 100
+            }
+          },
+          {
+            "id": "fresas",
+            "name": "Fresas frescas",
+            "category": "Frutas",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {}
+          },
+          {
+            "id": "queso-fresco-batido-0",
+            "name": "Queso fresco batido 0%",
+            "category": "Huevos y lácteos",
+            "unit": "g",
+            "baseQuantity": 80,
+            "extraByPerson": {
+              "ruben": 30
+            }
+          },
+          {
+            "id": "cacao-puro",
+            "name": "Cacao puro en polvo sin azúcar",
+            "category": "Despensa",
+            "unit": "g",
+            "baseQuantity": 8,
+            "extraByPerson": {}
+          },
+          {
+            "id": "edulcorante",
+            "name": "Edulcorante",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          },
+          {
+            "id": "hielo",
+            "name": "Hielo",
+            "category": "Despensa",
+            "unit": "al gusto",
+            "baseQuantity": 0,
+            "extraByPerson": {}
+          }
+        ],
+        "steps": [
+          {
+            "order": 1,
+            "text": "Introduce en la batidora {{leche-desnatada.total}} de leche desnatada, {{fresas.total}} de fresas, {{queso-fresco-batido-0.total}} de queso fresco batido 0%, {{cacao-puro.total}} de cacao puro, edulcorante y hielo."
+          },
+          {
+            "order": 2,
+            "text": "Tritura durante unos 30 segundos hasta obtener una textura homogénea."
+          }
+        ],
+        "notes": [
+          "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+        ]
+      }
+    },
+    {
+      "slot": "cena",
+      "label": "Cena",
+      "recipe": {
+        "id": "ensalada-pollo-aguacate-huevo-dia-7",
+        "name": "Ensalada de pollo asado, aguacate y huevo duro con vinagreta de mostaza y limón",
+        "emoji": "🥑",
+        "tags": ["Post-entreno"],
+        "timeMinutes": 12,
+        "macrosByPerson": {
+          "elena": {
+            "kcal": 435,
+            "proteinG": 38
+          },
+          "ruben": {
+            "kcal": 590
+          }
+        },
+        "ingredients": [
+          {
+            "id": "pechuga-pollo",
+            "name": "Pechuga de pollo",
+            "category": "Carnes y pescados",
+            "unit": "g",
+            "baseQuantity": 150,
+            "extraByPerson": {
+              "ruben": 60
+            }
+          },
+          {
+            "id": "aguacate",
+            "name": "Aguacate",
+            "category": "Frutas",
+            "unit": "g",
+            "baseQuantity": 50,
+            "extraByPerson": {}
+          },
+          {
+            "id": "tomate-cherry",
+            "name": "Tomate cherry",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 100,
+            "extraByPerson": {}
+          },
+          {
+            "id": "pepino",
+            "name": "Pepino",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 60,
+            "extraByPerson": {}
+          },
+          {
+            "id": "cebolla-morada",
+            "name": "Cebolla morada",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 30,
+            "extraByPerson": {}
+          },
+          {
+            "id": "mezcla-lechugas",
+            "name": "Mezcla de lechugas o canónigos",
+            "category": "Verduras y hortalizas",
+            "unit": "g",
+            "baseQuantity": 60,
+            "extraByPerson": {}
+          },
+          {
+            "id": "huevo",
+            "name": "Huevo",
+            "category": "Huevos y lácteos",
+            "unit": "unidades",
+            "baseQuantity": 1,
+            "extraByPerson": {
+              "ruben": 1
+            }
+          },
+          {
+            "id": "aove",
+            "name": "Aceite de oliva virgen extra",
+            "category": "Despensa",
+            "unit": "ml",
+            "baseQuantity": 5,
+            "extraByPerson": {}
+          },
+          {
+            "id": "mostaza-dijon",
+            "name": "Mostaza de Dijon",
+            "category": "Despensa",
+            "unit": "g",
+            "baseQuantity": 5,
+            "extraByPerson": {}
+          },
+          {
+            "id": "zumo-limon",
+            "name": "Zumo de limón",
+            "category": "Frutas",
+            "unit": "ml",
+            "baseQuantity": 15,
+            "extraByPerson": {}
+          },
+          {
+            "id": "vinagre-manzana",
+            "name": "Vinagre de manzana",
+            "category": "Despensa",
+            "unit": "ml",
+            "baseQuantity": 5,
+            "extraByPerson": {}
+          }
+        ],
+        "steps": [
+          {
+            "order": 1,
+            "text": "Cuece {{huevo.total}} de huevos durante 10 minutos. Enfría, pela y corta en cuartos."
+          },
+          {
+            "order": 2,
+            "text": "Si no tienes pollo preparado, cocina {{pechuga-pollo.total}} de pechuga de pollo marinada con limón, ajo y hierbas en air fryer a 180 °C durante 12 minutos."
+          },
+          {
+            "order": 3,
+            "text": "Monta la ensalada con {{mezcla-lechugas.total}} de hojas verdes, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino y {{cebolla-morada.total}} de cebolla morada."
+          },
+          {
+            "order": 4,
+            "text": "Añade el pollo, {{aguacate.total}} de aguacate y los huevos."
+          },
+          {
+            "order": 5,
+            "text": "Prepara una vinagreta con {{aove.total}}, {{mostaza-dijon.total}}, {{zumo-limon.total}} y {{vinagre-manzana.total}}. Aliña justo antes de servir."
+          }
+        ],
+        "notes": [
+          "Conversión histórica: los macros completos de Ruben no estaban disponibles en el HTML original; se conserva únicamente el aporte energético indicado."
+        ]
+      }
+    }
+  ]
+}
+]
+}
