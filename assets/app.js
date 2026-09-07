@@ -265,7 +265,7 @@ function renderDay(day, dayIndex) {
         <span class="day-card__title-area">
           <span class="day-number">${dayIndex + 1}</span>
           <span>
-            <span class="day-card__title">${escapeHtml(day.label)}</span>
+            <span class="day-card__title">Día ${dayIndex + 1}</span>
             <span class="day-card__subtitle">
               ${pluralize(recipeCount, "receta", "recetas")}
             </span>
@@ -1046,7 +1046,7 @@ function renderPrintHeader(sectionName, planTitle) {
 function renderPrintDay(day) {
   return `
     <section class="print-day">
-      <h2>${escapeHtml(day.label)}</h2>
+      <h2>Día ${state.plan.days.indexOf(day) + 1}</h2>
       ${(day.meals || [])
         .map((meal) => {
           const config = MEAL_CONFIG[meal.slot] || {

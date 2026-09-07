@@ -1,4 +1,4 @@
-css :root { --cream-50: #fffdf9; --cream-100: #fff8ef; --cream-200: #f8ecdd; --white: #ffffff;
+:root { --cream-50: #fffdf9; --cream-100: #fff8ef; --cream-200: #f8ecdd; --white: #ffffff;
 
 --teal-900: #134e4a; --teal-800: #115e59; --teal-700: #0f766e; --teal-600: #0d9488; --teal-500: #14b8a6; --teal-100: #ccfbf1; --teal-50: #f0fdfa;
 
@@ -16,7 +16,7 @@ css :root { --cream-50: #fffdf9; --cream-100: #fff8ef; --cream-200: #f8ecdd; --w
 
 --header-height: 66px; }
 
-{ box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
 html { min-width: 320px; background: var(--cream-100); }
 
 body { min-width: 320px; min-height: 100vh; margin: 0; color: var(--ink-950); background: radial-gradient(circle at 5% 10%, rgba(20, 184, 166, 0.11), transparent 26rem), radial-gradient(circle at 97% 26%, rgba(236, 72, 153, 0.09), transparent 25rem), var(--cream-100); font-family: var(--font-sans); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
