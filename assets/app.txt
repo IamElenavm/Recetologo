@@ -778,7 +778,22 @@ function normalizeShoppingOverride(override) {
     }));
 }
 
+function calculatePersonIngredientQuantity(ingredient, personId) {
+  if (isNonQuantifiable(ingredient)) return 0;
 
+  const base = Number(ingredient.baseQuantity) || 0;
+  const person = state.plan.people.find((item) => item.id === personId);
+
+  if (!person || person.isBase) {
+    return base;
+  }
+
+  return base + getExtraQuantity(ingredient, personId);
+}
+
+function getExtraQuantity(ingredient, personId) {
+  return Number(ingredient.extraByPerson?.[personId]) || 0;
+}
 
 function calculateIngredientTotal(ingredient) {
   if (isNonQuantifiable(ingredient)) return 0;
