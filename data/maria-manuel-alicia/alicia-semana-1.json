@@ -1,0 +1,1148 @@
+{
+  "schemaVersion": "1.0",
+  "id": "alicia-semana-1",
+  "profileId": "maria-manuel-alicia",
+  "title": "Plan nutricional · Semana 1 · Alicia",
+  "subtitle": "Plan individual de 5 días con recetas para tupper",
+  "period": {
+    "label": "Plan de 5 días"
+  },
+  "people": [
+    {
+      "id": "alicia",
+      "name": "Alicia",
+      "isBase": true
+    }
+  ],
+  "days": [
+    {
+      "id": "dia-1",
+      "label": "Día 1",
+      "meals": [
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "garbanzos-espinacas-huevo-arroz",
+            "name": "Garbanzos guisados con espinacas, tomate y huevo duro con arroz integral",
+            "emoji": "🥣",
+            "tags": [
+              "Tupper",
+              "Vegetariana"
+            ],
+            "timeMinutes": 35,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 660,
+                "proteinG": 30,
+                "fiberG": 16
+              }
+            },
+            "ingredients": [
+              {
+                "id": "garbanzos-cocidos",
+                "name": "Garbanzos cocidos",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 200,
+                "extraByPerson": {}
+              },
+              {
+                "id": "espinacas-frescas",
+                "name": "Espinacas frescas",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "tomate-triturado",
+                "name": "Tomate triturado",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "arroz-integral",
+                "name": "Arroz integral",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 60,
+                "extraByPerson": {}
+              },
+              {
+                "id": "cebolla",
+                "name": "Cebolla",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "ajo",
+                "name": "Ajo",
+                "category": "Frutas y Verduras",
+                "unit": "dientes",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pimenton-dulce",
+                "name": "Pimentón dulce",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              },
+              {
+                "id": "comino",
+                "name": "Comino molido",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Cuece {{huevos.total}} de huevo durante 10 minutos. Enfría y pela."
+              },
+              {
+                "order": 2,
+                "text": "Cuece {{arroz-integral.total}} de arroz integral según las instrucciones, durante unos 25–30 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Sofríe {{cebolla.total}} de cebolla y {{ajo.total}} de ajo con {{aove.total}} de aceite hasta dorar."
+              },
+              {
+                "order": 4,
+                "text": "Añade {{tomate-triturado.total}} de tomate triturado, pimentón y comino. Cocina 5 minutos."
+              },
+              {
+                "order": 5,
+                "text": "Incorpora {{garbanzos-cocidos.total}} de garbanzos y {{espinacas-frescas.total}} de espinacas. Cocina 8–10 minutos."
+              },
+              {
+                "order": 6,
+                "text": "Sirve sobre el arroz y termina con el huevo duro cortado por la mitad."
+              }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "tortilla-patata-espinacas-horno",
+            "name": "Tortilla de patata y espinacas al horno con queso rallado",
+            "emoji": "🍳",
+            "tags": [
+              "Post-entreno",
+              "Horno"
+            ],
+            "timeMinutes": 35,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 470,
+                "proteinG": 26,
+                "fiberG": 6
+              }
+            },
+            "ingredients": [
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 3,
+                "extraByPerson": {}
+              },
+              {
+                "id": "patata",
+                "name": "Patata",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "espinacas-frescas",
+                "name": "Espinacas frescas",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-rallado",
+                "name": "Queso rallado",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 40,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 5,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Precalienta el horno a 180 °C. Cocina {{patata.total}} de patata laminada durante 8 minutos en microondas o hervida."
+              },
+              {
+                "order": 2,
+                "text": "Bate {{huevos.total}} de huevos con sal y pimienta."
+              },
+              {
+                "order": 3,
+                "text": "En un molde con {{aove.total}} de aceite coloca la patata y {{espinacas-frescas.total}} de espinacas. Vierte el huevo."
+              },
+              {
+                "order": 4,
+                "text": "Añade {{queso-rallado.total}} de queso rallado por encima."
+              },
+              {
+                "order": 5,
+                "text": "Hornea durante 20–25 minutos, hasta que la tortilla esté cuajada."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-2",
+      "label": "Día 2",
+      "meals": [
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "curry-tofu-verduras-arroz",
+            "name": "Curry de tofu y verduras con leche de avena y arroz basmati",
+            "emoji": "🍛",
+            "tags": [
+              "Tupper",
+              "Vegetariana"
+            ],
+            "timeMinutes": 40,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 655,
+                "proteinG": 28,
+                "fiberG": 12
+              }
+            },
+            "ingredients": [
+              {
+                "id": "tofu-firme",
+                "name": "Tofu firme",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "calabacin",
+                "name": "Calabacín",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pimiento-rojo",
+                "name": "Pimiento rojo",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "zanahoria",
+                "name": "Zanahoria",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "leche-avena",
+                "name": "Leche de avena",
+                "category": "Huevos y lácteos",
+                "unit": "ml",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "arroz-basmati",
+                "name": "Arroz basmati",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 60,
+                "extraByPerson": {}
+              },
+              {
+                "id": "cebolla",
+                "name": "Cebolla",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "curry",
+                "name": "Curry en polvo",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Sella {{tofu-firme.total}} de tofu en dados con parte de {{aove.total}} de aceite. Reserva."
+              },
+              {
+                "order": 2,
+                "text": "Cuece {{arroz-basmati.total}} de arroz basmati durante 12–15 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Sofríe {{cebolla.total}} de cebolla, {{pimiento-rojo.total}} de pimiento y {{zanahoria.total}} de zanahoria con el resto del aceite durante 5–6 minutos."
+              },
+              {
+                "order": 4,
+                "text": "Añade {{calabacin.total}} de calabacín y cocina 3 minutos más."
+              },
+              {
+                "order": 5,
+                "text": "Incorpora curry al gusto y {{leche-avena.total}} de leche de avena. Cocina 8–10 minutos hasta espesar."
+              },
+              {
+                "order": 6,
+                "text": "Añade el tofu, mezcla y cocina 2 minutos. Sirve sobre el arroz."
+              }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "hamburguesas-lentejas-avena",
+            "name": "Hamburguesas de lentejas y avena con pimientos al horno y yogur de avena",
+            "emoji": "🍔",
+            "tags": [
+              "Post-entreno",
+              "Vegetariana"
+            ],
+            "timeMinutes": 40,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 480,
+                "proteinG": 22,
+                "fiberG": 13
+              }
+            },
+            "ingredients": [
+              {
+                "id": "lentejas-cocidas",
+                "name": "Lentejas cocidas",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "copos-avena",
+                "name": "Copos de avena",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 30,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pimiento-rojo",
+                "name": "Pimiento rojo",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "yogur-avena",
+                "name": "Yogur de avena natural",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Precalienta el horno a 200 °C. Tritura {{lentejas-cocidas.total}} de lentejas, {{copos-avena.total}} de avena y {{huevos.total}} de huevo."
+              },
+              {
+                "order": 2,
+                "text": "Forma 2 hamburguesas."
+              },
+              {
+                "order": 3,
+                "text": "Corta {{pimiento-rojo.total}} de pimiento en tiras y colócalo junto a las hamburguesas con {{aove.total}} de aceite."
+              },
+              {
+                "order": 4,
+                "text": "Hornea 20–25 minutos, dando la vuelta a mitad de cocción."
+              },
+              {
+                "order": 5,
+                "text": "Sirve con {{yogur-avena.total}} de yogur de avena como salsa."
+              }
+            ],
+            "notes": [
+              "Una unidad de yogur se considera una ración individual de aproximadamente 125 g."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-3",
+      "label": "Día 3",
+      "meals": [
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "quinoa-huevo-aguacate-feta",
+            "name": "Quinoa con huevo poché, aguacate, tomate cherry y queso feta",
+            "emoji": "🥗",
+            "tags": [
+              "Tupper",
+              "Vegetariana"
+            ],
+            "timeMinutes": 30,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 640,
+                "proteinG": 26,
+                "fiberG": 10
+              }
+            },
+            "ingredients": [
+              {
+                "id": "quinoa",
+                "name": "Quinoa",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 70,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aguacate",
+                "name": "Aguacate",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 75,
+                "extraByPerson": {}
+              },
+              {
+                "id": "tomate-cherry",
+                "name": "Tomate cherry",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-feta",
+                "name": "Queso feta",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "vinagre",
+                "name": "Vinagre",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 5,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Cuece {{quinoa.total}} de quinoa durante 15 minutos y escurre."
+              },
+              {
+                "order": 2,
+                "text": "Prepara {{huevos.total}} de huevo poché con agua y {{vinagre.total}} de vinagre durante 3 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Corta {{aguacate.total}} de aguacate y {{tomate-cherry.total}} de tomate cherry."
+              },
+              {
+                "order": 4,
+                "text": "Monta la quinoa con aguacate, tomate y {{queso-feta.total}} de queso feta desmenuzado."
+              },
+              {
+                "order": 5,
+                "text": "Añade el huevo poché y aliña con {{aove.total}} de aceite."
+              }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "crema-calabaza-tosta-huevo",
+            "name": "Crema de calabaza y zanahoria con tosta de queso fresco y huevo revuelto",
+            "emoji": "🎃",
+            "tags": [
+              "Post-entreno",
+              "Reconfortante"
+            ],
+            "timeMinutes": 35,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 475,
+                "proteinG": 21,
+                "fiberG": 9
+              }
+            },
+            "ingredients": [
+              {
+                "id": "calabaza",
+                "name": "Calabaza",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 200,
+                "extraByPerson": {}
+              },
+              {
+                "id": "zanahoria",
+                "name": "Zanahoria",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "leche-avena",
+                "name": "Leche de avena",
+                "category": "Huevos y lácteos",
+                "unit": "ml",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "cebolla",
+                "name": "Cebolla",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 30,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pan-integral",
+                "name": "Pan integral",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "rebanadas",
+                "baseQuantity": 1.5,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-fresco",
+                "name": "Queso fresco",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 40,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 5,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Sofríe {{cebolla.total}} de cebolla con {{aove.total}} de aceite. Añade {{calabaza.total}} de calabaza y {{zanahoria.total}} de zanahoria."
+              },
+              {
+                "order": 2,
+                "text": "Cubre con agua y cocina durante 15–18 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Añade {{leche-avena.total}} de leche de avena y tritura."
+              },
+              {
+                "order": 4,
+                "text": "Tuesta {{pan-integral.total}} de pan integral y unta con {{queso-fresco.total}} de queso fresco."
+              },
+              {
+                "order": 5,
+                "text": "Bate {{huevos.total}} de huevo y cocínalo revuelto durante 2 minutos. Sirve junto a la crema."
+              }
+            ],
+            "notes": [
+              "Una rebanada de pan equivale aproximadamente a 25–30 g."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-4",
+      "label": "Día 4",
+      "meals": [
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "lentejas-calabaza-huevo-arroz",
+            "name": "Lentejas estofadas con zanahoria, calabaza, tomate y huevo duro con arroz integral",
+            "emoji": "🫘",
+            "tags": [
+              "Tupper",
+              "Vegetariana"
+            ],
+            "timeMinutes": 40,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 650,
+                "proteinG": 29,
+                "fiberG": 17
+              }
+            },
+            "ingredients": [
+              {
+                "id": "lentejas-cocidas",
+                "name": "Lentejas cocidas",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 200,
+                "extraByPerson": {}
+              },
+              {
+                "id": "zanahoria",
+                "name": "Zanahoria",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "calabaza",
+                "name": "Calabaza",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "tomate-triturado",
+                "name": "Tomate triturado",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "arroz-integral",
+                "name": "Arroz integral",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "cebolla",
+                "name": "Cebolla",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pimenton-dulce",
+                "name": "Pimentón dulce",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              },
+              {
+                "id": "laurel",
+                "name": "Laurel",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Cuece {{huevos.total}} de huevo durante 10 minutos y pela."
+              },
+              {
+                "order": 2,
+                "text": "Cuece {{arroz-integral.total}} de arroz integral."
+              },
+              {
+                "order": 3,
+                "text": "Sofríe {{cebolla.total}} de cebolla con {{aove.total}} de aceite. Añade {{zanahoria.total}} de zanahoria y {{calabaza.total}} de calabaza. Cocina 5 minutos."
+              },
+              {
+                "order": 4,
+                "text": "Añade {{tomate-triturado.total}} de tomate triturado, pimentón y laurel. Cocina 5 minutos."
+              },
+              {
+                "order": 5,
+                "text": "Incorpora {{lentejas-cocidas.total}} de lentejas y cocina 10–12 minutos."
+              },
+              {
+                "order": 6,
+                "text": "Sirve sobre el arroz con el huevo duro."
+              }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "albondigas-garbanzos-espinaca",
+            "name": "Albóndigas de garbanzo y espinaca al horno con salsa de tomate y queso rallado",
+            "emoji": "🧆",
+            "tags": [
+              "Post-entreno",
+              "Vegetariana"
+            ],
+            "timeMinutes": 40,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 475,
+                "proteinG": 24,
+                "fiberG": 12
+              }
+            },
+            "ingredients": [
+              {
+                "id": "garbanzos-cocidos",
+                "name": "Garbanzos cocidos",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "espinacas-frescas",
+                "name": "Espinacas frescas",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 60,
+                "extraByPerson": {}
+              },
+              {
+                "id": "huevos",
+                "name": "Huevos",
+                "category": "Huevos y lácteos",
+                "unit": "unidades",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pan-rallado",
+                "name": "Pan rallado",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 20,
+                "extraByPerson": {}
+              },
+              {
+                "id": "tomate-triturado",
+                "name": "Tomate triturado",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-rallado",
+                "name": "Queso rallado",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 30,
+                "extraByPerson": {}
+              },
+              {
+                "id": "ajo",
+                "name": "Ajo",
+                "category": "Frutas y Verduras",
+                "unit": "dientes",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "oregano",
+                "name": "Orégano",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Precalienta el horno a 200 °C. Tritura {{garbanzos-cocidos.total}} de garbanzos, {{espinacas-frescas.total}} de espinacas, {{huevos.total}} de huevo y {{pan-rallado.total}} de pan rallado."
+              },
+              {
+                "order": 2,
+                "text": "Forma albóndigas y hornéalas durante 15 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Sofríe {{ajo.total}} de ajo con {{aove.total}} de aceite. Añade {{tomate-triturado.total}} de tomate triturado y orégano. Cocina 10 minutos."
+              },
+              {
+                "order": 4,
+                "text": "Vierte la salsa sobre las albóndigas, añade {{queso-rallado.total}} de queso rallado y gratina 5 minutos más."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-5",
+      "label": "Día 5",
+      "meals": [
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "ensalada-garbanzos-quinoa-feta",
+            "name": "Ensalada templada de garbanzos y quinoa con verduras asadas y queso feta",
+            "emoji": "🥗",
+            "tags": [
+              "Tupper",
+              "Vegetariana"
+            ],
+            "timeMinutes": 35,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 645,
+                "proteinG": 27,
+                "fiberG": 14
+              }
+            },
+            "ingredients": [
+              {
+                "id": "garbanzos-cocidos",
+                "name": "Garbanzos cocidos",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "quinoa",
+                "name": "Quinoa",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pimiento-rojo",
+                "name": "Pimiento rojo",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "calabacin",
+                "name": "Calabacín",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-feta",
+                "name": "Queso feta",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 50,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "oregano",
+                "name": "Orégano",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Precalienta el horno a 200 °C. Corta {{pimiento-rojo.total}} de pimiento y {{calabacin.total}} de calabacín."
+              },
+              {
+                "order": 2,
+                "text": "Hornea las verduras con parte de {{aove.total}} de aceite y orégano durante 20 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Cuece {{quinoa.total}} de quinoa durante 15 minutos y escurre."
+              },
+              {
+                "order": 4,
+                "text": "Mezcla la quinoa con {{garbanzos-cocidos.total}} de garbanzos y las verduras asadas."
+              },
+              {
+                "order": 5,
+                "text": "Añade {{queso-feta.total}} de queso feta y el resto del aceite."
+              }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "revuelto-tofu-champinones",
+            "name": "Revuelto de tofu con champiñones y espinacas con tostada de queso fresco",
+            "emoji": "🍄",
+            "tags": [
+              "Post-entreno",
+              "Vegetariana"
+            ],
+            "timeMinutes": 25,
+            "macrosByPerson": {
+              "alicia": {
+                "kcal": 470,
+                "proteinG": 25,
+                "fiberG": 8
+              }
+            },
+            "ingredients": [
+              {
+                "id": "tofu-firme",
+                "name": "Tofu firme",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "g",
+                "baseQuantity": 150,
+                "extraByPerson": {}
+              },
+              {
+                "id": "champinones",
+                "name": "Champiñones",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 100,
+                "extraByPerson": {}
+              },
+              {
+                "id": "espinacas-frescas",
+                "name": "Espinacas frescas",
+                "category": "Frutas y Verduras",
+                "unit": "g",
+                "baseQuantity": 80,
+                "extraByPerson": {}
+              },
+              {
+                "id": "pan-integral",
+                "name": "Pan integral",
+                "category": "Legumbres, Cereales y Conservas",
+                "unit": "rebanadas",
+                "baseQuantity": 1.5,
+                "extraByPerson": {}
+              },
+              {
+                "id": "queso-fresco",
+                "name": "Queso fresco",
+                "category": "Huevos y lácteos",
+                "unit": "g",
+                "baseQuantity": 40,
+                "extraByPerson": {}
+              },
+              {
+                "id": "ajo",
+                "name": "Ajo",
+                "category": "Frutas y Verduras",
+                "unit": "dientes",
+                "baseQuantity": 1,
+                "extraByPerson": {}
+              },
+              {
+                "id": "aove",
+                "name": "Aceite de oliva virgen extra",
+                "category": "Despensa",
+                "unit": "ml",
+                "baseQuantity": 10,
+                "extraByPerson": {}
+              },
+              {
+                "id": "curcuma",
+                "name": "Cúrcuma",
+                "category": "Despensa",
+                "unit": "al gusto",
+                "baseQuantity": 0,
+                "extraByPerson": {}
+              }
+            ],
+            "steps": [
+              {
+                "order": 1,
+                "text": "Desmenuza {{tofu-firme.total}} de tofu con un tenedor."
+              },
+              {
+                "order": 2,
+                "text": "Sofríe {{ajo.total}} de ajo con {{aove.total}} de aceite. Añade {{champinones.total}} de champiñones y cocina 5 minutos."
+              },
+              {
+                "order": 3,
+                "text": "Añade {{espinacas-frescas.total}} de espinacas y cocina 2 minutos."
+              },
+              {
+                "order": 4,
+                "text": "Incorpora el tofu y cúrcuma al gusto. Cocina 5 minutos."
+              },
+              {
+                "order": 5,
+                "text": "Tuesta {{pan-integral.total}} de pan integral, unta con {{queso-fresco.total}} de queso fresco y sirve junto al revuelto."
+              }
+            ],
+            "notes": [
+              "Una rebanada de pan equivale aproximadamente a 25–30 g."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
