@@ -12,7 +12,7 @@
   <div class="app-shell">
     <header class="site-header no-print">
       <div class="header-inner">
-        <button id="home-button" class="brand" type="button" aria-label="Volver a la página principal">
+       <button id="home-button" class="brand" type="button" aria-label="Volver a la página principal">
           <span class="brand-icon" aria-hidden="true">✦</span>
           <span>Mi plan nutricional</span>
         </button>
@@ -23,7 +23,31 @@
       </div>
     </header>
 
-    `
+<main id="app-main" class="main-content">
+      <section id="home-page" class="home-page" aria-labelledby="home-title">
+        <div class="home-page__intro">
+          <p class="eyebrow">Bienvenidos</p>
+          <h1 id="home-title">Elige tu plan</h1>
+          <p>Selecciona un perfil para consultar sus recetas, menú y lista de compra.</p>
+        </div>
+
+        <div id="home-profiles-grid" class="profiles-app-grid" aria-label="Perfiles disponibles"></div>
+      </section>
+
+      <section id="profile-plans-page" class="profile-plans-page is-hidden" aria-labelledby="profile-plans-title">
+        <button id="back-to-home-button" class="back-button" type="button">
+          <span aria-hidden="true">←</span>
+          Todos los perfiles
+        </button>
+
+        <div class="profile-plans-page__intro">
+          <p class="eyebrow">Tus planes</p>
+          <h1 id="profile-plans-title">Perfil</h1>
+          <p id="profile-plans-description"></p>
+        </div>
+
+        <div id="profile-plans-list" class="profile-plans-list" aria-label="Planes disponibles"></div>
+      </section>
 
       <section id="loading-state" class="loading-state" aria-live="polite">
         <div class="loading-orb" aria-hidden="true"></div>
