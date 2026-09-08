@@ -314,7 +314,8 @@ h3 { margin-bottom: 8px; font-size: 1rem; }
 
 .selector-modal, .recipe-modal { right: 50%; bottom: 24px; left: auto; width: min(680px, calc(100vw - 40px)); border-radius: var(--radius-xl); transform: translate(50%, 105%); }
 
-.selector-modal.is-open, .recipe-modal.is-open { transform: translate(50%, 0); } }
+.selector-modal.is-open, .recipe-modal.is-open { transform: translate(50%, 0); }
+}
 
 .home-page,
 .profile-plans-page {

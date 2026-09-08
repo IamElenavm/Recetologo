@@ -317,7 +317,7 @@
                             {
                                 "id": "perejil",
                                 "name": "Perejil fresco",
-                                "category": "Frutas y Verduras",
+                                "category": "Despensa",
                                 "unit": "al gusto",
                                 "baseQuantity": 0,
                                 "extraByPerson": {}
@@ -2763,7 +2763,7 @@
                                 "name": "Cebolla",
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
-                                "baseQuantity": 60,
+                                "baseQuantity": 90,
                                 "extraByPerson": {}
                             },
                             {
@@ -2820,14 +2820,6 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {}
-                            },
-                            {
-                                "id": "cebolla",
-                                "name": "Cebolla",
-                                "category": "Frutas y Verduras",
-                                "unit": "g",
-                                "baseQuantity": 30,
                                 "extraByPerson": {}
                             },
                             {
@@ -3184,7 +3176,8 @@
                                 "id": "perejil",
                                 "name": "Perejil fresco",
                                 "category": "Despensa",
-                                "unit": "al gusto""baseQuantity": 0,
+                                "unit": "al gusto",
+								"baseQuantity": 0,
                                 "extraByPerson": {}
                             },
                             {
