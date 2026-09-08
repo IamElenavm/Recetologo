@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "profiles": [
+    {
+      "id": "elena-ruben",
+      "name": "Elena y Ruben",
+      "description": "Planes nutricionales de Elena y Rubén",
+      "plans": [
+        {
+          "id": "menu-super-buenos-semana-1",
+          "title": "Plan nutricional · Semana 1",
+          "periodLabel": "Plan de 7 días",
+          "file": "data/elena-ruben/plan-historico-1.json"
+        }
+      ]
+    },
+    {
+      "id": "maria-manuel-alicia",
+      "name": "María, Manuel y Alicia",
+      "description": "Planes individuales y compartidos",
+      "plans": [
+        {
+          "id": "alicia-semana-1",
+          "title": "Alicia Semana 1",
+          "periodLabel": "Plan de 5 días · Alicia",
+          "file": "data/maria-manuel-alicia/alicia-semana-1.json"
+        }
+      ]
+    }
+  ]
+}
