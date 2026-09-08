@@ -3182,7 +3182,7 @@
                             },
                             {
                                 "id": "naranja-mandarina",
-                                "name": "Naranja o mandarinas",
+                                "name": "Naranja o mandarina",
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 150,
@@ -3208,7 +3208,7 @@
                             },
                             {
                                 "order": 5,
-                                "text": "Añade el pollo y aliña con {{aove.total}}, {{zumo-limon.total}}, comino y pimentón. Sirve {{naranja-mandarina.total}} de naranja o mandarinas de postre."
+                                "text": "Añade el pollo y aliña con {{aove.total}}, {{zumo-limon.total}}, comino y pimentón. Sirve {{naranja-mandarina.total}} de naranja o mandarina de postre."
                             }
                         ],
                         "notes": [
