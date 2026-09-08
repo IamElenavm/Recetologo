@@ -1430,7 +1430,7 @@
                             },
                             {
                                 "order": 3,
-                                "text": "Sirve con ensalada de rúcula, cebolla morada y vinagre."
+                                "text": "Sirve con ensalada de rúcula, cebolla y vinagre."
                             }
                         ]
                     }
@@ -2850,7 +2850,7 @@
                             },
                             {
                                 "order": 5,
-                                "text": "Aliña {{rucula.total}} de rúcula y {{cebolla.total}} de cebolla morada con el resto de {{aove.total}} y {{vinagre-jerez.total}} de vinagre de Jerez. Sirve junto a la dorada."
+                                "text": "Aliña {{rucula.total}} de rúcula con parte de {{aove.total}} y {{vinagre-jerez.total}} de vinagre de Jerez. Sirve junto a la dorada."
                             }
                         ],
                         "notes": [
@@ -3204,7 +3204,7 @@
                             },
                             {
                                 "order": 4,
-                                "text": "Mezcla los garbanzos con {{pimientos-piquillo.total}} de pimientos del piquillo, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino, {{cebolla.total}} de cebolla morada y perejil."
+                                "text": "Mezcla los garbanzos con {{pimientos-piquillo.total}} de pimientos del piquillo, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino, {{cebolla.total}} de cebolla y perejil."
                             },
                             {
                                 "order": 5,
@@ -3431,7 +3431,7 @@
                             },
                             {
                                 "order": 3,
-                                "text": "Monta la ensalada con {{mezcla-lechugas.total}} de hojas verdes, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino y {{cebolla.total}} de cebolla morada."
+                                "text": "Monta la ensalada con {{mezcla-lechugas.total}} de hojas verdes, {{tomate-cherry.total}} de tomate cherry, {{pepino.total}} de pepino y {{cebolla.total}} de cebolla."
                             },
                             {
                                 "order": 4,
