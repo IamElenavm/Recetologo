@@ -26,19 +26,6 @@
           "file": "data/maria-manuel-alicia/alicia-semana-1.json"
         }
       ]
-    },
-    {
-      "id": "abuela",
-      "name": "Abuela",
-      "description": "Plan individual",
-      "plans": [
-        {
-          "id": "abuela-semana-1",
-          "title": "Abuela Semana 1",
-          "periodLabel": "Plan de 5 días · Abuela",
-          "file": "data/abuela/abuela-semana-1.json"
-        }
-      ]
     }
   ]
 }

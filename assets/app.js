@@ -4,7 +4,15 @@ const DATA_INDEX_URL = "data/index.json";
 
 const MEAL_CONFIG = { desayuno: { label: "Desayuno", emoji: "🌅" }, "media-manana": { label: "Media mañana", emoji: "🍎" }, comida: { label: "Comida", emoji: "🥗" }, merienda: { label: "Merienda", emoji: "🍊" }, cena: { label: "Cena", emoji: "🌙" } };
 
-const CATEGORY_ICONS = { "Carnes y pescados": "🥩", "Huevos y lácteos": "🥛", "Verduras y hortalizas": "🥦", Frutas: "🍎", "Legumbres y conservas": "🥫", "Cereales y carbohidratos": "🌾", Despensa: "🫙", Congelados: "❄️", Otros: "🛒" };
+const CATEGORY_ICONS = {
+  "Carnes y pescados": "🥩",
+  "Huevos y lácteos": "🥛",
+  "Frutas y Verduras": "🥦",
+  "Legumbres, Cereales y Conservas": "🌾",
+  Despensa: "🫙",
+  Congelados: "❄️",
+  Otros: "🛒"
+};
 
 const state = { index: null, profile: null, plan: null, activeTab: "menu", selectedProfileId: null, openDays: new Set(), openCategories: new Set(), activeRecipe: null };
 
@@ -741,7 +749,7 @@ function getShoppingCategories(plan) {
     (day.meals || []).forEach((meal) => {
       (meal.recipe.ingredients || []).forEach((ingredient) => {
         const category = ingredient.category || "Otros";
-        const key = `${ingredient.id}|${ingredient.unit}|${category}`;
+        const key = `${slugify(ingredient.name)}|${ingredient.unit}|${category}`;
 
         if (!aggregate.has(key)) {
           aggregate.set(key, {
@@ -1319,10 +1327,8 @@ function sortCategories(first, second) {
   const orderedCategories = [
     "Carnes y pescados",
     "Huevos y lácteos",
-    "Verduras y hortalizas",
-    "Frutas",
-    "Legumbres y conservas",
-    "Cereales y carbohidratos",
+    "Frutas y Verduras",
+    "Legumbres, Cereales y Conservas",
     "Congelados",
     "Despensa",
     "Otros"
