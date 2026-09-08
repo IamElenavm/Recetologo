@@ -11,7 +11,8 @@
     {
       "id": "abuela",
       "name": "Abuela",
-      "isBase": true
+      "isBase": true,
+      "calorieTarget": 1200
     }
   ],
   "days": [

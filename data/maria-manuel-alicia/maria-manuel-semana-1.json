@@ -11,12 +11,14 @@
     {
       "id": "maria",
       "name": "María",
-      "isBase": true
+      "isBase": true,
+	  "calorieTarget": 1600
     },
     {
       "id": "manuel",
       "name": "Manuel",
-      "isBase": false
+      "isBase": false,
+      "calorieTarget": 1800
     }
   ],
   "days": [
@@ -38,11 +40,11 @@
               "manuel": {"kcal": 350, "proteinG": 13}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":75}},
-              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":30}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":10}},
-              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson":{"manuel":200}},
-              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson":{"manuel":150}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson": {}},
+              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Calienta {{leche-desnatada.total}} de leche y prepara el café."},
@@ -65,9 +67,9 @@
               "manuel": {"kcal": 197, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson":{"manuel":5}},
-              {"id":"melon-uvas","name":"Melón o uvas","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson": {}},
+              {"id":"melon-uvas","name":"Melón o uvas","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Sirve {{yogur-natural.total}} de yogur en boles."},
@@ -90,14 +92,14 @@
               "manuel": {"kcal": 493, "proteinG": 32}
             },
             "ingredients": [
-              {"id":"garbanzos-cocidos","name":"Garbanzos cocidos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":180,"extraByPerson":{"manuel":60}},
-              {"id":"atun-natural","name":"Atún al natural","category":"Carnes y pescados","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":40}},
-              {"id":"pimiento-asado","name":"Pimiento asado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":70,"extraByPerson":{"manuel":20}},
-              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":120,"extraByPerson":{"manuel":30}},
-              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":0}},
-              {"id":"aceitunas-negras","name":"Aceitunas negras","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":15,"extraByPerson":{"manuel":0}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":2}},
-              {"id":"vinagre-modena","name":"Vinagre de Módena","category":"Despensa","unit":"ml","baseQuantity":5,"extraByPerson":{"manuel":0}}
+              {"id":"garbanzos-cocidos","name":"Garbanzos cocidos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":180,"extraByPerson": {}},
+              {"id":"atun-natural","name":"Atún al natural","category":"Carnes y pescados","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"pimiento-asado","name":"Pimiento asado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":70,"extraByPerson": {}},
+              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":120,"extraByPerson": {}},
+              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson": {}},
+              {"id":"aceitunas-negras","name":"Aceitunas negras","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":15,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"vinagre-modena","name":"Vinagre de Módena","category":"Despensa","unit":"ml","baseQuantity":5,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Escurre {{garbanzos-cocidos.total}} de garbanzos y {{atun-natural.total}} de atún."},
@@ -121,9 +123,9 @@
               "manuel": {"kcal": 175, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson":{"manuel":5}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Corta {{manzana.total}} de manzana en dados."},
@@ -146,11 +148,11 @@
               "manuel": {"kcal": 305, "proteinG": 37}
             },
             "ingredients": [
-              {"id":"merluza","name":"Merluza","category":"Carnes y pescados","unit":"g","baseQuantity":180,"extraByPerson":{"manuel":40}},
-              {"id":"calabacin","name":"Calabacín","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"pimiento","name":"Pimiento","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":20}},
-              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":10}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":2}}
+              {"id":"merluza","name":"Merluza","category":"Carnes y pescados","unit":"g","baseQuantity":180,"extraByPerson": {}},
+              {"id":"calabacin","name":"Calabacín","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"pimiento","name":"Pimiento","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Precalienta el horno a 200 °C."},
@@ -179,11 +181,11 @@
               "manuel": {"kcal": 350, "proteinG": 13}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":75}},
-              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":30}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":10}},
-              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson":{"manuel":200}},
-              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson":{"manuel":150}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson": {}},
+              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Calienta {{leche-desnatada.total}} de leche y prepara el café."},
@@ -206,10 +208,10 @@
               "manuel": {"kcal": 210, "proteinG": 9}
             },
             "ingredients": [
-              {"id":"hummus","name":"Hummus de garbanzos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":20}},
-              {"id":"zanahoria","name":"Zanahoria","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":20}},
-              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":20}},
-              {"id":"picos-integrales","name":"Picos integrales","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":10}}
+              {"id":"hummus","name":"Hummus de garbanzos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"zanahoria","name":"Zanahoria","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"picos-integrales","name":"Picos integrales","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":20,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Corta {{zanahoria.total}} de zanahoria y {{pepino.total}} de pepino en bastones."},
@@ -231,13 +233,13 @@
               "manuel": {"kcal": 540, "proteinG": 42}
             },
             "ingredients": [
-              {"id":"pasta-integral-cocida","name":"Pasta integral cocida","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":70,"extraByPerson":{"manuel":20}},
-              {"id":"pechuga-pollo","name":"Pechuga de pollo","category":"Carnes y pescados","unit":"g","baseQuantity":120,"extraByPerson":{"manuel":40}},
-              {"id":"tomate-cherry","name":"Tomate cherry","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"aceitunas-negras","name":"Aceitunas negras","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":15,"extraByPerson":{"manuel":0}},
-              {"id":"queso-feta","name":"Queso feta","category":"Huevos y lácteos","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":10}},
-              {"id":"rucula","name":"Rúcula","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":5}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":2}}
+              {"id":"pasta-integral-cocida","name":"Pasta integral cocida","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":70,"extraByPerson": {}},
+              {"id":"pechuga-pollo","name":"Pechuga de pollo","category":"Carnes y pescados","unit":"g","baseQuantity":120,"extraByPerson": {}},
+              {"id":"tomate-cherry","name":"Tomate cherry","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"aceitunas-negras","name":"Aceitunas negras","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":15,"extraByPerson": {}},
+              {"id":"queso-feta","name":"Queso feta","category":"Huevos y lácteos","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"rucula","name":"Rúcula","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Cuece {{pasta-integral-cocida.total}} de pasta y enfría."},
@@ -261,9 +263,9 @@
               "manuel": {"kcal": 180, "proteinG": 5}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":25,"extraByPerson":{"manuel":15}},
-              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson":{"manuel":15}},
-              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"al gusto","baseQuantity":0,"extraByPerson":{}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":25,"extraByPerson": {}},
+              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson": {}},
+              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"al gusto","baseQuantity":0,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Tuesta {{pan-integral.total}} de pan."},
@@ -285,11 +287,11 @@
               "manuel": {"kcal": 320, "proteinG": 24}
             },
             "ingredients": [
-              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson":{"manuel":1}},
-              {"id":"queso-rallado-light","name":"Queso rallado light","category":"Huevos y lácteos","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":10}},
-              {"id":"espinacas-frescas","name":"Espinacas frescas","category":"Frutas y Verduras","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":0}},
-              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":0}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson":{"manuel":2}}
+              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson": {}},
+              {"id":"queso-rallado-light","name":"Queso rallado light","category":"Huevos y lácteos","unit":"g","baseQuantity":20,"extraByPerson": {}},
+              {"id":"espinacas-frescas","name":"Espinacas frescas","category":"Frutas y Verduras","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Saltea {{espinacas-frescas.total}} de espinacas durante 2 minutos."},
@@ -318,11 +320,11 @@
               "manuel": {"kcal": 350, "proteinG": 13}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":75}},
-              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":30}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":10}},
-              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson":{"manuel":200}},
-              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson":{"manuel":150}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson": {}},
+              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Prepara café con {{leche-desnatada.total}} de leche."},
@@ -345,9 +347,9 @@
               "manuel": {"kcal": 197, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson":{"manuel":5}},
-              {"id":"uvas","name":"Uvas","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson": {}},
+              {"id":"uvas","name":"Uvas","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Sirve {{yogur-natural.total}} de yogur con {{nueces.total}} de nueces y {{uvas.total}} de uvas."}
@@ -369,13 +371,13 @@
               "manuel": {"kcal": 520, "proteinG": 25}
             },
             "ingredients": [
-              {"id":"quinoa-cocida","name":"Quinoa cocida","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":150,"extraByPerson":{"manuel":50}},
-              {"id":"salmon-ahumado","name":"Salmón ahumado","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":30}},
-              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":20}},
-              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"tomate-cherry","name":"Tomate cherry","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":15}},
-              {"id":"rucula","name":"Rúcula","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":5}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson":{"manuel":2}}
+              {"id":"quinoa-cocida","name":"Quinoa cocida","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":150,"extraByPerson": {}},
+              {"id":"salmon-ahumado","name":"Salmón ahumado","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"tomate-cherry","name":"Tomate cherry","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"rucula","name":"Rúcula","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Cuece {{quinoa-cocida.total}} de quinoa y deja enfriar."},
@@ -399,9 +401,9 @@
               "manuel": {"kcal": 175, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson":{"manuel":5}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Mezcla {{yogur-natural.total}} de yogur con {{manzana.total}} de manzana y {{almendras.total}} de almendras."}
@@ -423,11 +425,11 @@
               "manuel": {"kcal": 300, "proteinG": 36}
             },
             "ingredients": [
-              {"id":"dorada","name":"Dorada","category":"Carnes y pescados","unit":"g","baseQuantity":180,"extraByPerson":{"manuel":40}},
-              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"unidades","baseQuantity":0.5,"extraByPerson":{"manuel":0.5}},
-              {"id":"ajo","name":"Ajo","category":"Frutas y Verduras","unit":"dientes","baseQuantity":1,"extraByPerson":{"manuel":1}},
-              {"id":"hierbas-provenzales","name":"Hierbas provenzales","category":"Despensa","unit":"al gusto","baseQuantity":0,"extraByPerson":{}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":2}}
+              {"id":"dorada","name":"Dorada","category":"Carnes y pescados","unit":"g","baseQuantity":180,"extraByPerson": {}},
+              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"unidades","baseQuantity":0.5,"extraByPerson": {}},
+              {"id":"ajo","name":"Ajo","category":"Frutas y Verduras","unit":"dientes","baseQuantity":1,"extraByPerson": {}},
+              {"id":"hierbas-provenzales","name":"Hierbas provenzales","category":"Despensa","unit":"al gusto","baseQuantity":0,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Precalienta el horno a 200 °C."},
@@ -456,11 +458,11 @@
               "manuel": {"kcal": 350, "proteinG": 13}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":75}},
-              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":30}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":10}},
-              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson":{"manuel":200}},
-              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson":{"manuel":150}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson": {}},
+              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Prepara café con {{leche-desnatada.total}} de leche."},
@@ -483,10 +485,10 @@
               "manuel": {"kcal": 210, "proteinG": 9}
             },
             "ingredients": [
-              {"id":"hummus","name":"Hummus de garbanzos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":20}},
-              {"id":"zanahoria","name":"Zanahoria","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":20}},
-              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson":{"manuel":20}},
-              {"id":"picos-integrales","name":"Picos integrales","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":10}}
+              {"id":"hummus","name":"Hummus de garbanzos","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"zanahoria","name":"Zanahoria","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"pepino","name":"Pepino","category":"Frutas y Verduras","unit":"g","baseQuantity":80,"extraByPerson": {}},
+              {"id":"picos-integrales","name":"Picos integrales","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":20,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Prepara {{zanahoria.total}} de zanahoria y {{pepino.total}} de pepino en bastones."},
@@ -508,13 +510,13 @@
               "manuel": {"kcal": 500, "proteinG": 28}
             },
             "ingredients": [
-              {"id":"patata","name":"Patata","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson":{"manuel":50}},
-              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":1}},
-              {"id":"atun-natural","name":"Atún al natural","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":30}},
-              {"id":"pimiento-asado","name":"Pimiento asado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":0}},
-              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":0}},
-              {"id":"aceitunas","name":"Aceitunas","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":10,"extraByPerson":{"manuel":0}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":0}}
+              {"id":"patata","name":"Patata","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson": {}},
+              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"atun-natural","name":"Atún al natural","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"pimiento-asado","name":"Pimiento asado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson": {}},
+              {"id":"aceitunas","name":"Aceitunas","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":10,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Cuece {{patata.total}} de patata y {{huevos.total}} de huevos."},
@@ -537,9 +539,9 @@
               "manuel": {"kcal": 180, "proteinG": 5}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":25,"extraByPerson":{"manuel":15}},
-              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson":{"manuel":15}},
-              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"al gusto","baseQuantity":0,"extraByPerson":{}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":25,"extraByPerson": {}},
+              {"id":"aguacate","name":"Aguacate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson": {}},
+              {"id":"limon","name":"Limón","category":"Frutas y Verduras","unit":"al gusto","baseQuantity":0,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Tuesta {{pan-integral.total}} de pan."},
@@ -561,10 +563,10 @@
               "manuel": {"kcal": 310, "proteinG": 22}
             },
             "ingredients": [
-              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson":{"manuel":1}},
-              {"id":"calabacin","name":"Calabacín","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"queso-fresco-batido","name":"Queso fresco batido 0%","category":"Huevos y lácteos","unit":"g","baseQuantity":40,"extraByPerson":{"manuel":20}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson":{"manuel":2}}
+              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson": {}},
+              {"id":"calabacin","name":"Calabacín","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"queso-fresco-batido","name":"Queso fresco batido 0%","category":"Huevos y lácteos","unit":"g","baseQuantity":40,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":8,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Saltea {{calabacin.total}} de calabacín con {{aove.total}} de AOVE durante 5 minutos."},
@@ -593,11 +595,11 @@
               "manuel": {"kcal": 350, "proteinG": 13}
             },
             "ingredients": [
-              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":75}},
-              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":30}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson":{"manuel":10}},
-              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson":{"manuel":200}},
-              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson":{"manuel":150}}
+              {"id":"pan-integral","name":"Pan integral","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"tomate-triturado","name":"Tomate triturado","category":"Legumbres, Cereales y Conservas","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":10,"extraByPerson": {}},
+              {"id":"leche-desnatada","name":"Leche desnatada","category":"Huevos y lácteos","unit":"ml","baseQuantity":200,"extraByPerson": {}},
+              {"id":"naranja","name":"Naranja","category":"Frutas y Verduras","unit":"g","baseQuantity":150,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Prepara café con {{leche-desnatada.total}} de leche."},
@@ -620,9 +622,9 @@
               "manuel": {"kcal": 197, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson":{"manuel":5}},
-              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"nueces","name":"Nueces","category":"Despensa","unit":"g","baseQuantity":15,"extraByPerson": {}},
+              {"id":"melon","name":"Melón","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Sirve {{yogur-natural.total}} de yogur con {{nueces.total}} de nueces y {{melon.total}} de melón."}
@@ -644,11 +646,11 @@
               "manuel": {"kcal": 560, "proteinG": 22}
             },
             "ingredients": [
-              {"id":"patata","name":"Patata","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson":{"manuel":50}},
-              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson":{"manuel":1}},
-              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson":{"manuel":0}},
-              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":15,"extraByPerson":{"manuel":5}},
-              {"id":"ensalada-verde","name":"Lechuga y tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}}
+              {"id":"patata","name":"Patata","category":"Frutas y Verduras","unit":"g","baseQuantity":200,"extraByPerson": {}},
+              {"id":"huevos","name":"Huevos","category":"Huevos y lácteos","unit":"unidades","baseQuantity":2,"extraByPerson": {}},
+              {"id":"cebolla","name":"Cebolla","category":"Frutas y Verduras","unit":"g","baseQuantity":50,"extraByPerson": {}},
+              {"id":"aove","name":"Aceite de oliva virgen extra","category":"Despensa","unit":"ml","baseQuantity":15,"extraByPerson": {}},
+              {"id":"ensalada-verde","name":"Lechuga y tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Pela y lamina {{patata.total}} de patata y {{cebolla.total}} de cebolla."},
@@ -672,9 +674,9 @@
               "manuel": {"kcal": 175, "proteinG": 8}
             },
             "ingredients": [
-              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":0.4}},
-              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson":{"manuel":30}},
-              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson":{"manuel":5}}
+              {"id":"yogur-natural","name":"Yogur natural","category":"Huevos y lácteos","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"manzana","name":"Manzana","category":"Frutas y Verduras","unit":"g","baseQuantity":100,"extraByPerson": {}},
+              {"id":"almendras","name":"Almendras","category":"Despensa","unit":"g","baseQuantity":10,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Mezcla {{yogur-natural.total}} de yogur con {{manzana.total}} de manzana y {{almendras.total}} de almendras."}
@@ -696,12 +698,12 @@
               "manuel": {"kcal": 330, "proteinG": 24}
             },
             "ingredients": [
-              {"id":"tortilla-integral","name":"Tortilla integral de trigo","category":"Legumbres, Cereales y Conservas","unit":"unidades","baseQuantity":1,"extraByPerson":{"manuel":1}},
-              {"id":"pavo-lonchas","name":"Pechuga de pavo en lonchas","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson":{"manuel":30}},
-              {"id":"queso-fresco-light","name":"Queso fresco light","category":"Huevos y lácteos","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":0}},
-              {"id":"lechuga","name":"Lechuga","category":"Frutas y Verduras","unit":"g","baseQuantity":30,"extraByPerson":{"manuel":0}},
-              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson":{"manuel":0}},
-              {"id":"zanahoria","name":"Zanahoria rallada","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson":{"manuel":0}}
+              {"id":"tortilla-integral","name":"Tortilla integral de trigo","category":"Legumbres, Cereales y Conservas","unit":"unidades","baseQuantity":1,"extraByPerson": {}},
+              {"id":"pavo-lonchas","name":"Pechuga de pavo en lonchas","category":"Carnes y pescados","unit":"g","baseQuantity":60,"extraByPerson": {}},
+              {"id":"queso-fresco-light","name":"Queso fresco light","category":"Huevos y lácteos","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"lechuga","name":"Lechuga","category":"Frutas y Verduras","unit":"g","baseQuantity":30,"extraByPerson": {}},
+              {"id":"tomate","name":"Tomate","category":"Frutas y Verduras","unit":"g","baseQuantity":40,"extraByPerson": {}},
+              {"id":"zanahoria","name":"Zanahoria rallada","category":"Frutas y Verduras","unit":"g","baseQuantity":20,"extraByPerson": {}}
             ],
             "steps": [
               {"order":1,"text":"Calienta {{tortilla-integral.total}} de tortillas integrales."},

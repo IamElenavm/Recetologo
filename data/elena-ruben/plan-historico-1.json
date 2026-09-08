@@ -11,13 +11,15 @@
         {
             "id": "elena",
             "name": "Elena",
-            "isBase": true
-        },
+            "isBase":true,
+			"calorieTarget":1600
+		},
         {
-            "id": "ruben",
-            "name": "Ruben",
-            "isBase": false
-        }
+			"id":"ruben",
+			"name":"Ruben",
+			"isBase":false,
+			"calorieTarget":2100
+		}
     ],
     "days": [
         {
@@ -60,9 +62,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "rebanadas",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "queso-fresco-batido-0",
@@ -86,9 +86,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 25,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -174,9 +172,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "manzana-verde",
@@ -236,9 +232,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 70
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "garbanzos-cocidos",
@@ -246,9 +240,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 160,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pimientos-piquillo",
@@ -380,9 +372,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 20,
-                                "extraByPerson": {
-                                    "ruben": 10
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pavo-lonchas",
@@ -390,9 +380,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "naranja-mandarina",
@@ -400,9 +388,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 120,
-                                "extraByPerson": {
-                                    "ruben": 120
-                                }
+                                "extraByPerson": {}
                             }
                         ],
                         "steps": [
@@ -448,9 +434,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "gambas-peladas",
@@ -458,9 +442,7 @@
                                 "category": "Congelados",
                                 "unit": "g",
                                 "baseQuantity": 100,
-                                "extraByPerson": {
-                                    "ruben": 50
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "esparragos-trigueros",
@@ -573,9 +555,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "rebanadas",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "queso-fresco-batido-0",
@@ -599,9 +579,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 25,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -652,9 +630,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "manzana-verde",
@@ -710,9 +686,7 @@
                                 "category": "Congelados",
                                 "unit": "g",
                                 "baseQuantity": 200,
-                                "extraByPerson": {
-                                    "ruben": 80
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "tomate-pera",
@@ -768,9 +742,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 50
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pera",
@@ -830,9 +802,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 20,
-                                "extraByPerson": {
-                                    "ruben": 10
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pavo-lonchas",
@@ -840,9 +810,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "naranja-mandarina",
@@ -850,9 +818,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 120,
-                                "extraByPerson": {
-                                    "ruben": 120
-                                }
+                                "extraByPerson": {}
                             }
                         ],
                         "steps": [
@@ -891,9 +857,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aguacate",
@@ -941,9 +905,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -1036,9 +998,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "rebanadas",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "queso-fresco-batido-0",
@@ -1062,9 +1022,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 25,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -1111,9 +1069,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "manzana-verde",
@@ -1169,9 +1125,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 175,
-                                "extraByPerson": {
-                                    "ruben": 75
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "boniato",
@@ -1179,9 +1133,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 180,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "espinacas-frescas",
@@ -1289,9 +1241,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 20,
-                                "extraByPerson": {
-                                    "ruben": 10
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pavo-lonchas",
@@ -1299,9 +1249,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "naranja-mandarina",
@@ -1309,9 +1257,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 120,
-                                "extraByPerson": {
-                                    "ruben": 120
-                                }
+                                "extraByPerson": {}
                             }
                         ],
                         "steps": [
@@ -1350,9 +1296,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 250,
-                                "extraByPerson": {
-                                    "ruben": 100
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "tomate-pera",
@@ -1477,9 +1421,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "rebanadas",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "queso-fresco-batido-0",
@@ -1503,9 +1445,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 25,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -1552,9 +1492,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "manzana-verde",
@@ -1610,9 +1548,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 70
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "garbanzos-cocidos",
@@ -1620,9 +1556,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 160,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pimientos-piquillo",
@@ -1722,9 +1656,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 20,
-                                "extraByPerson": {
-                                    "ruben": 10
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pavo-lonchas",
@@ -1732,9 +1664,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "naranja-mandarina",
@@ -1742,9 +1672,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 120,
-                                "extraByPerson": {
-                                    "ruben": 120
-                                }
+                                "extraByPerson": {}
                             }
                         ],
                         "steps": [
@@ -1783,9 +1711,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aguacate",
@@ -1833,9 +1759,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -1924,9 +1848,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "rebanadas",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "queso-fresco-batido-0",
@@ -1950,9 +1872,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 25,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
@@ -1999,9 +1919,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "manzana-verde",
@@ -2057,9 +1975,7 @@
                                 "category": "Congelados",
                                 "unit": "g",
                                 "baseQuantity": 200,
-                                "extraByPerson": {
-                                    "ruben": 80
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "tomate-pera",
@@ -2115,9 +2031,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 50
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pera",
@@ -2169,9 +2083,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 20,
-                                "extraByPerson": {
-                                    "ruben": 10
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pavo-lonchas",
@@ -2179,9 +2091,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 40,
-                                "extraByPerson": {
-                                    "ruben": 13
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "naranja-mandarina",
@@ -2189,9 +2099,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 120,
-                                "extraByPerson": {
-                                    "ruben": 120
-                                }
+                                "extraByPerson": {}
                             }
                         ],
                         "steps": [
@@ -2230,9 +2138,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 2,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "gambas-peladas",
@@ -2240,9 +2146,7 @@
                                 "category": "Congelados",
                                 "unit": "g",
                                 "baseQuantity": 100,
-                                "extraByPerson": {
-                                    "ruben": 50
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "esparragos-trigueros",
@@ -2347,9 +2251,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 45,
-                                "extraByPerson": {
-                                    "ruben": 15
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "claras-huevo",
@@ -2381,9 +2283,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "frutos-rojos",
@@ -2441,9 +2341,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 60,
-                                "extraByPerson": {
-                                    "ruben": 30
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "zanahoria",
@@ -2451,9 +2349,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 80,
-                                "extraByPerson": {
-                                    "ruben": 80
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pepino",
@@ -2519,9 +2415,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 175,
-                                "extraByPerson": {
-                                    "ruben": 75
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "boniato",
@@ -2529,9 +2423,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 180,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "espinacas-frescas",
@@ -2653,9 +2545,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "ml",
                                 "baseQuantity": 200,
-                                "extraByPerson": {
-                                    "ruben": 100
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "fresas",
@@ -2671,9 +2561,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "g",
                                 "baseQuantity": 80,
-                                "extraByPerson": {
-                                    "ruben": 30
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "cacao-puro",
@@ -2746,9 +2634,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 250,
-                                "extraByPerson": {
-                                    "ruben": 100
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "tomate-pera",
@@ -2899,9 +2785,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 45,
-                                "extraByPerson": {
-                                    "ruben": 15
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "claras-huevo",
@@ -2933,9 +2817,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "frutos-rojos",
@@ -3000,9 +2882,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 60,
-                                "extraByPerson": {
-                                    "ruben": 30
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "zanahoria",
@@ -3010,9 +2890,7 @@
                                 "category": "Frutas y Verduras",
                                 "unit": "g",
                                 "baseQuantity": 80,
-                                "extraByPerson": {
-                                    "ruben": 80
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pepino",
@@ -3086,9 +2964,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 70
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "garbanzos-cocidos",
@@ -3096,9 +2972,7 @@
                                 "category": "Legumbres, Cereales y Conservas",
                                 "unit": "g",
                                 "baseQuantity": 160,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "pimientos-piquillo",
@@ -3244,9 +3118,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "ml",
                                 "baseQuantity": 200,
-                                "extraByPerson": {
-                                    "ruben": 100
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "fresas",
@@ -3262,9 +3134,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "g",
                                 "baseQuantity": 80,
-                                "extraByPerson": {
-                                    "ruben": 30
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "cacao-puro",
@@ -3333,9 +3203,7 @@
                                 "category": "Carnes y pescados",
                                 "unit": "g",
                                 "baseQuantity": 150,
-                                "extraByPerson": {
-                                    "ruben": 60
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aguacate",
@@ -3383,9 +3251,7 @@
                                 "category": "Huevos y lácteos",
                                 "unit": "unidades",
                                 "baseQuantity": 1,
-                                "extraByPerson": {
-                                    "ruben": 1
-                                }
+                                "extraByPerson": {}
                             },
                             {
                                 "id": "aove",
