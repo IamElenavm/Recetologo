@@ -7,7 +7,7 @@
       "description": "Planes nutricionales de Elena y Ruben",
       "plans": [
         {
-          "id": "menu-super-buenos-semana-1",
+          "id": "ruben-elena-semana-1",
           "title": "Plan nutricional · Semana 1",
           "periodLabel": "Plan de 7 días · Elena y Ruben",
           "file": "data/elena-ruben/plan-historico-1.json"
@@ -49,6 +49,18 @@
           "title": "Plan nutricional · Semana 1",
           "periodLabel": "Plan individual de 7 días",
           "file": "data/abuela/abuela-semana-1.json"
+        },
+		{
+          "id": "abuela-semana-2",
+          "title": "Plan nutricional · Semana 2",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-2.json"
+        },
+		{
+          "id": "abuela-semana-3",
+          "title": "Plan nutricional · Semana 3",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-3.json"
         }
       ]
     }
