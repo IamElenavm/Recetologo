@@ -1,0 +1,219 @@
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="description" content="Planificador nutricional con menús, recetas y lista de compra.">
+  <title>Recetólogo</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer=""></script>
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="site-header no-print">
+      <div class="header-inner">
+       <button id="home-button" class="brand" type="button" aria-label="Volver a la página principal">
+          <span class="brand-icon" aria-hidden="true">✦</span>
+          <span>Recetólogo</span>
+        </button>
+
+        <button id="open-selector-button" class="icon-button" type="button" aria-label="Cambiar perfil o plan" title="Cambiar plan">
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
+    </header>
+
+<main id="app-main" class="main-content">
+      <section id="home-page" class="home-page" aria-labelledby="home-title">
+        <div class="home-page__intro">
+          <p class="eyebrow">Bienvenidos</p>
+          <h1 id="home-title">Elige tu plan</h1>
+          <p>Selecciona un perfil para consultar sus recetas, menú y lista de compra.</p>
+        </div>
+
+        <div id="home-profiles-grid" class="profiles-app-grid" aria-label="Perfiles disponibles"></div>
+      </section>
+
+      <section id="profile-plans-page" class="profile-plans-page is-hidden" aria-labelledby="profile-plans-title">
+        <button id="back-to-home-button" class="back-button" type="button">
+          <span aria-hidden="true">←</span>
+          Todos los perfiles
+        </button>
+
+        <div class="profile-plans-page__intro">
+          <p class="eyebrow">Tus planes</p>
+          <h1 id="profile-plans-title">Perfil</h1>
+          <p id="profile-plans-description"></p>
+        </div>
+
+        <div id="profile-plans-list" class="profile-plans-list" aria-label="Planes disponibles"></div>
+      </section>
+
+      <section id="loading-state" class="loading-state" aria-live="polite">
+        <div class="loading-orb" aria-hidden="true"></div>
+        <p id="loading-text">Cargando tu plan nutricional…</p>
+      </section>
+
+      <section id="app-content" class="is-hidden"> <button id="back-to-profile-plans-button" class="back-button no-print" type="button"> <span aria-hidden="true">←</span> Ver planes del perfil </button>
+        <section class="hero-card">
+          <div class="hero-card__top">
+            <p id="profile-name" class="eyebrow">Perfil</p>
+            <span id="people-count-badge" class="people-badge"></span>
+          </div>
+
+          <h1 id="plan-title">Plan nutricional</h1>
+          <p id="plan-subtitle" class="hero-card__subtitle"></p>
+
+          <div class="plan-meta">
+            <span id="plan-period" class="meta-chip"></span>
+            <span id="plan-days-count" class="meta-chip"></span>
+          </div>
+
+          <button id="change-plan-button" class="text-action no-print" type="button">
+            Cambiar perfil o plan
+            <span aria-hidden="true">→</span>
+          </button>
+        </section>
+
+        <section class="action-grid no-print" aria-label="Acciones del plan">
+          <button id="print-menu-button" class="action-button action-button--teal" type="button">
+            <span class="action-button__icon" aria-hidden="true">↓</span>
+            <span>
+              <strong>Guardar menú</strong>
+              <small>PDF</small>
+            </span>
+          </button>
+
+          <button id="print-shopping-button" class="action-button action-button--pink" type="button">
+            <span class="action-button__icon" aria-hidden="true">↓</span>
+            <span>
+              <strong>Guardar compra</strong>
+              <small>PDF</small>
+            </span>
+          </button>
+        </section>
+
+        <nav class="main-tabs no-print" aria-label="Secciones del plan">
+          <button class="tab-button is-active" type="button" data-tab-target="menu" aria-controls="menu-panel" aria-selected="true">
+            <span aria-hidden="true">🍽️</span>
+            Menú
+          </button>
+
+          <button class="tab-button" type="button" data-tab-target="shopping" aria-controls="shopping-panel" aria-selected="false">
+            <span aria-hidden="true">🛒</span>
+            Compra
+          </button>
+        </nav>
+
+        <section id="menu-panel" class="tab-panel is-active" data-tab-panel="menu" aria-label="Menú del plan">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Tu planificación</p>
+              <h2 id="menu-heading">Menú</h2>
+            </div>
+            <span id="menu-summary" class="section-summary"></span>
+          </div>
+
+          <div id="menu-container" class="days-list"></div>
+        </section>
+
+        <section id="shopping-panel" class="tab-panel" data-tab-panel="shopping" aria-label="Lista de compra" hidden="">
+          <section class="shopping-progress-card no-print">
+            <div class="shopping-progress-card__top">
+              <div>
+                <p class="eyebrow">Lista consolidada</p>
+                <h2>Compra</h2>
+              </div>
+
+              <button id="reset-shopping-button" class="reset-button" type="button">
+                Reiniciar
+              </button>
+            </div>
+
+            <div class="progress-copy">
+              <span id="shopping-progress-text">0 de 0 productos marcados</span>
+              <span id="shopping-progress-percent">0%</span>
+            </div>
+
+            <div class="progress-track" role="progressbar" aria-label="Progreso de la compra" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div id="shopping-progress-bar" class="progress-fill"></div>
+            </div>
+          </section>
+
+          <div id="shopping-container" class="shopping-list"></div>
+        </section>
+      </section>
+
+      <section id="error-state" class="error-state is-hidden" aria-live="assertive">
+        <div class="error-icon" aria-hidden="true">!</div>
+        <p class="eyebrow">No se ha podido cargar</p>
+        <h1>Algo no ha salido como esperábamos</h1>
+        <p id="error-message">
+          Revisa que los archivos JSON estén disponibles y vuelve a intentarlo.
+        </p>
+        <button id="retry-button" class="primary-button" type="button">
+          Reintentar
+        </button>
+      </section>
+    </main>
+  </div>
+
+  <div id="print-menu-area" class="print-area" aria-hidden="true"></div>
+  <div id="print-shopping-area" class="print-area" aria-hidden="true"></div>
+
+  <div id="selector-overlay" class="modal-overlay no-print" aria-hidden="true"></div>
+
+  <section id="plan-selector-modal" class="selector-modal no-print" role="dialog" aria-modal="true" aria-labelledby="selector-title" aria-hidden="true">
+    <div class="modal-handle" aria-hidden="true"></div>
+
+    <div class="modal-header">
+      <div>
+        <p class="eyebrow">Biblioteca de planes</p>
+        <h2 id="selector-title">Elige un plan</h2>
+      </div>
+
+      <button id="close-selector-button" class="icon-button" type="button" aria-label="Cerrar selector">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div id="profile-selector-container" class="selector-content">
+      <p class="selector-help">
+        Selecciona un perfil y después el plan que quieres consultar.
+      </p>
+
+      <div id="profiles-list" class="profiles-list"></div>
+      <div id="plans-list" class="plans-list"></div>
+    </div>
+  </section>
+
+  <div id="recipe-overlay" class="modal-overlay no-print" aria-hidden="true"></div>
+
+  <section id="recipe-modal" class="recipe-modal no-print" role="dialog" aria-modal="true" aria-labelledby="recipe-modal-title" aria-hidden="true">
+    <div class="modal-handle" aria-hidden="true"></div>
+
+    <div class="recipe-modal__header">
+      <div>
+        <span id="recipe-modal-slot" class="meal-pill"></span>
+        <h2 id="recipe-modal-title"></h2>
+      </div>
+
+      <button id="close-recipe-button" class="icon-button" type="button" aria-label="Cerrar receta">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div id="recipe-modal-content" class="recipe-modal__content"></div>
+  </section>
+
+  <noscript>
+    <section class="noscript-message">
+      <h1>JavaScript es necesario</h1>
+      <p>
+        Esta aplicación necesita JavaScript activado para cargar los planes,
+        calcular ingredientes y generar las listas de compra.
+      </p>
+    </section>
+  </noscript>
+
+</body></html>

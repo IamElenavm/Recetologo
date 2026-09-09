@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "profiles": [
+    {
+      "id": "elena-ruben",
+      "name": "Elena y Ruben",
+      "description": "Planes nutricionales de Elena y Ruben",
+      "plans": [
+        {
+          "id": "ruben-elena-semana-1",
+          "title": "Plan nutricional · Semana 1",
+          "periodLabel": "Plan de 7 días",
+          "file": "data/elena-ruben/ruben-elena-semana-1.json"
+        },
+        {
+          "id": "ruben-semana-2",
+          "title": "Plan nutricional · Semana 2 · Rubén",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/elena-ruben/ruben-semana-2.json"
+        },
+		{
+          "id": "ruben-elena-semana-3",
+          "title": "Plan nutricional · Semana 3 · Rubén y Elena",
+          "periodLabel": "Plan de 7 días",
+          "file": "data/elena-ruben/ruben-elena-semana-3.json"
+        }
+      ]
+    },
+    {
+      "id": "maria-manuel-alicia",
+      "name": "María, Manuel y Alicia",
+      "description": "Planes individuales y compartidos",
+      "plans": [
+        {
+          "id": "alicia-semana-1",
+          "title": "Plan nutricional · Semana 1 · Alicia",
+          "periodLabel": "Plan individual de 5 días",
+          "file": "data/maria-manuel-alicia/alicia-semana-1.json"
+        },
+        {
+          "id": "maria-manuel-semana-1",
+          "title": "Plan nutricional · Semana 1 · María y Manuel",
+          "periodLabel": "Plan compartido de 5 días",
+          "file": "data/maria-manuel-alicia/maria-manuel-semana-1.json"
+        }
+      ]
+    },
+    {
+      "id": "abuela",
+      "name": "Abuela",
+      "description": "Plan individual",
+      "plans": [
+        {
+          "id": "abuela-semana-1",
+          "title": "Plan nutricional · Semana 1",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-1.json"
+        },
+		{
+          "id": "abuela-semana-2",
+          "title": "Plan nutricional · Semana 2",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-2.json"
+        },
+		{
+          "id": "abuela-semana-3",
+          "title": "Plan nutricional · Semana 3",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-3.json"
+        }
+      ]
+    }
+  ]
+}
