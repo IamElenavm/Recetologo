@@ -9,14 +9,20 @@
         {
           "id": "ruben-elena-semana-1",
           "title": "Plan nutricional · Semana 1",
-          "periodLabel": "Plan de 7 días · Elena y Ruben",
-          "file": "data/elena-ruben/plan-historico-1.json"
+          "periodLabel": "Plan de 7 días",
+          "file": "data/elena-ruben/ruben-elena-semana-1.json"
         },
         {
           "id": "ruben-semana-2",
           "title": "Plan nutricional · Semana 2 · Rubén",
           "periodLabel": "Plan individual de 7 días",
           "file": "data/elena-ruben/ruben-semana-2.json"
+        },
+		{
+          "id": "ruben-elena-semana-3",
+          "title": "Plan nutricional · Semana 3 · Rubén y Elena",
+          "periodLabel": "Plan de 7 días",
+          "file": "data/elena-ruben/ruben-elena-semana-3.json"
         }
       ]
     },
