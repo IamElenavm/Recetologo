@@ -23,6 +23,12 @@
           "title": "Plan nutricional · Semana 3 · Rubén y Elena",
           "periodLabel": "Plan de 7 días",
           "file": "data/elena-ruben/ruben-elena-semana-3.json"
+        },
+		{
+          "id": "ruben-elena-semana-4",
+          "title": "Plan nutricional · Semana 4 · Rubén y Elena",
+          "periodLabel": "Plan de 5 días",
+          "file": "data/elena-ruben/ruben-elena-semana-4.json"
         }
       ]
     },
