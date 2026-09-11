@@ -510,7 +510,7 @@ body { background: #ffffff !important; font-size: 10pt; }
 
 .print-document__subtitle { margin: 0; color: #555555; font-size: 10pt; }
 
-.print-day, .print-category { margin: 0 0 14px; break-inside: avoid; page-break-inside: avoid; }
+.print-day, .print-category { margin: 0 0 14px; }
 
 .print-day h2, .print-category h2 { margin: 0 0 7px; padding: 7px 10px; color: #ffffff; background: #0f766e; font-size: 12pt; }
 
@@ -520,14 +520,17 @@ body { background: #ffffff !important; font-size: 10pt; }
 
 .print-recipe p { margin: 0; color: #555555; font-size: 8.5pt; }
 
+.print-shopping-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
 .print-shopping-list { width: 100%; border-collapse: collapse; }
 
-.print-shopping-list td { padding: 7px 5px; border-bottom: 1px solid #d7dfdd; }
+.print-shopping-list td { padding: 5px 4px; border-bottom: 1px solid #d7dfdd; font-size: 9pt; }
 
-.print-shopping-list td:last-child { color: #0f766e; text-align: right; font-weight: 800; } 
-.print-recipe--complete {
-  padding: 11px 12px;
-}
+.print-shopping-list td:last-child { color: #0f766e; text-align: right; font-weight: 800; }
 
 .print-recipe--complete h3 {
   margin-bottom: 5px;
@@ -566,25 +569,31 @@ body { background: #ffffff !important; font-size: 10pt; }
   gap: 2px;
 }
 
-.print-ingredients-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 8pt;
-}
+.print-ingredients-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
 
-.print-ingredients-table th,
-.print-ingredients-table td {
-  padding: 5px;
-  border: 1px solid #d7dfdd;
-  text-align: left;
-  vertical-align: top;
-}
+  .print-ingredients-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7pt;
+  }
 
-.print-ingredients-table th {
-  color: #0f766e;
-  background: #f0fdfa;
-  font-size: 7.5pt;
-}
+  .print-ingredients-table th,
+  .print-ingredients-table td {
+    padding: 3px 4px;
+    border: 1px solid #d7dfdd;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .print-ingredients-table th {
+    color: #0f766e;
+    background: #f0fdfa;
+    font-size: 6.5pt;
+  }
 
 .print-recipe__notes {
   margin-top: 10px;

@@ -1005,27 +1005,37 @@ function printShopping() {
     <article class="print-document">
       ${renderPrintHeader("Lista consolidada", state.plan.title)}
       ${categories
-        .map(
-          (category) => `
+        .map((category) => {
+          const half = Math.ceil(category.items.length / 2);
+          const col1 = category.items.slice(0, half);
+          const col2 = category.items.slice(half);
+
+          const renderRows = (items) =>
+            items
+              .map(
+                (item) => `
+                  <tr>
+                    <td>${escapeHtml(item.name)}</td>
+                    <td>${escapeHtml(item.quantityLabel)}</td>
+                  </tr>
+                `
+              )
+              .join("");
+
+          return `
             <section class="print-category">
               <h2>${escapeHtml(category.category)}</h2>
-              <table class="print-shopping-list">
-                <tbody>
-                  ${category.items
-                    .map(
-                      (item) => `
-                        <tr>
-                          <td>${escapeHtml(item.name)}</td>
-                          <td>${escapeHtml(item.quantityLabel)}</td>
-                        </tr>
-                      `
-                    )
-                    .join("")}
-                </tbody>
-              </table>
+              <div class="print-shopping-cols">
+                <table class="print-shopping-list">
+                  <tbody>${renderRows(col1)}</tbody>
+                </table>
+                ${col2.length ? `<table class="print-shopping-list">
+                  <tbody>${renderRows(col2)}</tbody>
+                </table>` : `<div></div>`}
+              </div>
             </section>
-          `
-        )
+          `;
+        })
         .join("")}
     </article>
   `;
