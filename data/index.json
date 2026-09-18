@@ -48,6 +48,18 @@
           "title": "Plan nutricional · Semana 1 · María y Manuel",
           "periodLabel": "Plan compartido de 5 días",
           "file": "data/maria-manuel-alicia/maria-manuel-semana-1.json"
+        },
+		{
+          "id": "maria-manuel-alicia-semana-2",
+          "title": "Plan nutricional · Semana 2 · María, Manuel y Alicia",
+          "periodLabel": "Plan compartido de 7 días",
+          "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-2.json.json"
+        },
+		{
+          "id": "maria-manuel-alicia-semana-3",
+          "title": "Plan nutricional · Semana 3 · María, Manuel y Alicia",
+          "periodLabel": "Plan compartido de 7 días",
+          "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-3.json.json"
         }
       ]
     },
