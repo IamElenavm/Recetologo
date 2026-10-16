@@ -1,0 +1,982 @@
+{
+  "schemaVersion": "1.0",
+  "id": "elena-ruben-semana-5",
+  "profileId": "elena-ruben",
+  "title": "Plan nutricional · Semana 5 · Elena y Rubén",
+  "subtitle": "Menú de 7 días con meal prep",
+  "period": { "label": "Plan de 7 días" },
+  "people": [
+    { "id": "elena", "name": "Elena", "isBase": true, "calorieTarget": 1600 },
+    { "id": "ruben", "name": "Rubén", "isBase": false, "calorieTarget": 2000 }
+  ],
+  "days": [
+    {
+      "id": "dia-1",
+      "label": "Día 1",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tostada-integral-tomate-jamon-cafe",
+            "name": "Tostada integral con tomate, jamón y café",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 5,
+            "macrosByPerson": { "elena": { "kcal": 303, "proteinG": 21 } },
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "jamon-cocido-extra-magro", "name": "Jamón cocido extra magro y bajo en sal", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 2, "text": "Ralla el tomate y reparte {{tomate-fresco.total}} sobre la tostada." },
+              { "order": 3, "text": "Añade {{jamon-cocido-extra-magro.total}} de jamón cocido y aliña con {{aove.total}} de AOVE." },
+              { "order": 4, "text": "Sirve café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml (1 g ≈ 1,1 ml).", "Pan integral convertido de 50 g a 2 rebanadas (1 rebanada ≈ 27 g)."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "estofado-pollo-alubias",
+            "name": "Estofado de pollo, alubias blancas y verduras mediterráneas",
+            "emoji": "🍲",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 20,
+            "macrosByPerson": { "elena": { "kcal": 600, "proteinG": 50 } },
+            "ingredients": [
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 140, "extraByPerson": {} },
+              { "id": "alubias-blancas", "name": "Alubias blancas de bote escurridas", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 160, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Coloca en la olla {{pechuga-pollo.total}} de pollo, {{alubias-blancas.total}} de alubias escurridas, {{calabacin.total}} de calabacín, {{zanahoria.total}} de zanahoria, {{cebolla.total}} de cebolla, {{tomate-triturado.total}} de tomate triturado y {{ajo.total}} de ajo." },
+              { "order": 2, "text": "Añade {{aove.total}} de AOVE, pimienta, laurel y agua hasta cubrir ligeramente." },
+              { "order": 3, "text": "Cocina a fuego lento hasta que las verduras y el pollo estén tiernos." },
+              { "order": 4, "text": "Incorpora {{espinacas-frescas.total}} de espinacas al final y cocina unos minutos más." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral y {{naranja.total}} de naranja de postre." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 30 g a 1 rebanada."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "tortilla-espinacas-champinones-queso-fresco",
+            "name": "Tortilla de espinacas, champiñones y queso fresco con ensalada",
+            "emoji": "🍳",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 13,
+            "macrosByPerson": { "elena": { "kcal": 353, "proteinG": 33 } },
+            "ingredients": [
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "queso-fresco-ligero", "name": "Queso fresco ligero", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "champinon", "name": "Champiñón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "lechuga", "name": "Lechuga", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Saltea {{champinon.total}} de champiñón y {{espinacas-frescas.total}} de espinacas con la mitad del AOVE." },
+              { "order": 2, "text": "Bate {{huevos.total}} de huevo con {{claras-pasteurizadas.total}} de claras e incorpora {{queso-fresco-ligero.total}} de queso fresco ligero." },
+              { "order": 3, "text": "Cuaja la tortilla a fuego medio." },
+              { "order": 4, "text": "Aliña {{tomate-fresco.total}} de tomate y {{lechuga.total}} de lechuga con {{aove.total}} de AOVE restante." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-2",
+      "label": "Día 2",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tostada-integral-tomate-jamon-cafe",
+            "name": "Tostada integral con tomate, jamón y café",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 5,
+            "macrosByPerson": { "elena": { "kcal": 303, "proteinG": 21 } },
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "jamon-cocido-extra-magro", "name": "Jamón cocido extra magro y bajo en sal", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 2, "text": "Ralla el tomate y reparte {{tomate-fresco.total}} sobre la tostada." },
+              { "order": 3, "text": "Añade {{jamon-cocido-extra-magro.total}} de jamón cocido y aliña con {{aove.total}} de AOVE." },
+              { "order": 4, "text": "Sirve café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "merluza-horno-patata-judias",
+            "name": "Merluza al horno con patata, judías verdes y salsa ligera de yogur",
+            "emoji": "🐟",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 38,
+            "macrosByPerson": { "elena": { "kcal": 555, "proteinG": 45 } },
+            "ingredients": [
+              { "id": "merluza", "name": "Merluza", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "patata", "name": "Patata", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "judias-verdes", "name": "Judías verdes", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 8, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "perejil", "name": "Perejil fresco", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Corta {{patata.total}} de patata en rodajas finas y prepara {{judias-verdes.total}} de judías verdes." },
+              { "order": 2, "text": "Hornea la patata y las judías con {{aove.total}} de AOVE a 200 ºC durante 20 minutos." },
+              { "order": 3, "text": "Añade {{merluza.total}} de merluza y {{ajo.total}} de ajo con perejil al gusto; hornea 12-15 minutos más." },
+              { "order": 4, "text": "Prepara la salsa mezclando {{yogur-natural-0.total}} de yogur con el zumo de {{limon.total}} de limón." },
+              { "order": 5, "text": "Acompaña con {{pan-integral.total}} de pan integral y {{kiwi.total}} de kiwi de postre." }
+            ],
+            "notes": ["AOVE convertido de 7 g a 8 ml.", "Pan integral convertido de 30 g a 1 rebanada.", "Perejil normalizado como ingrediente 'al gusto'."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "ensalada-pollo-garbanzos-pimiento-naranja",
+            "name": "Ensalada templada de pollo, garbanzos, pimiento asado y naranja",
+            "emoji": "🥗",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 13,
+            "macrosByPerson": { "elena": { "kcal": 428, "proteinG": 36 } },
+            "ingredients": [
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 90, "extraByPerson": {} },
+              { "id": "garbanzos-cocidos", "name": "Garbanzos cocidos", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 70, "extraByPerson": {} },
+              { "id": "pimiento-asado-conserva", "name": "Pimiento asado en conserva", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "rucula", "name": "Rúcula", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "comino-suave", "name": "Comino suave", "category": "Despensa", "unit": "g", "baseQuantity": 1, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cocina a la plancha {{pechuga-pollo.total}} de pechuga de pollo con parte del AOVE." },
+              { "order": 2, "text": "Escurre y aclara {{garbanzos-cocidos.total}} de garbanzos." },
+              { "order": 3, "text": "Mezcla la salsa con {{yogur-natural-0.total}} de yogur, el zumo de {{limon.total}} de limón, {{comino-suave.total}} de comino suave y el AOVE restante ({{aove.total}} en total)." },
+              { "order": 4, "text": "Monta la ensalada con {{rucula.total}} de rúcula, {{pimiento-asado-conserva.total}} de pimiento asado, los garbanzos y el pollo templado." },
+              { "order": 5, "text": "Acompaña con {{pan-integral.total}} de pan integral y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-3",
+      "label": "Día 3",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tostada-integral-tomate-jamon-cafe",
+            "name": "Tostada integral con tomate, jamón y café",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 5,
+            "macrosByPerson": { "elena": { "kcal": 303, "proteinG": 21 } },
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "jamon-cocido-extra-magro", "name": "Jamón cocido extra magro y bajo en sal", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 2, "text": "Ralla el tomate y reparte {{tomate-fresco.total}} sobre la tostada." },
+              { "order": 3, "text": "Añade {{jamon-cocido-extra-magro.total}} de jamón cocido y aliña con {{aove.total}} de AOVE." },
+              { "order": 4, "text": "Sirve café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "albondigas-pavo-bulgur-tzatziki",
+            "name": "Albóndigas de pavo con bulgur y tzatziki ligero",
+            "emoji": "🍖",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 50,
+            "macrosByPerson": { "elena": { "kcal": 539, "proteinG": 47 } },
+            "ingredients": [
+              { "id": "pavo-picado", "name": "Pavo picado 5%", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 130, "extraByPerson": {} },
+              { "id": "bulgur-seco", "name": "Bulgur seco", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pepino", "name": "Pepino", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "eneldo", "name": "Eneldo", "category": "Despensa", "unit": "g", "baseQuantity": 2, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Forma albóndigas con {{pavo-picado.total}} de pavo picado, {{ajo.total}} de ajo, pimienta y {{eneldo.total}} de eneldo." },
+              { "order": 2, "text": "Dora las albóndigas con {{aove.total}} de AOVE." },
+              { "order": 3, "text": "Añade {{cebolla.total}} de cebolla, {{zanahoria.total}} de zanahoria, {{calabacin.total}} de calabacín y {{tomate-triturado.total}} de tomate triturado. Cocina tapado 20 minutos." },
+              { "order": 4, "text": "Cuece {{bulgur-seco.total}} de bulgur seco según las indicaciones del envase." },
+              { "order": 5, "text": "Para el tzatziki, mezcla {{yogur-natural-0.total}} de yogur con {{pepino.total}} de pepino rallado, ajo y eneldo." },
+              { "order": 6, "text": "Sirve con {{manzana.total}} de manzana de postre." }
+            ],
+            "notes": ["AOVE convertido de 4 g a 4 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "ensalada-quinoa-tofu-edamame",
+            "name": "Ensalada de quinoa, tofu y edamame con aliño de sésamo y limón",
+            "emoji": "🥗",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 15,
+            "macrosByPerson": { "elena": { "kcal": 402, "proteinG": 28 } },
+            "ingredients": [
+              { "id": "quinoa-seca", "name": "Quinoa seca", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 35, "extraByPerson": {} },
+              { "id": "tofu-firme", "name": "Tofu firme", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "edamame-congelado", "name": "Edamame congelado", "category": "Congelados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "pepino", "name": "Pepino", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "lechuga", "name": "Lechuga", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aceite-sesamo", "name": "Aceite de sésamo", "category": "Despensa", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "salsa-soja-reducida-sal", "name": "Salsa de soja reducida en sal", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 15, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cuece {{quinoa-seca.total}} de quinoa seca durante 10-12 minutos." },
+              { "order": 2, "text": "Calienta {{edamame-congelado.total}} de edamame en el microondas 3-4 minutos." },
+              { "order": 3, "text": "Dora {{tofu-firme.total}} de tofu en dados con {{aceite-sesamo.total}} de aceite de sésamo." },
+              { "order": 4, "text": "Mezcla {{salsa-soja-reducida-sal.total}} de salsa de soja con el zumo de {{limon.total}} de limón." },
+              { "order": 5, "text": "Monta con {{pepino.total}} de pepino, {{zanahoria.total}} de zanahoria, {{lechuga.total}} de lechuga, la quinoa, el edamame y el tofu." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-4",
+      "label": "Día 4",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tostada-integral-tomate-jamon-cafe",
+            "name": "Tostada integral con tomate, jamón y café",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 5,
+            "macrosByPerson": { "elena": { "kcal": 303, "proteinG": 21 } },
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "jamon-cocido-extra-magro", "name": "Jamón cocido extra magro y bajo en sal", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 2, "text": "Ralla el tomate y reparte {{tomate-fresco.total}} sobre la tostada." },
+              { "order": 3, "text": "Añade {{jamon-cocido-extra-magro.total}} de jamón cocido y aliña con {{aove.total}} de AOVE." },
+              { "order": 4, "text": "Sirve café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "estofado-pollo-alubias",
+            "name": "Estofado de pollo, alubias blancas y verduras mediterráneas",
+            "emoji": "🍲",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 20,
+            "macrosByPerson": { "elena": { "kcal": 600, "proteinG": 50 } },
+            "ingredients": [
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 140, "extraByPerson": {} },
+              { "id": "alubias-blancas", "name": "Alubias blancas de bote escurridas", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 160, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Coloca en la olla {{pechuga-pollo.total}} de pollo, {{alubias-blancas.total}} de alubias escurridas, {{calabacin.total}} de calabacín, {{zanahoria.total}} de zanahoria, {{cebolla.total}} de cebolla, {{tomate-triturado.total}} de tomate triturado y {{ajo.total}} de ajo." },
+              { "order": 2, "text": "Añade {{aove.total}} de AOVE, pimienta, laurel y agua hasta cubrir ligeramente." },
+              { "order": 3, "text": "Cocina a fuego lento hasta que las verduras y el pollo estén tiernos." },
+              { "order": 4, "text": "Incorpora {{espinacas-frescas.total}} de espinacas al final y cocina unos minutos más." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral y {{naranja.total}} de naranja de postre." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 30 g a 1 rebanada."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "tortilla-espinacas-champinones-queso-fresco",
+            "name": "Tortilla de espinacas, champiñones y queso fresco con ensalada",
+            "emoji": "🍳",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 13,
+            "macrosByPerson": { "elena": { "kcal": 353, "proteinG": 33 } },
+            "ingredients": [
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "queso-fresco-ligero", "name": "Queso fresco ligero", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "champinon", "name": "Champiñón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "lechuga", "name": "Lechuga", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Saltea {{champinon.total}} de champiñón y {{espinacas-frescas.total}} de espinacas con la mitad del AOVE." },
+              { "order": 2, "text": "Bate {{huevos.total}} de huevo con {{claras-pasteurizadas.total}} de claras e incorpora {{queso-fresco-ligero.total}} de queso fresco ligero." },
+              { "order": 3, "text": "Cuaja la tortilla a fuego medio." },
+              { "order": 4, "text": "Aliña {{tomate-fresco.total}} de tomate y {{lechuga.total}} de lechuga con {{aove.total}} de AOVE restante." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-5",
+      "label": "Día 5",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tostada-integral-tomate-jamon-cafe",
+            "name": "Tostada integral con tomate, jamón y café",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 5,
+            "macrosByPerson": { "elena": { "kcal": 303, "proteinG": 21 } },
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "jamon-cocido-extra-magro", "name": "Jamón cocido extra magro y bajo en sal", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 2, "text": "Ralla el tomate y reparte {{tomate-fresco.total}} sobre la tostada." },
+              { "order": 3, "text": "Añade {{jamon-cocido-extra-magro.total}} de jamón cocido y aliña con {{aove.total}} de AOVE." },
+              { "order": 4, "text": "Sirve café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "merluza-horno-patata-judias",
+            "name": "Merluza al horno con patata, judías verdes y salsa ligera de yogur",
+            "emoji": "🐟",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 38,
+            "macrosByPerson": { "elena": { "kcal": 555, "proteinG": 45 } },
+            "ingredients": [
+              { "id": "merluza", "name": "Merluza", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "patata", "name": "Patata", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "judias-verdes", "name": "Judías verdes", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 8, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "perejil", "name": "Perejil fresco", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Corta {{patata.total}} de patata en rodajas finas y prepara {{judias-verdes.total}} de judías verdes." },
+              { "order": 2, "text": "Hornea la patata y las judías con {{aove.total}} de AOVE a 200 ºC durante 20 minutos." },
+              { "order": 3, "text": "Añade {{merluza.total}} de merluza y {{ajo.total}} de ajo con perejil al gusto; hornea 12-15 minutos más." },
+              { "order": 4, "text": "Prepara la salsa mezclando {{yogur-natural-0.total}} de yogur con el zumo de {{limon.total}} de limón." },
+              { "order": 5, "text": "Acompaña con {{pan-integral.total}} de pan integral y {{kiwi.total}} de kiwi de postre." }
+            ],
+            "notes": ["AOVE convertido de 7 g a 8 ml.", "Pan integral convertido de 30 g a 1 rebanada.", "Perejil normalizado como ingrediente 'al gusto'."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "ensalada-pollo-garbanzos-pimiento-naranja",
+            "name": "Ensalada templada de pollo, garbanzos, pimiento asado y naranja",
+            "emoji": "🥗",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 13,
+            "macrosByPerson": { "elena": { "kcal": 428, "proteinG": 36 } },
+            "ingredients": [
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 90, "extraByPerson": {} },
+              { "id": "garbanzos-cocidos", "name": "Garbanzos cocidos", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 70, "extraByPerson": {} },
+              { "id": "pimiento-asado-conserva", "name": "Pimiento asado en conserva", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "rucula", "name": "Rúcula", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "comino-suave", "name": "Comino suave", "category": "Despensa", "unit": "g", "baseQuantity": 1, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cocina a la plancha {{pechuga-pollo.total}} de pechuga de pollo con parte del AOVE." },
+              { "order": 2, "text": "Escurre y aclara {{garbanzos-cocidos.total}} de garbanzos." },
+              { "order": 3, "text": "Mezcla la salsa con {{yogur-natural-0.total}} de yogur, el zumo de {{limon.total}} de limón, {{comino-suave.total}} de comino suave y el AOVE restante ({{aove.total}} en total)." },
+              { "order": 4, "text": "Monta la ensalada con {{rucula.total}} de rúcula, {{pimiento-asado-conserva.total}} de pimiento asado, los garbanzos y el pollo templado." },
+              { "order": 5, "text": "Acompaña con {{pan-integral.total}} de pan integral y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-6",
+      "label": "Día 6",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tortilla-francesa-queso-fresco-cafe",
+            "name": "Tortilla francesa con queso fresco y café",
+            "emoji": "🍳",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": { "elena": { "kcal": 317, "proteinG": 36 } },
+            "ingredients": [
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "queso-fresco-ligero", "name": "Queso fresco ligero", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Bate {{huevos.total}} de huevo con {{claras-pasteurizadas.total}} de claras pasteurizadas." },
+              { "order": 2, "text": "Cuaja la tortilla en una sartén antiadherente y añade {{queso-fresco-ligero.total}} de queso fresco ligero antes de cerrarla." },
+              { "order": 3, "text": "Sirve con {{tomate-fresco.total}} de tomate, {{pan-integral.total}} de pan integral y café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "albondigas-pavo-bulgur-tzatziki",
+            "name": "Albóndigas de pavo con bulgur y tzatziki ligero",
+            "emoji": "🍖",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 50,
+            "macrosByPerson": { "elena": { "kcal": 539, "proteinG": 47 } },
+            "ingredients": [
+              { "id": "pavo-picado", "name": "Pavo picado 5%", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 130, "extraByPerson": {} },
+              { "id": "bulgur-seco", "name": "Bulgur seco", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "yogur-natural-0", "name": "Yogur natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pepino", "name": "Pepino", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "eneldo", "name": "Eneldo", "category": "Despensa", "unit": "g", "baseQuantity": 2, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Forma albóndigas con {{pavo-picado.total}} de pavo picado, {{ajo.total}} de ajo, pimienta y {{eneldo.total}} de eneldo." },
+              { "order": 2, "text": "Dora las albóndigas con {{aove.total}} de AOVE." },
+              { "order": 3, "text": "Añade {{cebolla.total}} de cebolla, {{zanahoria.total}} de zanahoria, {{calabacin.total}} de calabacín y {{tomate-triturado.total}} de tomate triturado. Cocina tapado 20 minutos." },
+              { "order": 4, "text": "Cuece {{bulgur-seco.total}} de bulgur seco según las indicaciones del envase." },
+              { "order": 5, "text": "Para el tzatziki, mezcla {{yogur-natural-0.total}} de yogur con {{pepino.total}} de pepino rallado, ajo y eneldo." },
+              { "order": 6, "text": "Sirve con {{manzana.total}} de manzana de postre." }
+            ],
+            "notes": ["AOVE convertido de 4 g a 4 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "ensalada-quinoa-tofu-edamame",
+            "name": "Ensalada de quinoa, tofu y edamame con aliño de sésamo y limón",
+            "emoji": "🥗",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 15,
+            "macrosByPerson": { "elena": { "kcal": 402, "proteinG": 28 } },
+            "ingredients": [
+              { "id": "quinoa-seca", "name": "Quinoa seca", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 35, "extraByPerson": {} },
+              { "id": "tofu-firme", "name": "Tofu firme", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "edamame-congelado", "name": "Edamame congelado", "category": "Congelados", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "pepino", "name": "Pepino", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "lechuga", "name": "Lechuga", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aceite-sesamo", "name": "Aceite de sésamo", "category": "Despensa", "unit": "g", "baseQuantity": 3, "extraByPerson": {} },
+              { "id": "salsa-soja-reducida-sal", "name": "Salsa de soja reducida en sal", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 15, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cuece {{quinoa-seca.total}} de quinoa seca durante 10-12 minutos." },
+              { "order": 2, "text": "Calienta {{edamame-congelado.total}} de edamame en el microondas 3-4 minutos." },
+              { "order": 3, "text": "Dora {{tofu-firme.total}} de tofu en dados con {{aceite-sesamo.total}} de aceite de sésamo." },
+              { "order": 4, "text": "Mezcla {{salsa-soja-reducida-sal.total}} de salsa de soja con el zumo de {{limon.total}} de limón." },
+              { "order": 5, "text": "Monta con {{pepino.total}} de pepino, {{zanahoria.total}} de zanahoria, {{lechuga.total}} de lechuga, la quinoa, el edamame y el tofu." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-7",
+      "label": "Día 7",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "tortilla-francesa-queso-fresco-cafe",
+            "name": "Tortilla francesa con queso fresco y café",
+            "emoji": "🍳",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": { "elena": { "kcal": 317, "proteinG": 36 } },
+            "ingredients": [
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "queso-fresco-ligero", "name": "Queso fresco ligero", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cafe-molido", "name": "Café molido", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Bate {{huevos.total}} de huevo con {{claras-pasteurizadas.total}} de claras pasteurizadas." },
+              { "order": 2, "text": "Cuaja la tortilla en una sartén antiadherente y añade {{queso-fresco-ligero.total}} de queso fresco ligero antes de cerrarla." },
+              { "order": 3, "text": "Sirve con {{tomate-fresco.total}} de tomate, {{pan-integral.total}} de pan integral y café con {{leche-desnatada.total}} de leche desnatada." }
+            ],
+            "notes": ["Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "skyr-manzana",
+            "name": "Skyr con manzana",
+            "emoji": "🍎",
+            "tags": ["Media mañana"],
+            "timeMinutes": 2,
+            "macrosByPerson": { "elena": { "kcal": 168, "proteinG": 17 } },
+            "ingredients": [
+              { "id": "skyr-natural-0", "name": "Skyr natural 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Lleva un recipiente con {{skyr-natural-0.total}} de skyr natural 0%." },
+              { "order": 2, "text": "Añade {{manzana.total}} de manzana troceada justo antes de comer." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "estofado-pollo-alubias",
+            "name": "Estofado de pollo, alubias blancas y verduras mediterráneas",
+            "emoji": "🍲",
+            "tags": ["Comida", "Tupper"],
+            "timeMinutes": 20,
+            "macrosByPerson": { "elena": { "kcal": 600, "proteinG": 50 } },
+            "ingredients": [
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 140, "extraByPerson": {} },
+              { "id": "alubias-blancas", "name": "Alubias blancas de bote escurridas", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 160, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Coloca en la olla {{pechuga-pollo.total}} de pollo, {{alubias-blancas.total}} de alubias escurridas, {{calabacin.total}} de calabacín, {{zanahoria.total}} de zanahoria, {{cebolla.total}} de cebolla, {{tomate-triturado.total}} de tomate triturado y {{ajo.total}} de ajo." },
+              { "order": 2, "text": "Añade {{aove.total}} de AOVE, pimienta, laurel y agua hasta cubrir ligeramente." },
+              { "order": 3, "text": "Cocina a fuego lento hasta que las verduras y el pollo estén tiernos." },
+              { "order": 4, "text": "Incorpora {{espinacas-frescas.total}} de espinacas al final y cocina unos minutos más." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral y {{naranja.total}} de naranja de postre." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 30 g a 1 rebanada."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "queso-fresco-batido-avena-cacao",
+            "name": "Queso fresco batido con avena y cacao",
+            "emoji": "🥣",
+            "tags": ["Merienda"],
+            "timeMinutes": 3,
+            "macrosByPerson": { "elena": { "kcal": 169, "proteinG": 20 } },
+            "ingredients": [
+              { "id": "queso-fresco-batido-0", "name": "Queso fresco batido 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "copos-avena", "name": "Copos de avena", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 15, "extraByPerson": {} },
+              { "id": "cacao-puro", "name": "Cacao puro", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Mezcla {{queso-fresco-batido-0.total}} de queso fresco batido 0% con {{copos-avena.total}} de avena." },
+              { "order": 2, "text": "Espolvorea {{cacao-puro.total}} de cacao puro." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "tortilla-espinacas-champinones-queso-fresco",
+            "name": "Tortilla de espinacas, champiñones y queso fresco con ensalada",
+            "emoji": "🍳",
+            "tags": ["Cena", "Tupper"],
+            "timeMinutes": 13,
+            "macrosByPerson": { "elena": { "kcal": 353, "proteinG": 33 } },
+            "ingredients": [
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "queso-fresco-ligero", "name": "Queso fresco ligero", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "champinon", "name": "Champiñón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "tomate-fresco", "name": "Tomate fresco", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "lechuga", "name": "Lechuga", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Saltea {{champinon.total}} de champiñón y {{espinacas-frescas.total}} de espinacas con la mitad del AOVE." },
+              { "order": 2, "text": "Bate {{huevos.total}} de huevo con {{claras-pasteurizadas.total}} de claras e incorpora {{queso-fresco-ligero.total}} de queso fresco ligero." },
+              { "order": 3, "text": "Cuaja la tortilla a fuego medio." },
+              { "order": 4, "text": "Aliña {{tomate-fresco.total}} de tomate y {{lechuga.total}} de lechuga con {{aove.total}} de AOVE restante." },
+              { "order": 5, "text": "Sirve con {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 15 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    }
+  ]
+}
