@@ -66,6 +66,12 @@
           "title": "Plan nutricional · Semana 3 · María, Manuel y Alicia",
           "periodLabel": "Plan compartido de 7 días",
           "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-3.json"
+        },
+		{
+          "id": "maria-manuel-alicia-semana-4",
+          "title": "Plan nutricional · Semana 4 · María, Manuel y Alicia",
+          "periodLabel": "Plan compartido de 7 días",
+          "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-4.json"
         }
       ]
     },
@@ -91,6 +97,12 @@
           "title": "Plan nutricional · Semana 3",
           "periodLabel": "Plan individual de 7 días",
           "file": "data/abuela/abuela-semana-3.json"
+        },
+		{
+          "id": "abuela-semana-4",
+          "title": "Plan nutricional · Semana 4",
+          "periodLabel": "Plan individual de 7 días",
+          "file": "data/abuela/abuela-semana-4.json"
         }
       ]
     }

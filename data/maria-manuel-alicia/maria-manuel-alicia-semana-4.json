@@ -1,0 +1,912 @@
+{
+  "schemaVersion": "1.0",
+  "id": "maria-manuel-alicia-semana-4",
+  "profileId": "maria-manuel-alicia",
+  "title": "Plan nutricional · Semana 4 · María, Manuel y Alicia",
+  "subtitle": "Menú alternativo mediterráneo",
+  "period": { "label": "Plan de 7 días" },
+  "people": [
+    { "id": "maria", "name": "María", "isBase": true, "calorieTarget": 1615 },
+    { "id": "manuel", "name": "Manuel", "isBase": false, "calorieTarget": 2105 },
+    { "id": "alicia", "name": "Alicia", "isBase": false, "calorieTarget": 1940 }
+  ],
+  "days": [
+    {
+      "id": "dia-1",
+      "label": "Día 1",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-naranja",
+            "name": "Tostada de tomate con naranja",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 140, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-naranja",
+            "name": "Naranja de media mañana",
+            "emoji": "🍊",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{naranja.total}} de naranja a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "ensalada-patata-judias-pimiento-ternera-1",
+            "name": "Ensalada templada de patata, judías verdes, pimiento y espinacas con ternera",
+            "emoji": "🥗",
+            "tags": ["Comida"],
+            "timeMinutes": 35,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "patata", "name": "Patata", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "judias-verdes", "name": "Judías verdes", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "ternera-tiras", "name": "Tiras de ternera magra", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cuece {{patata.total}} de patata y {{judias-verdes.total}} de judías verdes; asa {{pimiento-rojo.total}} de pimiento rojo." },
+              { "order": 2, "text": "Mezcla las verduras con {{espinacas-frescas.total}} de espinacas frescas, {{aove.total}} de AOVE, limón, ajo y pimentón al gusto." },
+              { "order": 3, "text": "Cocina {{ternera-tiras.total}} de tiras de ternera magra y añádelas a la ensalada." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-manzana-yogur",
+            "name": "Manzana con yogur proteico",
+            "emoji": "🍎",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "crema-coliflor-puerro-calabaza-queso-1",
+            "name": "Crema de coliflor, puerro y calabaza con queso de cabra y cottage",
+            "emoji": "🍲",
+            "tags": ["Cena"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "coliflor", "name": "Coliflor", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "puerro", "name": "Puerro", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 70, "extraByPerson": {} },
+              { "id": "calabaza", "name": "Calabaza", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "nueces", "name": "Nueces", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 4, "extraByPerson": {} },
+              { "id": "queso-cabra", "name": "Queso de cabra", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 20, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 160, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cuece {{coliflor.total}} de coliflor, {{puerro.total}} de puerro y {{calabaza.total}} de calabaza hasta que estén tiernos y tritura con agua de cocción, {{aove.total}} de AOVE, sal y pimienta." },
+              { "order": 2, "text": "Sirve con {{nueces.total}} de nueces troceadas." },
+              { "order": 3, "text": "Añade {{queso-cabra.total}} de queso de cabra y {{queso-cottage.total}} de queso cottage, acompañado de {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 4 g a 4 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-2",
+      "label": "Día 2",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-kiwi",
+            "name": "Tostada de tomate con kiwi",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-naranja",
+            "name": "Naranja de media mañana",
+            "emoji": "🍊",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{naranja.total}} de naranja a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "noquis-ragu-tomate-berenjena-pollo-1",
+            "name": "Ñoquis de patata con ragú de tomate y berenjena, albóndigas de pollo",
+            "emoji": "🍝",
+            "tags": ["Comida"],
+            "timeMinutes": 40,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "noquis-patata", "name": "Ñoquis de patata vegetarianos", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "berenjena", "name": "Berenjena", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "pollo-picado", "name": "Pollo picado", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "oregano", "name": "Orégano", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Prepara el ragú con {{cebolla.total}} de cebolla, {{berenjena.total}} de berenjena, {{calabacin.total}} de calabacín, {{tomate-triturado.total}} de tomate triturado, {{aove.total}} de AOVE y orégano al gusto." },
+              { "order": 2, "text": "Cuece {{noquis-patata.total}} de ñoquis y mézclalos con la salsa." },
+              { "order": 3, "text": "Cocina {{pollo-picado.total}} de pollo picado en albóndigas y añádelas al plato." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-pera-yogur",
+            "name": "Pera con yogur proteico",
+            "emoji": "🍐",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pera", "name": "Pera", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{pera.total}} de pera con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "dorada-horno-alcachofas-calabaza-1",
+            "name": "Dorada al horno con alcachofas, tomate cherry y calabaza",
+            "emoji": "🐟",
+            "tags": ["Cena", "Pescado al horno"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "dorada", "name": "Dorada limpia", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 190, "extraByPerson": {} },
+              { "id": "calabaza", "name": "Calabaza", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "alcachofas", "name": "Alcachofas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "tomate-cherry", "name": "Tomate cherry", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "perejil", "name": "Perejil fresco", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Hornea {{calabaza.total}} de calabaza, {{alcachofas.total}} de alcachofas y {{tomate-cherry.total}} de tomate cherry con {{aove.total}} de AOVE, ajo y limón durante 10 minutos." },
+              { "order": 2, "text": "Añade {{dorada.total}} de dorada y hornea 8-10 minutos más." },
+              { "order": 3, "text": "Sirve con perejil y pimienta al gusto." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-3",
+      "label": "Día 3",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-naranja",
+            "name": "Tostada de tomate con naranja",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 140, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-kiwi",
+            "name": "Kiwi de media mañana",
+            "emoji": "🥝",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{kiwi.total}} de kiwi a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "boniato-relleno-verduras-pavo-1",
+            "name": "Boniato relleno de verduras mediterráneas y pavo",
+            "emoji": "🍠",
+            "tags": ["Comida"],
+            "timeMinutes": 45,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "boniato", "name": "Boniato", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "tomate-natural", "name": "Tomate natural", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "pavo-picado", "name": "Pavo picado", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "comino", "name": "Comino", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Hornea {{boniato.total}} de boniato partido por la mitad y vacíalo ligeramente." },
+              { "order": 2, "text": "Saltea {{cebolla.total}} de cebolla, {{calabacin.total}} de calabacín, {{pimiento-rojo.total}} de pimiento rojo, {{tomate-natural.total}} de tomate natural y {{espinacas-frescas.total}} de espinacas con {{aove.total}} de AOVE, y rellena el boniato." },
+              { "order": 3, "text": "Incorpora {{pavo-picado.total}} de pavo picado con pimentón y comino al gusto." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-melocoton-yogur",
+            "name": "Melocotón o nectarina con yogur proteico",
+            "emoji": "🍑",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "melocoton-nectarina", "name": "Melocotón o nectarina", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{melocoton-nectarina.total}} de melocotón o nectarina con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "tostas-tomate-asado-mozzarella-cottage-1",
+            "name": "Tostas integrales de tomate asado, cebolla y albahaca con mozzarella y cottage",
+            "emoji": "🍅",
+            "tags": ["Cena"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 2, "extraByPerson": {} },
+              { "id": "tomate-natural", "name": "Tomate natural", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "albahaca-fresca", "name": "Albahaca fresca", "category": "Despensa", "unit": "g", "baseQuantity": 10, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "mozzarella-ligera", "name": "Mozzarella ligera", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 160, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Asa {{tomate-natural.total}} de tomate natural y {{cebolla.total}} de cebolla con {{aove.total}} de AOVE y {{albahaca-fresca.total}} de albahaca." },
+              { "order": 2, "text": "Tuesta {{pan-integral.total}} de pan integral." },
+              { "order": 3, "text": "Reparte {{mozzarella-ligera.total}} de mozzarella sobre las tostas, gratina y sirve con {{queso-cottage.total}} de queso cottage." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-4",
+      "label": "Día 4",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-kiwi",
+            "name": "Tostada de tomate con kiwi",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-naranja",
+            "name": "Naranja de media mañana",
+            "emoji": "🍊",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{naranja.total}} de naranja a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "tacos-maiz-coliflor-pimiento-pollo-1",
+            "name": "Tacos de maíz con coliflor y pimiento asados, pollo",
+            "emoji": "🌮",
+            "tags": ["Comida"],
+            "timeMinutes": 40,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "tortillas-maiz", "name": "Tortillas de maíz", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "coliflor", "name": "Coliflor", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 40, "extraByPerson": {} },
+              { "id": "tomate-natural", "name": "Tomate natural", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "pechuga-pollo", "name": "Pechuga de pollo", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "comino", "name": "Comino", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Asa {{coliflor.total}} de coliflor, {{pimiento-rojo.total}} de pimiento rojo y {{cebolla.total}} de cebolla con {{aove.total}} de AOVE, pimentón y comino." },
+              { "order": 2, "text": "Calienta {{tortillas-maiz.total}} de tortillas de maíz y rellena con las verduras y {{tomate-natural.total}} de tomate natural." },
+              { "order": 3, "text": "Añade {{pechuga-pollo.total}} de pechuga de pollo al pimentón y limón al gusto." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-manzana-yogur",
+            "name": "Manzana con yogur proteico",
+            "emoji": "🍎",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "trucha-horno-puerro-calabacin-1",
+            "name": "Trucha al horno con puerro, calabacín y limón",
+            "emoji": "🐟",
+            "tags": ["Cena", "Pescado al horno"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "trucha", "name": "Trucha limpia", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "patata", "name": "Patata", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "puerro", "name": "Puerro", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "calabacin", "name": "Calabacín", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "limon", "name": "Limón", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Hornea {{patata.total}} de patata, {{puerro.total}} de puerro y {{calabacin.total}} de calabacín con {{aove.total}} de AOVE y limón durante 10 minutos." },
+              { "order": 2, "text": "Añade {{trucha.total}} de trucha y hornea 8-10 minutos más." },
+              { "order": 3, "text": "Sirve con ajo, pimentón y pimienta al gusto." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-5",
+      "label": "Día 5",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-naranja",
+            "name": "Tostada de tomate con naranja",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 140, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-uvas",
+            "name": "Uvas de media mañana",
+            "emoji": "🍇",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "uvas", "name": "Uvas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{uvas.total}} de uvas a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "tortilla-patata-espinacas-pimiento-1",
+            "name": "Tortilla de patata, espinacas y pimiento asado",
+            "emoji": "🍳",
+            "tags": ["Comida", "Tortilla de patata del viernes"],
+            "timeMinutes": 40,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "patata", "name": "Patata", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 130, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 70, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "tomate-natural", "name": "Tomate natural", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "huevos", "name": "Huevos", "category": "Huevos y lácteos", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "claras-pasteurizadas", "name": "Claras pasteurizadas", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Pocha {{patata.total}} de patata, {{pimiento-rojo.total}} de pimiento rojo y {{cebolla.total}} de cebolla con {{aove.total}} de AOVE; añade {{espinacas-frescas.total}} de espinacas al final." },
+              { "order": 2, "text": "Mezcla las verduras con {{huevos.total}} de huevo y {{claras-pasteurizadas.total}} de claras pasteurizadas, y cuaja la tortilla." },
+              { "order": 3, "text": "Sirve con {{queso-cottage.total}} de queso cottage, {{tomate-natural.total}} de tomate natural en ensalada y {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-pera-yogur",
+            "name": "Pera con yogur proteico",
+            "emoji": "🍐",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pera", "name": "Pera", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{pera.total}} de pera con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "musaca-berenjena-tomate-queso-1",
+            "name": "Musaca ligera de berenjena y tomate con queso de cabra y cottage",
+            "emoji": "🍆",
+            "tags": ["Cena"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "berenjena", "name": "Berenjena", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "queso-cabra", "name": "Queso de cabra", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 20, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "oregano", "name": "Orégano", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cocina {{berenjena.total}} de berenjena, {{cebolla.total}} de cebolla y {{tomate-triturado.total}} de tomate triturado con {{aove.total}} de AOVE y orégano hasta obtener una salsa espesa." },
+              { "order": 2, "text": "Monta la musaca, añade {{queso-cabra.total}} de queso de cabra, gratina y sirve con {{queso-cottage.total}} de queso cottage y {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-6",
+      "label": "Día 6",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-kiwi",
+            "name": "Tostada de tomate con kiwi",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-kiwi",
+            "name": "Kiwi de media mañana",
+            "emoji": "🥝",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "kiwi", "name": "Kiwi", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{kiwi.total}} de kiwi a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "albondigas-pavo-salsa-tomate-pure-calabaza-1",
+            "name": "Albóndigas de pavo en salsa de tomate con puré de calabaza",
+            "emoji": "🍲",
+            "tags": ["Comida"],
+            "timeMinutes": 40,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pavo-picado", "name": "Pavo picado", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "calabaza", "name": "Calabaza", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 300, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 9, "extraByPerson": {} },
+              { "id": "romero", "name": "Romero", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cuece {{calabaza.total}} de calabaza y tritúrala con pimienta y una pequeña parte del AOVE." },
+              { "order": 2, "text": "Cocina la salsa de tomate con {{tomate-triturado.total}} de tomate triturado, {{cebolla.total}} de cebolla y {{zanahoria.total}} de zanahoria." },
+              { "order": 3, "text": "Cuece {{pavo-picado.total}} de albóndigas de pavo en la salsa con {{aove.total}} de AOVE y romero al gusto." }
+            ],
+            "notes": ["AOVE convertido de 8 g a 9 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-melocoton-yogur",
+            "name": "Melocotón o nectarina con yogur proteico",
+            "emoji": "🍑",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "melocoton-nectarina", "name": "Melocotón o nectarina", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{melocoton-nectarina.total}} de melocotón o nectarina con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "ensalada-endivias-pera-zanahoria-queso-1",
+            "name": "Ensalada templada de endivias, pera, zanahoria asada y nueces con queso",
+            "emoji": "🥗",
+            "tags": ["Cena"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "endivias", "name": "Endivias", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "pera", "name": "Pera", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 100, "extraByPerson": {} },
+              { "id": "zanahoria", "name": "Zanahoria", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 160, "extraByPerson": {} },
+              { "id": "nueces", "name": "Nueces", "category": "Despensa", "unit": "g", "baseQuantity": 5, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 7, "extraByPerson": {} },
+              { "id": "queso-cabra", "name": "Queso de cabra", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 20, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "vinagre", "name": "Vinagre", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "tomillo", "name": "Tomillo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Asa {{zanahoria.total}} de zanahoria con {{aove.total}} de AOVE y tomillo durante 15 minutos; mezcla con {{endivias.total}} de endivias y {{pera.total}} de pera." },
+              { "order": 2, "text": "Añade {{nueces.total}} de nueces y vinagre al gusto." },
+              { "order": 3, "text": "Incorpora {{queso-cabra.total}} de queso de cabra y {{queso-cottage.total}} de queso cottage, y sirve con {{pan-integral.total}} de pan integral." }
+            ],
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dia-7",
+      "label": "Día 7",
+      "meals": [
+        {
+          "slot": "desayuno",
+          "label": "Desayuno",
+          "recipe": {
+            "id": "desayuno-tostada-tomate-naranja",
+            "name": "Tostada de tomate con naranja",
+            "emoji": "🍞",
+            "tags": ["Desayuno"],
+            "timeMinutes": 10,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 1.5, "extraByPerson": {} },
+              { "id": "tomate-rallado", "name": "Tomate rallado", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "cafe", "name": "Café", "category": "Despensa", "unit": "unidades", "baseQuantity": 1, "extraByPerson": {} },
+              { "id": "leche-desnatada", "name": "Leche desnatada", "category": "Huevos y lácteos", "unit": "ml", "baseQuantity": 200, "extraByPerson": {} },
+              { "id": "melon", "name": "Melón", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 140, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+          }
+        },
+        {
+          "slot": "media-manana",
+          "label": "Media mañana",
+          "recipe": {
+            "id": "fruta-media-manana-naranja",
+            "name": "Naranja de media mañana",
+            "emoji": "🍊",
+            "tags": ["Media mañana"],
+            "timeMinutes": 1,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "naranja", "name": "Naranja", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{naranja.total}} de naranja a media mañana." }
+            ]
+          }
+        },
+        {
+          "slot": "comida",
+          "label": "Comida",
+          "recipe": {
+            "id": "lasana-calabaza-espinacas-tomate-pavo-1",
+            "name": "Lasaña de calabaza, espinacas y tomate con pavo",
+            "emoji": "🍝",
+            "tags": ["Comida"],
+            "timeMinutes": 45,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "placas-lasana", "name": "Placas de lasaña", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 30, "extraByPerson": {} },
+              { "id": "calabaza", "name": "Calabaza", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "espinacas-frescas", "name": "Espinacas frescas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 60, "extraByPerson": {} },
+              { "id": "tomate-triturado", "name": "Tomate triturado", "category": "Legumbres, Cereales y Conservas", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "pavo-picado", "name": "Pavo picado", "category": "Carnes y pescados", "unit": "g", "baseQuantity": 170, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "nuez-moscada", "name": "Nuez moscada", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "oregano", "name": "Orégano", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Cocina {{calabaza.total}} de calabaza, {{cebolla.total}} de cebolla, {{espinacas-frescas.total}} de espinacas y {{tomate-triturado.total}} de tomate triturado con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Monta la lasaña alternando {{placas-lasana.total}} de placas de lasaña con el relleno vegetal." },
+              { "order": 3, "text": "Añade {{pavo-picado.total}} de pavo picado y {{queso-cottage.total}} de queso cottage; hornea hasta dorar con nuez moscada y orégano al gusto." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml."]
+          }
+        },
+        {
+          "slot": "merienda",
+          "label": "Merienda",
+          "recipe": {
+            "id": "merienda-manzana-yogur",
+            "name": "Manzana con yogur proteico",
+            "emoji": "🍎",
+            "tags": ["Merienda"],
+            "timeMinutes": 2,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "manzana", "name": "Manzana", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 150, "extraByPerson": {} },
+              { "id": "yogur-proteico-0", "name": "Yogur proteico 0%", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 250, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
+            ]
+          }
+        },
+        {
+          "slot": "cena",
+          "label": "Cena",
+          "recipe": {
+            "id": "pimientos-rellenos-acelgas-tomate-cottage-1",
+            "name": "Pimientos rellenos de acelgas y tomate con cottage",
+            "emoji": "🫑",
+            "tags": ["Cena"],
+            "timeMinutes": 20,
+            "macrosByPerson": {},
+            "ingredients": [
+              { "id": "pimiento-rojo", "name": "Pimiento rojo", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 180, "extraByPerson": {} },
+              { "id": "acelgas", "name": "Acelgas", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 80, "extraByPerson": {} },
+              { "id": "tomate-natural", "name": "Tomate natural", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 120, "extraByPerson": {} },
+              { "id": "cebolla", "name": "Cebolla", "category": "Frutas y Verduras", "unit": "g", "baseQuantity": 50, "extraByPerson": {} },
+              { "id": "aove", "name": "Aceite de oliva virgen extra", "category": "Despensa", "unit": "ml", "baseQuantity": 6, "extraByPerson": {} },
+              { "id": "queso-cottage", "name": "Queso cottage", "category": "Huevos y lácteos", "unit": "g", "baseQuantity": 160, "extraByPerson": {} },
+              { "id": "pan-integral", "name": "Pan integral", "category": "Legumbres, Cereales y Conservas", "unit": "rebanadas", "baseQuantity": 0.5, "extraByPerson": {} },
+              { "id": "pimenton-dulce", "name": "Pimentón dulce", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "ajo", "name": "Ajo", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} },
+              { "id": "pimienta", "name": "Pimienta", "category": "Despensa", "unit": "al gusto", "baseQuantity": 0, "extraByPerson": {} }
+            ],
+            "steps": [
+              { "order": 1, "text": "Asa {{pimiento-rojo.total}} de pimiento rojo durante 8 minutos; saltea {{acelgas.total}} de acelgas, {{cebolla.total}} de cebolla y {{tomate-natural.total}} de tomate natural con {{aove.total}} de AOVE." },
+              { "order": 2, "text": "Rellena los pimientos con la base vegetal." },
+              { "order": 3, "text": "Sirve con {{queso-cottage.total}} de queso cottage y {{pan-integral.total}} de pan integral, con pimentón y ajo al gusto." }
+            ],
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas."]
+          }
+        }
+      ]
+    }
+  ]
+}
