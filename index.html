@@ -95,6 +95,18 @@
           </button>
         </nav>
 
+        <div id="quantity-scope" class="quantity-scope no-print"
+          role="group" aria-label="Cantidades de las recetas">
+          <button type="button" class="quantity-scope__button is-active"
+            data-quantity-scope="base" aria-pressed="true">1 P</button>
+          <button type="button" class="quantity-scope__button"
+            data-quantity-scope="people" aria-pressed="false">
+            <span id="plan-people-option">Personas del plan</span>
+          </button>
+          <button type="button" class="quantity-scope__button"
+            data-quantity-scope="total" aria-pressed="false">Total</button>
+        </div>
+
         <section id="recipes-panel" class="tab-panel is-active"
           data-tab-panel="recipes" aria-label="Recetas del plan">
           <div class="section-heading">

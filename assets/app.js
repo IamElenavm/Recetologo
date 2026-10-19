@@ -26,6 +26,7 @@ const state = {
   plan: null,
   catalog: [],
   activeTab: "recipes",
+  quantityScope: "base",
   selectedProfileId: null,
   openCategories: new Set(),
 };
@@ -55,6 +56,8 @@ const elements = {
 
   menuSummary: document.getElementById("menu-summary"),
   recipesContainer: document.getElementById("recipes-container"),
+  quantityScope: document.getElementById("quantity-scope"),
+  planPeopleOption: document.getElementById("plan-people-option"),
   menuContainer: document.getElementById("menu-container"),
   shoppingContainer: document.getElementById("shopping-container"),
   shoppingProgressText: document.getElementById("shopping-progress-text"),
@@ -85,6 +88,34 @@ async function init() {
 function bindEvents() {
   document.querySelectorAll("[data-tab-target]").forEach((button) => {
     button.addEventListener("click", () => switchTab(button.dataset.tabTarget));
+  });
+
+  document.querySelectorAll("[data-quantity-scope]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const openGroup = elements.recipesContainer
+        .querySelector(".recipe-group[open]")?.dataset.recipeGroup;
+
+      const openRecipe = elements.recipesContainer
+        .querySelector(".catalog-recipe[open]")?.dataset.recipeDetails;
+
+      state.quantityScope = button.dataset.quantityScope;
+      updateQuantityScope();
+      renderRecipes();
+
+      if (openGroup) {
+        const group = [...elements.recipesContainer
+          .querySelectorAll("[data-recipe-group]")]
+          .find((item) => item.dataset.recipeGroup === openGroup);
+        if (group) group.open = true;
+      }
+
+      if (openRecipe) {
+        const recipe = [...elements.recipesContainer
+          .querySelectorAll("[data-recipe-details]")]
+          .find((item) => item.dataset.recipeDetails === openRecipe);
+        if (recipe) recipe.open = true;
+      }
+    });
   });
 
   elements.openSelectorButton.addEventListener("click", openSelector);
@@ -284,6 +315,7 @@ async function selectPlan(profileId, planId, shouldCloseSelector = true) {
   state.plan = plan;
   state.catalog = buildRecipeCatalog(plan);
   state.activeTab = "recipes";
+  state.quantityScope = "base";
   state.selectedProfileId = profile.id;
   state.openCategories = new Set(
     getShoppingCategories(plan).map((category) => category.category),
@@ -308,10 +340,21 @@ async function selectPlan(profileId, planId, shouldCloseSelector = true) {
 
 function renderPlan() {
   renderPlanHeader();
+  elements.planPeopleOption.textContent =
+    `${state.plan.people.length} P`;
+  updateQuantityScope();
   renderRecipes();
   renderMenu();
   renderShopping();
   switchTab(state.activeTab, false);
+}
+
+function updateQuantityScope() {
+  document.querySelectorAll("[data-quantity-scope]").forEach((button) => {
+    const selected = button.dataset.quantityScope === state.quantityScope;
+    button.classList.toggle("is-active", selected);
+    button.setAttribute("aria-pressed", String(selected));
+  });
 }
 
 function renderPlanHeader() {
@@ -414,6 +457,13 @@ function renderCatalogRecipe(entry) {
 function renderCatalogRecipeBody(entry, printable = false) {
   const recipe = entry.recipe;
   const basePerson = getBasePerson(state.plan);
+  const scope = printable ? "total" : state.quantityScope;
+  const displayedTotals = calculateRecipeTotals(entry, state.plan, scope);
+  const quantityLabel = scope === "base"
+    ? `Cantidad · 1 P (${basePerson.name})`
+    : scope === "people"
+      ? `Cantidad · ${state.plan.people.length} P`
+      : "Cantidad · Total";
   const macros = recipe.macrosByPerson?.[basePerson.id];
   const macroLabels = [];
 
@@ -433,17 +483,13 @@ function renderCatalogRecipeBody(entry, printable = false) {
     macroLabels.push(`${formatNumber(macros.fiberG)} g fibra`);
   }
 
-  const rows = [...entry.totals.values()]
+  const rows = [...displayedTotals.values()]
     .filter((item) => item.quantity > 0 || item.nonQuantifiable)
     .sort((a, b) => a.name.localeCompare(b.name, "es"))
     .map((item) => `
       <tr>
         <td>${escapeHtml(item.name)}
           ${item.forPerson ? `<small> · ${escapeHtml(item.forPerson)}</small>` : ""}
-        </td>
-        <td>${item.forPerson
-          ? "—"
-          : escapeHtml(formatIngredientQuantity(item.baseQuantity, item.unit))}
         </td>
         <td>${escapeHtml(item.nonQuantifiable
           ? "al gusto"
@@ -454,7 +500,7 @@ function renderCatalogRecipeBody(entry, printable = false) {
 
   const steps = [...(recipe.steps || [])]
     .sort((a, b) => Number(a.order) - Number(b.order))
-    .map((step) => renderStep(step, entry))
+    .map((step) => renderStep(step, entry, scope, displayedTotals))
     .join("");
 
   const days = [...entry.dayIds].map((dayId) => {
@@ -485,8 +531,7 @@ function renderCatalogRecipeBody(entry, printable = false) {
           <thead>
             <tr>
               <th>Ingrediente</th>
-              <th>${escapeHtml(basePerson.name)} · total del plan</th>
-              <th>Total del plan</th>
+              <th>${escapeHtml(quantityLabel)}</th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>
@@ -513,20 +558,30 @@ function renderCatalogRecipeBody(entry, printable = false) {
   `;
 }
 
-function renderStep(step, entry) {
-  const variants = state.plan.people.flatMap((person) => {
-    const variant = (entry.recipe.variantsByPerson?.[person.id] || [])
-      .find((item) => Number(item.order) === Number(step.order));
+function renderStep(
+  step,
+  entry,
+  scope = state.quantityScope,
+  displayedTotals = calculateRecipeTotals(entry, state.plan, scope)
+) {
+  const variants = scope === "base"
+    ? []
+    : state.plan.people.flatMap((person) => {
+        const variant = (entry.recipe.variantsByPerson?.[person.id] || [])
+          .find((item) => Number(item.order) === Number(step.order));
 
-    return variant ? [{ person, variant }] : [];
-  });
+        return variant ? [{ person, variant }] : [];
+      });
 
   const number = Number(step.order);
   const generalLabel = variants.length
     ? `${number}a · General`
     : number === 0 ? "Paso 0 · Meal prep" : `Paso ${number}`;
 
-  const generalText = replaceIngredientTokens(step.text, entry.totals);
+  const generalText = replaceIngredientTokens(
+    step.text,
+    displayedTotals
+  );
 
   return `
     <div class="recipe-step">
@@ -534,7 +589,11 @@ function renderStep(step, entry) {
       <div>${formatStepText(generalText)}</div>
       ${variants.map(({ person, variant }, index) => {
         const letter = String.fromCharCode(98 + index);
-        const text = replaceIngredientTokens(variant.text, entry.totals);
+        const text = replaceIngredientTokens(
+          variant.text,
+          displayedTotals,
+          person.id
+        );
 
         return `
           <div class="recipe-step__variant">
@@ -815,15 +874,21 @@ function buildRecipeCatalog(plan) {
   });
 }
 
-function calculateRecipeTotals(entry, plan) {
+function calculateRecipeTotals(entry, plan, scope = "total") {
   const totals = new Map();
-  const basePerson = getBasePerson(plan);
+  const appearances = scope === "total"
+    ? entry.appearances
+    : entry.appearances.slice(0, 1);
 
-  function addIngredient(ingredient, amount, forPerson = null) {
+  const people = scope === "base"
+    ? [getBasePerson(plan)]
+    : plan.people;
+
+  function addIngredient(ingredient, amount, person = null) {
     const key = [
-      forPerson?.id || "general",
+      person?.id || "general",
       ingredient.id,
-      ingredient.unit,
+      ingredient.unit || "",
       ingredient.category || "Otros"
     ].join("|");
 
@@ -832,35 +897,30 @@ function calculateRecipeTotals(entry, plan) {
         id: ingredient.id,
         name: ingredient.name,
         category: ingredient.category || "Otros",
-        unit: ingredient.unit,
+        unit: ingredient.unit || "",
         quantity: 0,
-        baseQuantity: 0,
-        forPerson: forPerson?.name || null,
+        forPerson: person?.name || null,
+        forPersonId: person?.id || null,
         nonQuantifiable: isNonQuantifiable(ingredient)
       });
     }
 
     const item = totals.get(key);
-
-    if (!item.nonQuantifiable) {
-      item.quantity += amount;
-      if (!forPerson) {
-        item.baseQuantity += Number(ingredient.baseQuantity) || 0;
-      }
-    }
+    if (!item.nonQuantifiable) item.quantity += amount;
   }
 
-  entry.appearances.forEach((recipe) => {
+  appearances.forEach((recipe) => {
     const removedByPerson = new Map();
 
-    plan.people.forEach((person) => {
+    people.forEach((person) => {
       const variants = recipe.variantsByPerson?.[person.id] || [];
 
-      const removed = new Set(
-        variants.flatMap((variant) => variant.removeIngredientIds || [])
+      removedByPerson.set(
+        person.id,
+        new Set(variants.flatMap(
+          (variant) => variant.removeIngredientIds || []
+        ))
       );
-
-      removedByPerson.set(person.id, removed);
 
       variants.forEach((variant) => {
         (variant.ingredients || []).forEach((ingredient) => {
@@ -874,24 +934,18 @@ function calculateRecipeTotals(entry, plan) {
     });
 
     (recipe.ingredients || []).forEach((ingredient) => {
-      const consumers = plan.people.filter((person) =>
+      const consumers = people.filter((person) =>
         !removedByPerson.get(person.id)?.has(ingredient.id)
       ).length;
 
-      addIngredient(
-        ingredient,
-        (Number(ingredient.baseQuantity) || 0) * consumers
-      );
+      if (consumers > 0) {
+        addIngredient(
+          ingredient,
+          (Number(ingredient.baseQuantity) || 0) * consumers
+        );
+      }
     });
   });
-
-  // La persona base nunca puede tener sustituciones.
-  // Su cantidad se conserva en baseQuantity, independientemente del total.
-  if (entry.appearances.some((recipe) =>
-    (recipe.variantsByPerson?.[basePerson.id] || []).length
-  )) {
-    throw new Error("La persona base no puede tener variantes.");
-  }
 
   return totals;
 }
@@ -951,14 +1005,24 @@ function isNonQuantifiable(ingredient) {
   );
 }
 
-function replaceIngredientTokens(text, totals) {
+function replaceIngredientTokens(text, totals, personId = null) {
   if (typeof text !== "string") return "";
 
   return text.replace(
     /\{\{([a-z0-9-]+)\.total\}\}/gi,
     (match, ingredientId) => {
-      const ingredient = [...totals.values()]
-        .find((item) => item.id === ingredientId);
+      const items = [...totals.values()];
+
+      const ingredient = (
+        personId
+          ? items.find((item) =>
+              item.id === ingredientId &&
+              item.forPersonId === personId
+            )
+          : null
+      ) || items.find((item) =>
+        item.id === ingredientId && !item.forPersonId
+      );
 
       if (!ingredient) return match;
 
@@ -980,6 +1044,7 @@ function formatStepText(text) {
 
 function switchTab(tabName, shouldRender = true) {
   state.activeTab = tabName;
+  elements.quantityScope.hidden = tabName === "shopping";
 
   document.querySelectorAll("[data-tab-target]").forEach((button) => {
     const isActive = button.dataset.tabTarget === tabName;
@@ -1214,7 +1279,7 @@ function printMenu() {
               return `
                 <article class="print-recipe">
                   <h3>${escapeHtml(entry.recipe.name)}</h3>
-                  ${renderStep(step, entry)}
+                  ${renderStep(step, entry, "total")}
                 </article>
               `;
             }

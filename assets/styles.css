@@ -1379,6 +1379,37 @@ h3 {
   font-size: 1.45rem;
   font-weight: 700;
 }
+.quantity-scope {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  margin: -8px 0 19px;
+  padding: 5px;
+  border: 1px solid var(--ink-200);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.quantity-scope[hidden] {
+  display: none;
+}
+
+.quantity-scope__button {
+  min-height: 38px;
+  padding: 6px;
+  border: 0;
+  border-radius: 10px;
+  color: var(--ink-600);
+  background: transparent;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.quantity-scope__button.is-active {
+  color: var(--white);
+  background: var(--teal-700);
+}
+
 .recipe-groups {
   display: grid;
   gap: 12px;
