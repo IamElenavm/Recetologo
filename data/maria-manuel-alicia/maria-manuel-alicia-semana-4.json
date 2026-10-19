@@ -38,7 +38,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -86,7 +86,7 @@
               { "order": 2, "text": "Mezcla las verduras con {{espinacas-frescas.total}} de espinacas frescas, {{aove.total}} de AOVE, limón, ajo y pimentón al gusto." },
               { "order": 3, "text": "Cocina {{ternera-tiras.total}} de tiras de ternera magra y añádelas a la ensalada." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de ternera, dora 220 g de seitán con pimentón, en sartén o zona separada."]
           }
         },
         {
@@ -105,7 +105,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -133,7 +134,7 @@
               { "order": 2, "text": "Sirve con {{nueces.total}} de nueces troceadas." },
               { "order": 3, "text": "Añade {{queso-cabra.total}} de queso de cabra y {{queso-cottage.total}} de queso cottage, acompañado de {{pan-integral.total}} de pan integral." }
             ],
-            "notes": ["AOVE convertido de 4 g a 4 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+            "notes": ["AOVE convertido de 4 g a 4 ml.", "Pan integral convertido de 25 g a 1 rebanada.", "Alicia: en lugar de quesos, sirve 300 g de tofu ahumado dorado (sin pan integral)."]
           }
         }
       ]
@@ -165,7 +166,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -213,7 +214,7 @@
               { "order": 2, "text": "Cuece {{noquis-patata.total}} de ñoquis y mézclalos con la salsa." },
               { "order": 3, "text": "Cocina {{pollo-picado.total}} de pollo picado en albóndigas y añádelas al plato." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de albóndigas de pollo, hornea o dora 300 g de tofu al orégano."]
           }
         },
         {
@@ -232,7 +233,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{pera.total}} de pera con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -261,7 +263,7 @@
               { "order": 2, "text": "Añade {{dorada.total}} de dorada y hornea 8-10 minutos más." },
               { "order": 3, "text": "Sirve con perejil y pimienta al gusto." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de dorada, hornea 240 g de seitán al limón en fuente o zona separada; incluye 20 g de pan integral."]
           }
         }
       ]
@@ -293,7 +295,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -342,7 +344,7 @@
               { "order": 2, "text": "Saltea {{cebolla.total}} de cebolla, {{calabacin.total}} de calabacín, {{pimiento-rojo.total}} de pimiento rojo, {{tomate-natural.total}} de tomate natural y {{espinacas-frescas.total}} de espinacas con {{aove.total}} de AOVE, y rellena el boniato." },
               { "order": 3, "text": "Incorpora {{pavo-picado.total}} de pavo picado con pimentón y comino al gusto." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de pavo picado, añade 300 g de tofu especiado dorado."]
           }
         },
         {
@@ -361,7 +363,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{melocoton-nectarina.total}} de melocotón o nectarina con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -388,7 +391,7 @@
               { "order": 2, "text": "Tuesta {{pan-integral.total}} de pan integral." },
               { "order": 3, "text": "Reparte {{mozzarella-ligera.total}} de mozzarella sobre las tostas, gratina y sirve con {{queso-cottage.total}} de queso cottage." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 50 g a 2 rebanadas.", "Alicia: en lugar de mozzarella y cottage, hidrata y saltea 60 g de soja texturizada con 50 g de espinacas, y añade 80 g de seitán dorado como refuerzo proteico."]
           }
         }
       ]
@@ -420,7 +423,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -468,7 +471,7 @@
               { "order": 2, "text": "Calienta {{tortillas-maiz.total}} de tortillas de maíz y rellena con las verduras y {{tomate-natural.total}} de tomate natural." },
               { "order": 3, "text": "Añade {{pechuga-pollo.total}} de pechuga de pollo al pimentón y limón al gusto." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de pollo, agrega 65 g de soja texturizada hidratada y 80 g de seitán."]
           }
         },
         {
@@ -487,7 +490,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -516,7 +520,7 @@
               { "order": 2, "text": "Añade {{trucha.total}} de trucha y hornea 8-10 minutos más." },
               { "order": 3, "text": "Sirve con ajo, pimentón y pimienta al gusto." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Alicia: en lugar de trucha, hornea 300 g de tofu al pimentón en fuente separada; incluye 20 g de pan integral."]
           }
         }
       ]
@@ -548,7 +552,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -596,7 +600,7 @@
               { "order": 2, "text": "Mezcla las verduras con {{huevos.total}} de huevo y {{claras-pasteurizadas.total}} de claras pasteurizadas, y cuaja la tortilla." },
               { "order": 3, "text": "Sirve con {{queso-cottage.total}} de queso cottage, {{tomate-natural.total}} de tomate natural en ensalada y {{pan-integral.total}} de pan integral." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas.", "Alicia: en lugar de huevo, claras y cottage, mezcla su base de verduras con 30 g de harina de garbanzo, agua y 300 g de tofu desmenuzado, y cuaja en sartén independiente (sin pan integral)."]
           }
         },
         {
@@ -615,7 +619,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{pera.total}} de pera con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -644,7 +649,7 @@
               { "order": 1, "text": "Cocina {{berenjena.total}} de berenjena, {{cebolla.total}} de cebolla y {{tomate-triturado.total}} de tomate triturado con {{aove.total}} de AOVE y orégano hasta obtener una salsa espesa." },
               { "order": 2, "text": "Monta la musaca, añade {{queso-cabra.total}} de queso de cabra, gratina y sirve con {{queso-cottage.total}} de queso cottage y {{pan-integral.total}} de pan integral." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada.", "Alicia: en lugar de quesos, incorpora 220 g de seitán al orégano marcado a la plancha; incluye 30 g de pan integral."]
           }
         }
       ]
@@ -676,7 +681,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{kiwi.total}} de kiwi." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -723,7 +728,7 @@
               { "order": 2, "text": "Cocina la salsa de tomate con {{tomate-triturado.total}} de tomate triturado, {{cebolla.total}} de cebolla y {{zanahoria.total}} de zanahoria." },
               { "order": 3, "text": "Cuece {{pavo-picado.total}} de albóndigas de pavo en la salsa con {{aove.total}} de AOVE y romero al gusto." }
             ],
-            "notes": ["AOVE convertido de 8 g a 9 ml."]
+            "notes": ["AOVE convertido de 8 g a 9 ml.", "Alicia: en lugar de albóndigas de pavo, saltea 280 g de tofu y 50 g de soja texturizada hidratada."]
           }
         },
         {
@@ -742,7 +747,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{melocoton-nectarina.total}} de melocotón o nectarina con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -773,7 +779,7 @@
               { "order": 2, "text": "Añade {{nueces.total}} de nueces y vinagre al gusto." },
               { "order": 3, "text": "Incorpora {{queso-cabra.total}} de queso de cabra y {{queso-cottage.total}} de queso cottage, y sirve con {{pan-integral.total}} de pan integral." }
             ],
-            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada."]
+            "notes": ["AOVE convertido de 6 g a 7 ml.", "Pan integral convertido de 25 g a 1 rebanada.", "Alicia: en lugar de quesos, añade 180 g de seitán dorado."]
           }
         }
       ]
@@ -805,7 +811,7 @@
               { "order": 1, "text": "Tuesta {{pan-integral.total}} de pan integral y añade {{tomate-rallado.total}} de tomate rallado con {{aove.total}} de AOVE." },
               { "order": 2, "text": "Acompaña con {{cafe.total}} de café, {{leche-desnatada.total}} de leche desnatada, {{melon.total}} de melón y {{naranja.total}} de naranja." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 40 g a 1,5 rebanadas.", "Alicia: bebida de soja sin azúcar en lugar de leche desnatada."]
           }
         },
         {
@@ -854,7 +860,7 @@
               { "order": 2, "text": "Monta la lasaña alternando {{placas-lasana.total}} de placas de lasaña con el relleno vegetal." },
               { "order": 3, "text": "Añade {{pavo-picado.total}} de pavo picado y {{queso-cottage.total}} de queso cottage; hornea hasta dorar con nuez moscada y orégano al gusto." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Alicia: en lugar de pavo y cottage, usa 250 g de tofu y 35 g de soja texturizada hidratada."]
           }
         },
         {
@@ -873,7 +879,8 @@
             ],
             "steps": [
               { "order": 1, "text": "Toma {{manzana.total}} de manzana con {{yogur-proteico-0.total}} de yogur proteico 0% de merienda." }
-            ]
+            ],
+            "notes": ["Alicia: yogur de soja proteico (250 g) en lugar de yogur proteico 0%."]
           }
         },
         {
@@ -903,7 +910,7 @@
               { "order": 2, "text": "Rellena los pimientos con la base vegetal." },
               { "order": 3, "text": "Sirve con {{queso-cottage.total}} de queso cottage y {{pan-integral.total}} de pan integral, con pimentón y ajo al gusto." }
             ],
-            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas."]
+            "notes": ["AOVE convertido de 5 g a 6 ml.", "Pan integral convertido de 20 g a 0,5 rebanadas.", "Alicia: en lugar de queso cottage, añade 220 g de seitán al pimentón dorado; incluye 25 g de pan integral."]
           }
         }
       ]
