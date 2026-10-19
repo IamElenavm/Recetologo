@@ -56,23 +56,8 @@
 
       <section id="app-content" class="is-hidden"> <button id="back-to-profile-plans-button" class="back-button no-print" type="button"> <span aria-hidden="true">←</span> Ver planes del perfil </button>
         <section class="hero-card">
-          <div class="hero-card__top">
-            <p id="profile-name" class="eyebrow">Perfil</p>
-            <span id="people-count-badge" class="people-badge"></span>
-          </div>
-
           <h1 id="plan-title">Plan nutricional</h1>
-          <p id="plan-subtitle" class="hero-card__subtitle"></p>
-
-          <div class="plan-meta">
-            <span id="plan-period" class="meta-chip"></span>
-            <span id="plan-days-count" class="meta-chip"></span>
-          </div>
-
-          <button id="change-plan-button" class="text-action no-print" type="button">
-            Cambiar perfil o plan
-            <span aria-hidden="true">→</span>
-          </button>
+          <p id="plan-days-count" class="hero-card__subtitle"></p>
         </section>
 
         <section class="action-grid no-print" aria-label="Acciones del plan">
@@ -94,18 +79,34 @@
         </section>
 
         <nav class="main-tabs no-print" aria-label="Secciones del plan">
-          <button class="tab-button is-active" type="button" data-tab-target="menu" aria-controls="menu-panel" aria-selected="true">
-            <span aria-hidden="true">🍽️</span>
-            Menú
+          <button class="tab-button is-active" type="button" data-tab-target="recipes"
+            aria-controls="recipes-panel" aria-selected="true">
+            <span aria-hidden="true">👩‍🍳</span> Recetas
           </button>
 
-          <button class="tab-button" type="button" data-tab-target="shopping" aria-controls="shopping-panel" aria-selected="false">
-            <span aria-hidden="true">🛒</span>
-            Compra
+          <button class="tab-button" type="button" data-tab-target="menu"
+            aria-controls="menu-panel" aria-selected="false">
+            <span aria-hidden="true">🍽️</span> Menú
+          </button>
+
+          <button class="tab-button" type="button" data-tab-target="shopping"
+            aria-controls="shopping-panel" aria-selected="false">
+            <span aria-hidden="true">🛒</span> Compra
           </button>
         </nav>
 
-        <section id="menu-panel" class="tab-panel is-active" data-tab-panel="menu" aria-label="Menú del plan">
+        <section id="recipes-panel" class="tab-panel is-active"
+          data-tab-panel="recipes" aria-label="Recetas del plan">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Preparación del plan</p>
+              <h2>Recetas</h2>
+            </div>
+          </div>
+          <div id="recipes-container" class="recipe-groups"></div>
+        </section>
+
+        <section id="menu-panel" class="tab-panel" data-tab-panel="menu" aria-label="Menú del plan" hidden>
           <div class="section-heading">
             <div>
               <p class="eyebrow">Tu planificación</p>
@@ -185,25 +186,6 @@
       <div id="profiles-list" class="profiles-list"></div>
       <div id="plans-list" class="plans-list"></div>
     </div>
-  </section>
-
-  <div id="recipe-overlay" class="modal-overlay no-print" aria-hidden="true"></div>
-
-  <section id="recipe-modal" class="recipe-modal no-print" role="dialog" aria-modal="true" aria-labelledby="recipe-modal-title" aria-hidden="true">
-    <div class="modal-handle" aria-hidden="true"></div>
-
-    <div class="recipe-modal__header">
-      <div>
-        <span id="recipe-modal-slot" class="meal-pill"></span>
-        <h2 id="recipe-modal-title"></h2>
-      </div>
-
-      <button id="close-recipe-button" class="icon-button" type="button" aria-label="Cerrar receta">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
-
-    <div id="recipe-modal-content" class="recipe-modal__content"></div>
   </section>
 
   <noscript>

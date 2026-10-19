@@ -10,30 +10,35 @@
           "id": "ruben-elena-semana-1",
           "title": "Plan nutricional · Semana 1",
           "periodLabel": "Plan de 7 días",
+          "order": 1,
           "file": "data/elena-ruben/ruben-elena-semana-1.json"
         },
         {
           "id": "ruben-semana-2",
           "title": "Plan nutricional · Semana 2 · Rubén",
           "periodLabel": "Plan individual de 7 días",
+          "order": 2,
           "file": "data/elena-ruben/ruben-semana-2.json"
         },
 		{
           "id": "ruben-elena-semana-3",
           "title": "Plan nutricional · Semana 3 · Rubén y Elena",
           "periodLabel": "Plan de 7 días",
+          "order": 3,
           "file": "data/elena-ruben/ruben-elena-semana-3.json"
         },
 		{
           "id": "ruben-elena-semana-4",
           "title": "Plan nutricional · Semana 4 · Rubén y Elena",
           "periodLabel": "Plan de 5 días",
+          "order": 4,
           "file": "data/elena-ruben/ruben-elena-semana-4.json"
         },
 		{
           "id": "ruben-elena-semana-5",
           "title": "Plan nutricional · Semana 5 · Rubén y Elena",
           "periodLabel": "Plan de 7 días",
+          "order": 6,
           "file": "data/elena-ruben/ruben-elena-semana-5.json"
         }
       ]
@@ -47,30 +52,35 @@
           "id": "alicia-semana-1",
           "title": "Plan nutricional · Semana 1 · Alicia",
           "periodLabel": "Plan individual de 5 días",
+          "order": 1,
           "file": "data/maria-manuel-alicia/alicia-semana-1.json"
         },
         {
           "id": "maria-manuel-semana-1",
           "title": "Plan nutricional · Semana 1 · María y Manuel",
           "periodLabel": "Plan compartido de 5 días",
+          "order": 2,
           "file": "data/maria-manuel-alicia/maria-manuel-semana-1.json"
         },
 		{
           "id": "maria-manuel-alicia-semana-2",
           "title": "Plan nutricional · Semana 2 · María, Manuel y Alicia",
           "periodLabel": "Plan compartido de 7 días",
+          "order": 3,
           "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-2.json"
         },
 		{
           "id": "maria-manuel-alicia-semana-3",
           "title": "Plan nutricional · Semana 3 · María, Manuel y Alicia",
           "periodLabel": "Plan compartido de 7 días",
+          "order": 4,
           "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-3.json"
         },
 		{
           "id": "maria-manuel-alicia-semana-4",
           "title": "Plan nutricional · Semana 4 · María, Manuel y Alicia",
           "periodLabel": "Plan compartido de 7 días",
+          "order": 5,
           "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-4.json"
         }
       ]
@@ -84,24 +94,28 @@
           "id": "abuela-semana-1",
           "title": "Plan nutricional · Semana 1",
           "periodLabel": "Plan individual de 7 días",
+          "order": 1,
           "file": "data/abuela/abuela-semana-1.json"
         },
 		{
           "id": "abuela-semana-2",
           "title": "Plan nutricional · Semana 2",
           "periodLabel": "Plan individual de 7 días",
+          "order": 2,
           "file": "data/abuela/abuela-semana-2.json"
         },
 		{
           "id": "abuela-semana-3",
           "title": "Plan nutricional · Semana 3",
           "periodLabel": "Plan individual de 7 días",
+          "order": 3,
           "file": "data/abuela/abuela-semana-3.json"
         },
 		{
           "id": "abuela-semana-4",
           "title": "Plan nutricional · Semana 4",
           "periodLabel": "Plan individual de 7 días",
+          "order": 4,
           "file": "data/abuela/abuela-semana-4.json"
         }
       ]
