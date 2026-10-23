@@ -564,14 +564,12 @@ function renderStep(
   scope = state.quantityScope,
   displayedTotals = calculateRecipeTotals(entry, state.plan, scope)
 ) {
-  const variants = scope === "base"
-    ? []
-    : state.plan.people.flatMap((person) => {
-        const variant = (entry.recipe.variantsByPerson?.[person.id] || [])
-          .find((item) => Number(item.order) === Number(step.order));
+  const variants = state.plan.people.flatMap((person) => {
+    const variant = (entry.recipe.variantsByPerson?.[person.id] || [])
+      .find((item) => Number(item.order) === Number(step.order));
 
-        return variant ? [{ person, variant }] : [];
-      });
+    return variant ? [{ person, variant }] : [];
+  });
 
   const number = Number(step.order);
   const generalLabel = variants.length
@@ -589,15 +587,22 @@ function renderStep(
       <div>${formatStepText(generalText)}</div>
       ${variants.map(({ person, variant }, index) => {
         const letter = String.fromCharCode(98 + index);
+        const variantTotals = scope === "base"
+          ? calculateRecipeTotals(
+              entry,
+              { ...state.plan, people: [person] },
+              "people"
+            )
+          : displayedTotals;
         const text = replaceIngredientTokens(
           variant.text,
-          displayedTotals,
+          variantTotals,
           person.id
         );
 
         return `
           <div class="recipe-step__variant">
-            <strong>${number}${letter} · ${escapeHtml(person.name)}</strong>
+            <strong>${number}${letter} · ${escapeHtml(person.name)}${scope === "base" ? " (alternativa; no incluida en 1 P)" : ""}</strong>
             <div>${formatStepText(text)}</div>
           </div>
         `;

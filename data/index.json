@@ -34,12 +34,19 @@
           "order": 4,
           "file": "data/elena-ruben/ruben-elena-semana-4.json"
         },
-		{
+        {
           "id": "ruben-elena-semana-5",
           "title": "Plan nutricional · Semana 5 · Rubén y Elena",
           "periodLabel": "Plan de 7 días",
-          "order": 6,
+          "order": 5,
           "file": "data/elena-ruben/ruben-elena-semana-5.json"
+        },
+		{
+          "id": "ruben-elena-semana-6",
+          "title": "Plan nutricional · Semana 6 · Rubén y Elena",
+          "periodLabel": "Plan de 7 días",
+          "order": 6,
+          "file": "data/elena-ruben/ruben-elena-semana-6.json"
         }
       ]
     },
@@ -82,6 +89,20 @@
           "periodLabel": "Plan compartido de 7 días",
           "order": 5,
           "file": "data/maria-manuel-alicia/maria-manuel-alicia-semana-4.json"
+        }
+      ]
+    },
+    {
+      "id": "mari-ceci-dani-caro",
+      "name": "María, Cecilia, Daniel y Carolina",
+      "description": "Planes semanales",
+      "plans": [
+        {
+          "id": "mari-ceci-dani-caro-semana-1",
+          "title": "Plan nutricional · Semana 1 · María, Cecilia, Daniel y Carolina",
+          "periodLabel": "Plan individual de 5 días",
+          "order": 1,
+          "file": "data/mari-ceci-dani-caro/mari-ceci-dani-caro-semana-1.json"
         }
       ]
     },
