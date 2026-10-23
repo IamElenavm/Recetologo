@@ -74,7 +74,7 @@
                 },
                 {
                   "order": 2,
-                  "text": "Añade para Rubén 2 batidos de proteína, cada uno con {{preparado-proteina.total}} de preparado de proteína y {{leche-desnatada-batidos.total}} de leche desnatada. Ambos batidos forman parte de esta media mañana; puede preparar los dos de una vez y tomar el segundo de forma fraccionada hasta la comida.",
+                  "text": "Añade para Rubén 2 batidos de proteína, cada uno con {{preparado-proteina}} de preparado de proteína y {{leche-desnatada-batidos}} de leche desnatada. Ambos batidos forman parte de esta media mañana; puede preparar los dos de una vez y tomar el segundo de forma fraccionada hasta la comida.",
                   "removeIngredientIds": [],
                   "ingredients": [
                     { "id": "preparado-proteina", "name": "Preparado de proteína en polvo", "category": "Otros", "unit": "raciones", "baseQuantity": 2 },
